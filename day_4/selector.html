@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECTOR2</title>
+    <style>
+      /* universal selector */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* browser will provide default value for margin and padding  */
+      }
+
+      small ,div{
+        background-color: aqua;
+        font-size: 15px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h1>SELECTOR</h1>
+    <hr />
+    <h3>universal selector</h3>
+    <p>it indicates with *</p>
+    <p>it select all elements</p>
+    <hr>
+    <h3>grouping selector</h3>
+    <small>it is used to select group of elements</small>
+    <div>it is indicated with comma(,)</div>
+    <hr>
+    <h3>combined selector</h3>
+     
+        <h5>descendent selector</h5>
+         <p>it selects all child elements (direct /indirect)</p>
+         <pre>
+            parent child{
+               // both direct and indirect childs will select
+            }
+         </pre>
+        <h5>child selector<h5>
+        <p>it selects direct child element<p>
+            <pre>
+                parent > child{
+                 //it selects direct child
+                }
+            </pre>
+        <h5>adjacent sibling selector</h5>
+        <p>it select immediate adjacent element</p>
+           <pre>
+               main + adjacentelement{
+                   // it selcts immediate adjacent element
+               }
+           </pre>
+        <h5>general sibling selector</h5>
+        <p>it selects all adjacent elements</p>
+        <pre>
+            main ~ adjacentelement{
+                // it selects all siblings to the main element
+            } 
+        </pre>
+      </ol>
+  </body>
+</html>
