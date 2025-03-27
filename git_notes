@@ -12,7 +12,7 @@ git commit -m "msg"              --->for committing
 git config --global user.email "register email"/
       
 git remote add origin repository link(paste)
-git push origin master     /main            ---git push origin main --force
+git push origin    master     /main            ---git push origin main --force
 
 
 
