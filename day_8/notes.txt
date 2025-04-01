@@ -1,0 +1,54 @@
+ <h1>flex</h1>
+    <hr>
+    <p>it is used to align elements</p>
+    <p>it is used to distribute space between elements</p>
+    <p>it is used to distribute space around elements</p>
+    <p>It will arrange elements in cross axis and main axis</p>
+    <p>flex container is main division of flex</p>
+    <p>flex items are child of flex container</p>
+    <p>flex container is used to wrap the flex items</p>
+
+
+    <p>"display : flex" is used to make flex container</p>
+    <p>the default direction is row(left to right) </p>
+    <p>"flex-direction : row-reverse; row; column; column-reverse" is used to change the direction</p>
+  
+
+
+row (left to right)  x axis(main axis)  y axis(cross axis)
+column(top to bottom) y axis(main axis) x axis(cross axis)
+
+
+
+parent properties :
+
+
+justify-content : it is used to align main axis
+                 flex-start(default) ; flex-end; centre; space-around; space-between;space-evenly 
+
+
+align items : it is used to align cross axis
+                 flex-start(default) ; flex-end; centre; 
+
+align-content: It is used to align when there is extra space in the cross axis ,similar to 'justify-content' aligns individual items 
+                 flex-start(default) ; flex-end; centre; space-around; space-between;space-evenly 
+
+gap: it used to provide gap between the elements 
+row-gap: it is used to provide gap between row elements
+column-gap: it is used to provide gap between column elements
+
+
+child properties/flex items:
+
+
+flex-shrink:  it is used to shrink elements according to width
+    default-1
+    0-items wont shrink
+flex-grow: it is used to grow element size according to width
+    default-0
+    
+order:it is used to re arrange the order of flex-items
+
+justify-self - to provide justify content property , specifically to a flex item
+align-self - to provide align items property , specifically to a flex item
+
