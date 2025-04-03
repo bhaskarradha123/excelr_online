@@ -5,12 +5,16 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
 }
 .nav {
   border: 1px solid red;
   display: flex;
   height: 10%;
+}
+.main{
+    border: 1px solid red;
+    height: 80%;
 }
 .footer {
   border: 1px solid red;
