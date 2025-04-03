@@ -41,8 +41,6 @@ body {
     grid-area: content;
     background-color: rgb(85, 0, 255);
 }
-
-
 .footer {
   border: 1px solid red;
   height: 10%;
