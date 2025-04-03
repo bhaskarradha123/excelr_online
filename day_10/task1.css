@@ -15,7 +15,35 @@ body {
 .main{
     border: 1px solid red;
     height: 80%;
+    display: grid;
+    grid-template-areas: "section1 section2"
+                        "content content";
+    
+
 }
+.mainItem{
+    color: white;
+    font-size: 3em;
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.section1{
+    grid-area: section1;
+    background-color: rgb(52, 225, 225);
+}
+.section2{
+    grid-area: section2;    
+    background-color: rgb(229, 105, 22);
+}
+.content{
+    grid-area: content;
+    background-color: rgb(85, 0, 255);
+}
+
+
 .footer {
   border: 1px solid red;
   height: 10%;
