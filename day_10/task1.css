@@ -3,3 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  min-height: 100vh;
+}
+.nav {
+  border: 1px solid red;
+  display: flex;
+  height: 10%;
+}
+.footer {
+  border: 1px solid red;
+  height: 10%;
+}
