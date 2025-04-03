@@ -15,7 +15,7 @@ System.out.println("My Name is " + name);
 
 
 
-
+/* 
 
 {
 // block of code 
@@ -47,3 +47,4 @@ Data type : it defines type of a data
     
 
 
+*/
