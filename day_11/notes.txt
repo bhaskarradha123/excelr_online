@@ -23,6 +23,7 @@ z-index:it is used to specify the stacking order of elements
     when overlapping each other
     default-0
     higher value means higher z-index
+    - used for relative, absolute, fixed, sticky
 
 3.fixed
     position: fixed;
