@@ -6,7 +6,6 @@
 
 body{
     height: 100vh;
-    border: 1px solid black;
     
 }
 header{
@@ -31,24 +30,40 @@ a{
     text-decoration: none;
 }
 main{
-    border: 1px solid black;
     height: 70%;
     display: grid;
     grid-template-areas: "section section aside"
                          "article1 article2 aside";
+                       
 }
-
 section{
     grid-area: section;
+    box-shadow: rgb(78, 78, 194) 0px 0px 10px ;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    
 }
 aside{
     grid-area: aside;
+    box-shadow: rgb(78, 78, 194) 0px 0px 10px ;
+    border-radius: 10px;
+    margin: 2px;
+   
 }
 .article1{
     grid-area: article1;
+    box-shadow: rgb(78, 78, 194) 0px 0px 10px ;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
 }
 .article2{
     grid-area: article2;
+    box-shadow: rgb(78, 78, 194) 0px 0px 10px ;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 figure{
