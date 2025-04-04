@@ -20,11 +20,11 @@ ul{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+    margin-top: 20px;
     
 }
 a{
-    margin: 10px;
-    padding: 10px;
+    padding: 20px;
     color: white;
     cursor: pointer;
     font-size: 2em;
@@ -33,6 +33,32 @@ a{
 main{
     border: 1px solid black;
     height: 70%;
+    display: grid;
+    grid-template-areas: "section section aside"
+                         "article1 article2 aside";
+}
+
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+}
+.article1{
+    grid-area: article1;
+}
+.article2{
+    grid-area: article2;
+}
+
+figure{
+    margin: 50px;
+    padding: 20px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgb(78, 78, 194) 0px 0px 10px ;
 }
 footer{
     height: 10%;
