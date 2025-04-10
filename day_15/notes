@@ -59,7 +59,7 @@ operators in javascript:
 5.ternary operators:operand1?operand2:operand3
                    condition?value_if_true:value_if_false
 
-6.bitwise operators:
+6.bitwise operators: &,|,^,~,<<,>>
 
 7.typeof operator: typeof(data)
 
