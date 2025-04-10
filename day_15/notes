@@ -48,17 +48,20 @@ external js:
 operators in javascript:
 
 
-1.arithmetic operators:
+1.arithmetic operators:+ ,-,*,/,%,** ,++,--
 
-2.relational operators:
+2.relational operators:<,>,<=,>=,==,!=,===
 
-3.logical operators:
+3.logical operators: &&,||,!
 
-4.assignment operators:
+4.assignment operators: +=,-=,/=,*=,%=,**=
 
-5.ternary operators:
+5.ternary operators:operand1?operand2:operand3
+                   condition?value_if_true:value_if_false
 
 6.bitwise operators:
+
+7.typeof operator: typeof(data)
 
 
 
