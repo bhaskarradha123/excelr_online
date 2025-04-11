@@ -1,7 +1,7 @@
 javascript:
    it is a scripting language
    it is used to create dynamic and interactive webpages
-   it is a client side language
+   it is a client and server side language
    it is used to add behavior and functionalities to webpages
    It is synchronous language/it is executed line by line
    It is case sensitive
@@ -12,8 +12,9 @@ javascript also used in:
               3.Vuejs
               4.NodeJs
 
-js current version : ECMAScript 13 (ES13)
+js current version : ECMAScript 2023 (ES2023)
 ECMA- european computers manufacturer association
+      invented by  by Brendan Eich in 1995 , developer of netscape.
 
 
 
