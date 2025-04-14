@@ -112,3 +112,27 @@ syntax:
     .
     yield n;
 }
+
+========================================================================
+7.IIFE:
+    -immediately invoked function expression
+    -it is a function that is called immediately after it is defined
+
+syntax:
+
+   (
+       function(){
+          //set of sentences that performs a task 
+       }
+   )();
+
+=============================================================
+8.higher order functions:
+    -it is a function that is passed as an argument to another function
+    -takes a function as an argument and returns a function
+    
+syntax:
+    function functionName(arg1, arg2 , func_2 ){
+        //set of sentences that performs a task
+        return func_2(arg1,arg2);
+    }
