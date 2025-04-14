@@ -71,3 +71,44 @@ syntax:
 ex:   (ar1,ar2)=>{
        //specific task
       }
+
+=============================================================
+4.constructor function:
+    -it is a special function that is used to create objects
+
+syntax:
+ 
+        function Person(name, age){
+            this.name=name;
+            this.age=age;
+        }
+
+      const  data=new Person('ram',20);
+
+=============================================================
+5.Call back function :
+    -it is a function that is passed as an argument to another function
+    -it is a function that is called by another function
+
+
+syntax:
+
+    function functionName(arg1, arg2 , func_2 , func_3){
+        //set of sentences that performs a task
+    }
+
+    functionName(arg1,arg2, func_2, func_3);
+
+=============================================================
+6.Generator function:
+    -it is a function that is used to create iterators/generators
+
+syntax:
+
+    function* functionName(){
+    yield 1;
+    .
+    .
+    .
+    yield n;
+}
