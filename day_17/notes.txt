@@ -1,0 +1,11 @@
+What is Functions
+why functions
+types of functions
+function declaration
+function expression
+arrow functions
+callback functions
+constructor functions
+generator functions
+IIFE
+higher order functions

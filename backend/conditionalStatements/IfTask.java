@@ -1,25 +1,10 @@
-class IfTask{
+class  IfTask{
+ 
     public static void main(String[] args) {
-         
-        int age=2;
-
+        int age =17;
         if(age>=18){
-         System.out.println("you can vote");
-         System.out.println("you can drive");
-         System.out.println("you can marry");
+            System.out.println("Eligible to vote");
+
         }
-       
-
-
-     
-        if(true){
-            System.out.println("hello");
-        }
-        // if(false){
-        //     System.out.println("hii");
-        // }
-
-
-
     }
 }
