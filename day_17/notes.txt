@@ -1,11 +1,73 @@
-What is Functions
+Functions:
+    --it is a block of code that performs a specific task
+    --it is a re-usable block of code
+    --it is a collection of statements that performs a task
+------------------------------------------------------
 why functions
-types of functions
-function declaration
-function expression
-arrow functions
-callback functions
-constructor functions
-generator functions
-IIFE
-higher order functions
+    1.code reusability
+    2.code maintainability
+    3.code readability
+    4.code Organization
+    5.Scalability
+ 
+--------------------------------------------------
+types:
+        function declaration
+        function expression
+        arrow functions
+        callback functions
+        constructor functions
+        generator functions
+        IIFE
+        higher order functions
+
+==============================================================
+
+1.function declaration/named function/general function
+-----------------------------------------------------
+
+syntax:
+ function functionName/Identifier(){
+     //set of sentences that performs a task
+ }
+
+
+ //passing arguments 
+ function funct_Name(arg1, arg2.......){
+     
+ }
+ funct_Name(arg1, arg2.......);
+
+
+ //return statement
+ function funct_Name(arg1, arg2.......){
+     return result;
+ }
+ let result=funct_Name(arg1, arg2.......);
+
+==============================================================
+
+2.function expression
+------------------
+
+syntax: 
+       let result = function(arg1, arg2.......){
+
+          return result;  
+        }
+
+        result(arg1,arg2.....);
+       
+===============================================================
+3.arrow functions:
+------------------
+          shorter syntax than regular function
+syntax:
+
+    let data=  ()=>{
+
+         }
+
+ex:   (ar1,ar2)=>{
+       //specific task
+      }
