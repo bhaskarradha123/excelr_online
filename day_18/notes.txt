@@ -1,0 +1,34 @@
+what are callback functions
+           -- it is a function that is passed as an argument to another function
+
+callback hell(pyramid of doom)
+---------------------------------
+   -it is a situation where we have multiple callbacks inside a callback(nested callbacks)
+   -hard to read       
+   -hard to maintain/modify 
+   -hard to debug
+   -this usually happens when we have to perform multiple asynchronous operations
+   
+
+
+
+
+
+
+
+
+
+
+
+
+what are promises
+states in promises
+what is then() function
+async & awit keywords
+Promise.all()
+Promise.race()
+Promise.allSettled()
+Promise.all()
+JQuery Integration
+Examples on JQuery
+
