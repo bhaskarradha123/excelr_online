@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Promises</title>
+    <title>Async Await</title>
   </head>
   <body>
     <script>
@@ -47,16 +47,24 @@
           }, 2000);
         });
       }
-// chaining promises
-      boilWater()
-        .then(() => brewCoffee())
-        .then(() => addSugarAndMilk())
-        .then(() => pourInCup())
-        .then(() => serveCoffee())
-        .then(() => console.log("Coffee is ready to be served!"))
-        .catch((error) => {
-          console.error("Error:", error);
-        });
+     
+
+      async function makeCoffee() {
+       try {
+        await boilWater();
+        await brewCoffee();
+        await addSugarAndMilk();
+        await pourInCup();
+        await serveCoffee();
+       } catch (error) {
+        console.error("Error:", error);
+       }  
+      }
+      makeCoffee();
+
+
+
+
     </script>
   </body>
 </html>

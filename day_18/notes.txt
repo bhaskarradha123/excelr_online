@@ -22,14 +22,74 @@ promises:
  - we can use catch() function to handle the failure of a promise
  - we can use finally() function to handle the success and failure of a promise
 
+-----------------------------------------------------------------------------
+async:
++++++++++++++++
 
+   async functions are functions that return a promise
+   async functions are used to handle asynchronous operations
 
+syntax:
 
-async & awit keywords
+async function functionName(){
+    
+}
+await:
++++++++++++++++
+
+   await keyword is used to wait for a promise to resolve
+   await is used inside an async function
+   it will make the code synchronous
+
+syntax:
+
+async function functionName(){
+    await functionName();   
+}
+---------------------------------------------------------
 Promise.all()
+    - it is used to wait for all the promises to resolve
+    - it returns a promise
+    - it is used to handle multiple promises(asynchronous operations)
+    -if all successful it returns an array of values
+    -if any one fails it returns an   errors
+ 
+-------------------------------------------------------------------------
 Promise.race()
+   - it is used to wait for the first promise to resolve
+   - it returns a promise
+   - it is used to handle multiple promises(asynchronous operations)
+   - 
+
+---------------------------------------------------------------------------
+
 Promise.allSettled()
-Promise.all()
-JQuery Integration
+   -it is used to wait for all promises to resolve
+   - it returns a promise
+   - it is used to handle multiple promises(asynchronous operations)
+   - wait for all promises and tells
+                      1.which one success
+                      2.which one is fails
+-------------------------------------------------------------------------------------
+
+feature                     .all                   .race               .allSettled   
+wait for all promises       yes                     no                   yes
+fails fast                  on first reject         if first rejects     never fails
+use case                    all must succeed        first win            get all outcomes
+return                      array                   first value          all results with status
+
+----------------------------------------------------------------------------------------------
+JQuery:
+      JQuery is fast , small js library
+      use: dom manipulation
+           event handling
+           animation
+           ajax(api - http requests)
+      -- it is easier when compared with js
+
+JQuery Integration:
+      1.cdn
 Examples on JQuery
+
+
 
