@@ -20,6 +20,82 @@ ex:
  Note : in js every object has a prototype
  ----------------------------------------------------------------------------      
 
+Creation of Objects:
+
+         1.constructor function (before es6) 
+         2.class (after es6)
+         3.object literal
+         4.Object.create()
+
+===============================================================================
+
+class:
+    -it is a template for creating objects
+    -it is a blueprint for creating objects
+
+creation :
+     1.class declaration
+     2.class expression
+
+1.class declaration :
+----------------------------------------------------------------------
+        class className{
+                    constructor(var1, var2....){
+                    this.var1=var1;
+                    this.var2=var2;
+                    }
+                    function f1(){
+                        
+                    }
+        }
+
+2.class expression :
+----------------------------------------------------------------------
+        let className=new class{
+                   constructor(var1, var2....){
+                    this.var1=var1;
+                    this.var2=var2;
+                    }
+                    function f1(){
+                        
+                    }
+        }
+
+
+==========================================================================
+
+object literal :
+---------------
+
+let obj={
+    'propertyName'='value',
+    'propertyName'='value',
+}
+
+======================================================================
+
+Object.create():
+----------------
+        const obj1={
+            'propertyName'='value',
+        }
+
+        const obj2=Object.create(obj1);
+=====================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 prototype:
     -it is a property of an object
     -it allows other object to inherit properties and methods
