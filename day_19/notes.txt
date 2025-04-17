@@ -83,25 +83,29 @@ Object.create():
         const obj2=Object.create(obj1);
 =====================================================================
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 prototype:
     -it is a property of an object
     -it allows other object to inherit properties and methods
     -it is used to add new properties and methods to an object
     -this created a prototype chain between objects
                    :allows objects to share properties and methods
+
+prototype chaining:
+    -it is a chain of objects
+    -we can achieve prototype chaining by using Object.create() method
+    -it is used to create a prototype chain between objects
+    -it allows objects to share properties and methods
+    how:
+        let obj1={
+            'propertyName'='value',
+        }
+        let obj2=Object.create(obj1);
+
+        let obj3=Object.create(obj2);
+    -setting prototype of obj1 to obj2 will allow obj2 to inherit properties and methods from obj1
+    
+
+
 
 
 
