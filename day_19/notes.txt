@@ -1,0 +1,31 @@
+object :
+    -it is a collection of related data and functions
+    -it is a collection of properties and methods
+    -it is a collection of variables and functions
+    -it indicates real time entity
+ex:
+       dog :
+            data/properties/variables:name ,color, age ,breed ,height
+            actions/behavior/functions/methods:barking, eating, running,jumping
+       function dog(variable_1, variable_2){
+            this.name=variable_1;
+            this.color=variable_2;
+            this.propertyName=variableName;
+            
+            function barking(){
+                
+            }
+       }
+
+ Note : in js every object has a prototype
+ ----------------------------------------------------------------------------      
+
+prototype:
+    -it is a property of an object
+    -it allows other object to inherit properties and methods
+    -it is used to add new properties and methods to an object
+    -this created a prototype chain between objects
+                   :allows objects to share properties and methods
+
+
+
