@@ -71,22 +71,34 @@ const json1={
     "age": 30,
     "city": "New York"
 }
-const json2={
-    "email": "p7NlQ@example.com",
-    "phone": "1234567890"
-}
-console.log(json1);
-console.log(json2);
-json1.phone=345678;
-json1["email"]=json2.email;
+// const json2={
+//     "email": "p7NlQ@example.com",
+//     "phone": "1234567890"
+// }
+// console.log(json1);
+// console.log(json2);
+// json1.phone=345678;
+// json1["email"]=json2.email;
 
 
- delete json2.phone;
- delete json2["email"];
+//  delete json2.phone;
+//  delete json2["email"];
 // const merged_json=Object.assign(json1,json2);
 // const merged_json={...json1,...json2};
 // console.log(merged_json);
 
 
-
+console.log(json1);
+for(let key in json1){
+    console.log(key+" : "+json1[key]); 
+}
+Object.keys(json1).forEach(key => {
+    console.log(key+" : "+json1[key]); 
+});  
+Object.entries(json1).forEach(key => {
+    console.log(key+" : "+json1[key]);  
+});  
+Object.values(json1).forEach(value => {
+    console.log(value);  
+});  
  

@@ -72,5 +72,24 @@ Delete JSON Properties:
     -with the help of square brackets([])
     -with the help of delete keyword
 ---------------------------------------------------------------
-Iterate JSON Objects
+Iterate JSON Objects:(consist list of key value pairs)
+    -with the help of for  loop
+    -with the help of foreach  loop
+ Iterate key in json object:
+ let json1={
+     "key1":"value1",
+     "key2":"value2",
+ }
+    1.for loop
+syntax;
+//iterating only keys
+for(let key in json1){
+    console.log(key);
+}
+//iterating keys and values
+for(let key in json1){
+    console.log(json1[key] - key);
+}
+
+--------------------------------------------------------
 Destructuring JSON Objects
