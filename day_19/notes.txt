@@ -95,6 +95,7 @@ prototype chaining:
     -we can achieve prototype chaining by using Object.create() method
     -it is used to create a prototype chain between objects
     -it allows objects to share properties and methods
+    - it is used to create inheritance in js
     how:
         let obj1={
             'propertyName'='value',
@@ -103,6 +104,15 @@ prototype chaining:
 
         let obj3=Object.create(obj2);
     -setting prototype of obj1 to obj2 will allow obj2 to inherit properties and methods from obj1
+-------------------------------------------------------------------------------------------------------------------
+
+  inheritance:
+    - is a way to create a new object from an existing object
+    - thus,it can share properties and methods of an existing object
+    - to achieve we can use Object.create()
+  
+
+   
     
 
 
