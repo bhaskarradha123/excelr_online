@@ -51,9 +51,26 @@ Accessing data from json objects:
     -with the help of(dot(.)operator) and brackets([])
 
 ----------------------------------------------------------------
-Object Methods
-Merge JSON Objects
-Add JSON Properties
-Delete JSON Properties
+Object Methods:
+        1.Object.keys()--fetch all the keys
+        2.Object.values()--fetch all the values
+        3.Object.entries()--fetch all the key value pairs
+
+--------------------------------------------------------------
+Merge JSON Objects:
+    - it is same as merging js objects
+    - with the help of spread operator(...)
+    - with the help of Object.assign()
+----------------------------------------------------------------
+Add JSON Properties:
+    -with the help of dot(.)operator
+    -with the help of square brackets([])
+    -with the help of Object.assign()
+---------------------------------------------------------------
+Delete JSON Properties:
+    -with the help of dot(.)operator
+    -with the help of square brackets([])
+    -with the help of delete keyword
+---------------------------------------------------------------
 Iterate JSON Objects
 Destructuring JSON Objects
