@@ -1,0 +1,59 @@
+JSON Objects:
+--------------------------------------------------------------------
+     -javascript object notation
+     -used to store(nosql) and exchange data(client<->sever)
+     -it is a lightweight data interchange format
+     -it is a text based format
+     -it is a collection of key/value pairs
+
+
+ex:
+
+{
+   "key1":"value1" ,
+   "key2":"value2"
+}
+
+
+                 js object                        JSON object
+-------------------------------------------------------------------
+syntax          flexible and dynamic            fixed/strict and static
+keyQuotes       optional                        mandatory
+
+
+
+Json Rules :
+ -json object must be in curly brackets({})
+ -json object contains collection of key and value pairs
+ -key must be in double quotes
+ -value can be in double quotes or single quotes(based on data type)
+ -string must be in double quotes
+ -key name must be unique
+----------------------------------------------------------------------
+ 
+ Json Structure:
+    1.Objects(like dictionaries/maps) 
+    2.Arrays(like lists)
+    3.Nested Objects
+----------------------------------------------------------------
+JSON Arrays:
+    -it is a collection of values
+    -it is a list of values
+
+    ex: [1,2,3,4,5,6,7,8,9,10]
+        ["abc","xyz","pqr","mno","lmn","jkl","hij","def","ghi","abc"]
+        [
+            {},{},{}
+        ]
+------------------------------------------------------------------
+Accessing data from json objects:
+    -it is same as accessing data from js objects
+    -with the help of(dot(.)operator) and brackets([])
+
+----------------------------------------------------------------
+Object Methods
+Merge JSON Objects
+Add JSON Properties
+Delete JSON Properties
+Iterate JSON Objects
+Destructuring JSON Objects
