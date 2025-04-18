@@ -88,17 +88,38 @@ const json1={
 // console.log(merged_json);
 
 
-console.log(json1);
-for(let key in json1){
-    console.log(key+" : "+json1[key]); 
-}
-Object.keys(json1).forEach(key => {
-    console.log(key+" : "+json1[key]); 
-});  
-Object.entries(json1).forEach(key => {
-    console.log(key+" : "+json1[key]);  
-});  
-Object.values(json1).forEach(value => {
-    console.log(value);  
-});  
+// console.log(json1);
+// for(let key in json1){
+//     console.log(key+" : "+json1[key]); 
+// }
+// Object.keys(json1).forEach(key => {
+//     console.log(key+" : "+json1[key]); 
+// });  
+// Object.entries(json1).forEach(key => {
+//     console.log(key+" : "+json1[key]);  
+// });  
+// Object.values(json1).forEach(value => {
+//     console.log(value);  
+// });  
  
+
+const user={
+    "name": "John",
+    "age": 30,
+    "city": "New York",
+    "skills": ["JavaScript", "Python", "Java"],
+   
+}
+// destructuring the object
+ const {name,age}=user;
+console.log(name);
+console.log(age);
+// console.log(city);
+
+// destructing and renaming the object
+const{name:userName , age:userAge}=user;
+console.log(userName);
+
+// destructing and adding default value to the object
+const{country="India"}=user;
+console.log(country);
