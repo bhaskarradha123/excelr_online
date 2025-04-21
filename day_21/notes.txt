@@ -92,7 +92,28 @@ syntax:
 }
 index and array is optional
 -------------------------------------------------------------------
-       reduce()
+4.reduce()
+++++++++++
+        -it is used to create a new array by performing a specific
+          operation on each element of an existing array
+        -it returns a single value
+        -it wont change the original array
+        -it takes a function as an argument
+        -it is an example of higher order function and introduced in Es9
+syntax:
+
+array.reduce((accumulator, currentValue, index, array) => {
+    return accumulator;
+}, initialValue);
+
+accumulator: it is used to store the result of the previous iteration
+currentValue: it is used to store the current element of the array
+index: index of an array(optional)
+array: original array(optional)
+initialValue: it is used to provide a default value for the accumulator
+             (optional but recommended)
+------------------------------------------------------------------------------------
+
        includes()
        find()
        every()
