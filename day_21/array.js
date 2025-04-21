@@ -66,23 +66,40 @@
 // console.log(arr3);//[ 'THIS', 'IS', 'ARRAY', 'SESSION' ]
 
 
-let arr1 = [10, 21, 36, 45, 50];
+//let arr1 = [10, 21, 36, 45, 50];
 // let arr2=arr1.filter(
 //     (e,index,arr1)=>{
 //          return e%2==0;//even numbers
 //     }
 // )
-let arr2=arr1.filter(num=>num%2==0)
-console.log(arr1);
-console.log(arr2);
+// let arr2=arr1.filter(num=>num%2==0)
+// console.log(arr1);
+// console.log(arr2);
 
 
-let inputArr=[6,7,8,9,10];
-let cubeArr=inputArr.map(e=>e*e*e);
-let oddArr=inputArr.filter(e=>e%2!=0);
+// let inputArr=[6,7,8,9,10];
+// let cubeArr=inputArr.map(e=>e*e*e);
+// let oddArr=inputArr.filter(e=>e%2!=0);
 
-let outputArr=inputArr.map(e=>e*e*e).filter(e=>e%2!=0);
-console.log(inputArr);
-console.log(outputArr);
+// let outputArr=inputArr.map(e=>e*e*e).filter(e=>e%2!=0);
+// console.log(inputArr);
+// console.log(outputArr);
+
+
+// let arr1=[1,2,3,4,5];
+// let arr2=arr1.reduce((accumulator,currentValue)=>{
+//     return accumulator+currentValue;
+// },1);
+// console.log(arr1);//[ 1, 2, 3, 4, 5 ]
+// console.log(arr2);//166
+
+
+let arr1=[1,2,3,4,5];
+console.log(arr1.includes(2));//true
+console.log(arr1.includes(2,0));//true
+console.log(arr1.includes(2,1));//true
+console.log(arr1.includes(2,2));//false
+
+
 
 

@@ -113,8 +113,16 @@ array: original array(optional)
 initialValue: it is used to provide a default value for the accumulator
              (optional but recommended)
 ------------------------------------------------------------------------------------
+5.includes()
+++++++++++
+        -it is used to check if an element is present in an array
+        -it returns a boolean value
+syntax:
+array.includes(element,fromIndex);
+element: value of an array
+fromIndex: index of an array(optional), default value is 0
+---------------------------------------------------------------
 
-       includes()
        find()
        every()
        splice()
