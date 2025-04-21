@@ -122,9 +122,30 @@ array.includes(element,fromIndex);
 element: value of an array
 fromIndex: index of an array(optional), default value is 0
 ---------------------------------------------------------------
+6.find()
++++++++++
+        -it is used to return the first element of an array that
+          satisfies a specific condition
+        -it returns a single value i.e first result 
+        -it introduced in es6
+syntax
 
-       find()
-       every()
+array.find((element,index,array)=>{
+       return element;
+})
+index and array are optional
+---------------------------------------------------------------
+7.every()
+++++++++++
+        -it is used to check if all the elements of an array
+          satisfy a specific condition
+        -it returns a boolean value
+        -it introduced in es6
+syntax
+array.every((element,index,array)=>{
+       return element;
+})
+-------------------------------------------------------------------
        splice()
        findIndex()
        some()

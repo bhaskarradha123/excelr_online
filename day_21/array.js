@@ -94,12 +94,36 @@
 // console.log(arr2);//166
 
 
-let arr1=[1,2,3,4,5];
-console.log(arr1.includes(2));//true
-console.log(arr1.includes(2,0));//true
-console.log(arr1.includes(2,1));//true
-console.log(arr1.includes(2,2));//false
+// let arr1=[1,2,3,4,5];
+// console.log(arr1.includes(2));//true
+// console.log(arr1.includes(2,0));//true
+// console.log(arr1.includes(2,1));//true
+// console.log(arr1.includes(2,2));//false
 
 
+
+// let arr1=[1,2,3,4,5];
+// let outPut=arr1.find((e,index,arr1)=>{
+//     return e%2==0;//even numbers
+   
+// })
+// console.log(outPut);
+// let arr1=[1,2,3,4,5,'hello','world'];
+// let outPut=arr1.find((e,index,arr1)=>{
+//     return typeof e==='string'; 
+// })
+// console.log(outPut);//hello
+
+let arr1=[1,2,3,4,5,6,'hello'];
+let outPut=arr1.every((e,index,arr1)=>{
+    return typeof e==='number'; 
+})
+console.log(outPut);//false
+
+let arr2=[1,2,3,4,5,6];
+let outPut2=arr1.every((e,index,arr1)=>{
+    return typeof e==='number'; 
+})
+console.log(outPut2);//true
 
 
