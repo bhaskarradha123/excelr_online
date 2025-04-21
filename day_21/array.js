@@ -16,9 +16,23 @@ console.log(arr4);//[empty × 3]
 console.log(arr4.length);//3
 
 
-let arr5=new Array(1);
+let arr5=new Array(1);//[_]
 arr5[0]=10;
 console.log(arr5);//[10]//array containing
+
+let arr6=Array.of('developer');
+console.log(arr6);//developer
+
+//accessing array values/elements/items
+let arr7=[10,20,30,40,50];
+console.log(arr7[0]);// with the help of index
+arr7[1]=10000;//updating the value of index 1
+console.log(arr7[1]);//10000
+arr7[1]=20000;//updating the value of index 2
+console.log(arr7[1]);//20000
+
+
+
 
 
 

@@ -31,7 +31,14 @@ Array Creation:
         let numArr=Array.of(10,20,30,50);
         -it is used to create new array from a set of values
 
-
+-----------------------------------------------------------------
+accessing data from array:
+       1.Array indexing
+       2.Array methods
+------------------------------------------------------------------
+updating/modifying data in array:
+       1.Array indexing
+       2.Array methods
 
 
 
