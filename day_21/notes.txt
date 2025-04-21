@@ -40,7 +40,12 @@ updating/modifying data in array:
        1.Array indexing
        2.Array methods
 
-
+------------------------------------------------------------------
+Adding elements to an array:
+       1.Array indexing
+       2.Array methods:
+                     1.push()-add element at the end
+                     2.unshift()-add element at the beginning
 
 
 
