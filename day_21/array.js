@@ -15,7 +15,6 @@
 // console.log(arr4);//[empty × 3]
 // console.log(arr4.length);//3
 
-
 // let arr5=new Array(1);//[_]
 // arr5[0]=10;
 // console.log(arr5);//[10]//array containing
@@ -31,26 +30,38 @@
 // arr7[1]=20000;//updating the value of index 2
 // console.log(arr7[1]);//20000
 
-
 //adding values to array
-let arr8=['this','is','array','session' ];
-console.log(arr8);
-arr8[4]=1000;
-arr8[9]=200;
-console.log(arr8.length);//10
-console.log(arr8[7]);//undefined
+// let arr8=['this','is','array','session' ];
+// console.log(arr8);
+// arr8[4]=1000;
+// arr8[9]=200;
+// console.log(arr8.length);//10
+// console.log(arr8[7]);//undefined
 
-arr8.push('example');//adding value to the end of array
+// arr8.push('example');//adding value to the end of array
 
-console.log(arr8);//[ 'this', 'is', 'array', 'session', 1000, <4 empty items>, 'example' ]
+// console.log(arr8);//[ 'this', 'is', 'array', 'session', 1000, <4 empty items>, 'example' ]
 
-arr8.unshift('hello');//adding value to the beginning of array
-console.log(arr8);
+// arr8.unshift('hello');//adding value to the beginning of array
+// console.log(arr8);
 
+// //removing values from array
+// arr8.pop();
+// console.log(arr8);
+// arr8.shift();
+// console.log(arr8);
 
+// //at method
+// let arr9=[10,20,30,40,50];
+// console.log(arr9.at(0));//10
+// console.log(arr9.at(-1));//50
+// console.log(arr9.at(8));//undefined
 
+let arr1 = [10, 20, 30, 40, 50];
+let squareArr = arr1.map((num, index,arr1) => num * num);
+console.log(arr1, squareArr); // [100, 400, 900, 1600, 2500]
 
-
-
-
+let arr2=['this','is','array','session'];
+let arr3=arr2.map((e) =>e.toUpperCase() );
+console.log(arr3);//[ 'THIS', 'IS', 'ARRAY', 'SESSION' ]
 
