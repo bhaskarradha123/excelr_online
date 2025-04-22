@@ -75,3 +75,20 @@ console.log(output5);//hello,world,hi
 let arr6=[10,20,30];
 let output6=arr6.join('-😊');
 console.log(output6);
+
+/**
+ * slice() method
+ *  -The slice() method returns a shallow copy of a
+ *  portion of an array into a new array object selected
+ *  from start to end (end not included) where start and
+ *  end represent the index of items in that array.
+ *  -The original array will not be modified.
+ * syntax:
+ * array.slice(start, end)
+ *  start: it is used to specify the starting index
+ *  end: it is used to specify the ending index(exclusive)
+ * 
+ */
+let arr7=[10,20,30,40,50,60];
+let output7=arr7.slice(2,4);//[30,40]
+console.log(output7);//[ 30, 40 ]
