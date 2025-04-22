@@ -80,11 +80,7 @@ work with objects   yes                 no                  yes
        flat()
        flatMap()
        
-       fill()
-       
-       delete()
-       
-       
+
        padStart()
        padEnd()
        trimStart()

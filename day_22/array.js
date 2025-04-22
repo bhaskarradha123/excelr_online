@@ -183,3 +183,29 @@ arr12.fill(100);//[ 100, 100, 100, 100, 100, 100 ]
 console.log(arr12);
 arr12.fill(100,5)//[ 10, 20, 30, 40, 100, 100 ]
 arr12.fill(200,3,5)//[ 10, 20, 30, 200, 200, 60 ]
+
+/**
+ * padStart()
+ *     - The padStart() method pads the current string with
+ *       another string (multiple times) until it reaches the
+ *       specified length.
+ *     - it does not change the original string
+ *     - it returns the padded string
+ *     - it starts padding from left side
+ * padEnd()
+ *     - The padEnd() method pads the current string with
+ *       another string (multiple times) until it reaches the
+ *       specified length.
+ *      - it does not change the original string
+ *      - it returns the padded string
+ *      - it starts padding from right side
+ * syntax:
+ *     string.padStart(targetLength, padString)
+ * targetLength: The length of the string to pad to.
+ * padString: The string to pad the current string with.
+ *            (default is ' ')(optional)
+ */
+
+let str1='hello';
+console.log(str1.padStart(10,'*'));//*****hello
+console.log(str1.padEnd(10,'*'));//hello*****
