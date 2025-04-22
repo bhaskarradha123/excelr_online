@@ -110,6 +110,23 @@ console.log(arr7.slice(3));//[ 40, 50, 60 ]
 let arr8=[10,20,30,40,50,60];
 arr8.forEach(
     (element,index,array)=>{
-        console.log(`element: ${element} - index: ${index} `);
+        console.log(`element: ${element} `);
+        console.log('square of element:',element*element);
+        
     }
 )
+
+/**
+ * for of loop
+ *    -The for...of statement creates a loop iterating over
+ *    iterable objects, including: typed sets, arrays, strings, etc.
+ *  syntax:
+ *    for(let element of array){
+ * *      //code block
+ *    } 
+ *  
+ */
+let arr9=[10,20,30,40,50,60];
+        for(let e of arr9){
+            console.log(e);    
+        }

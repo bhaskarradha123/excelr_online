@@ -26,9 +26,20 @@ array.some((element,index,array)=>{
        return element;
 })
 
+-------------------------------------------------------------------
 
+         forEach()             map()                   filter()
+--------------------------------------------------------------------
+use:     loop through      loop through              loop through 
+        the array          the array                  the array 
 
+purpose  iterates          process/transform the data    filter the data
 
+returns    nothing         returns a new array       returns a new array
+
+modify
+original   no                 no                          no
+array
 
 
        findIndex()
