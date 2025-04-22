@@ -209,3 +209,107 @@ arr12.fill(200,3,5)//[ 10, 20, 30, 200, 200, 60 ]
 let str1='hello';
 console.log(str1.padStart(10,'*'));//*****hello
 console.log(str1.padEnd(10,'*'));//hello*****
+
+/*
+* trimStart() -it removes the space from the left side
+* trimEnd()   -it removes the space from the right side
+* trim()      -it removes the space from both sides
+* 
+*/
+let str2='   hello   ';
+console.log(str2.length);//11
+str2.trimStart();
+console.log(str2.length);//8
+console.log(str2);//hello
+str2.trimEnd();
+console.log(str2.length);//5
+
+/**
+ * sort()
+ *    - The sort() method sorts the elements of an array
+ *      in place and returns the sorted array.
+ *    - it changes the original array
+ *    - it returns the sorted array
+ * syntax:
+ *     array.sort([compareFunction])
+ * compareFunction: A function that defines the sort order.
+ *                  (optional)
+ *                   (default is ascending order)
+ */
+
+let arr13=[10,40,20,30,60,40];
+arr13.sort();
+console.log(arr13);//[ 10, 20, 30, 40, 40, 60 ]
+
+/**
+ * reduceRight()
+ *     - The reduceRight() method applies a function against
+ *       an accumulator and each value of the array (from right
+ *       to left) to reduce it to a single value.
+ *     - it changes the original array
+ *     - it returns the reduced value
+ * syntax:
+ *     array.reduceRight(
+ *         (accumulator, currentValue, currentIndex, array) => {
+ *             // code block
+ *         }
+ *     )
+ * accumulator: The value accumulated thus far.
+ * currentValue: The current element being processed in the array.
+ */
+
+let arr14=['welcome' , 'to' , 'session'];
+arr14.reduceRight(
+    (accumulator, currentValue, currentIndex, array) => {
+        return accumulator+' '+currentValue;
+    }
+)
+console.log(arr14);//[ 'welcome', 'to', 'session' ]
+
+
+/**
+ * lastIndexOf()
+ *     - The lastIndexOf() method returns the last index
+ *       at which a given element can be found in the array,
+ *       or -1 if it is not present.
+ *     - it returns the index
+ *     - it returns -1 if the element is not found
+ * syntax:
+ *     array.lastIndexOf(searchElement, fromIndex)
+ * searchElement: The element to locate in the array.
+ * fromIndex: The index at which to start the search.
+ */
+
+let arr15=[10,20,30,40,50,60,10];
+console.log(arr15.lastIndexOf(10));//6
+console.log(arr15.indexOf(10));//0
+
+/**
+ * copyWithin()
+ *     - The copyWithin() method shallow copies part of an
+ *       array to another location in the same array and
+ *       returns it, without modifying its length.
+ *     - it changes the original array
+ *     - it returns the modified array
+ * syntax:
+ *     array.copyWithin(target, start, end)
+ * target: The index to copy the array to.
+ * start: The index to start copying from.
+ * end: The index to stop copying (exclusive).
+ */
+
+
+let arr16=[10,20,30,40,50,60];
+arr16.copyWithin(4,0,3);//[ 10, 20, 30, 40, 10, 20 ]
+console.log(arr16);
+/**
+ * repeat()
+ *     - The repeat() method creates a new string by
+ *       repeating the string n times.
+ *     - it returns the repeated string
+ * syntax:
+ *     string.repeat(count)
+ * count: The number of times to repeat the string.
+ */
+let str3='hello';
+console.log(str3.repeat(3));//hellohellohello
