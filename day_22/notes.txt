@@ -41,6 +41,43 @@ modify
 original   no                 no                          no
 array
 
+-------------------------------------------------------------------
+ 
+ 
+ 
+               for..of                     for..in
+-------------------------------------------------------------------
+loop            yes                         yes
+
+returns         value of each element       key of each element
+
+modify          no                          no
+
+loop over      element/value                 index/keys
+
+useCase:      array/Strings                  objects
+
+
+---------------------------------------------------------------------
+ 
+ 
+                  indexOf()            findIndex()         includes()
+--------------------------------------------------------------------
+matchType          exactMatch          partialMatch        exactMatch
+
+returns            index or -1         index or -1         boolean
+
+work with objects   yes                 no                  yes
+
+---------------------------------------------------------------------
+
+
+
+
+
+
+
+
 
        findIndex()
        some()

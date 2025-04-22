@@ -127,6 +127,29 @@ arr8.forEach(
  *  
  */
 let arr9=[10,20,30,40,50,60];
-        for(let e of arr9){
-            console.log(e);    
+        for(let element of arr9){
+            console.log(element);    
         }
+
+        for(let index in arr9){
+            console.log(index,' - ',arr9[index]);
+            
+        }
+
+
+/**
+ * indexOf() method
+ *     -  The indexOf() method returns the first index at
+ *         which a given element can be found in the array,
+ *         or -1 if it is not present.
+ * syntax:
+ * array.indexOf(searchElement, fromIndex)
+ * searchElement: The value to search for.
+ * fromIndex: The index at which to begin the search.(default is 0)(optional)
+ */
+
+let arr10=[10,20,30,40,50,60];
+let output10=arr10.indexOf(20);//1
+console.log(arr10.indexOf(100));//-1
+console.log(arr10.indexOf(100,0));//-1
+
