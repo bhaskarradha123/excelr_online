@@ -164,3 +164,22 @@ let arr11=[10,20,30,40,50,60];
 delete arr11[1];
 console.log(arr11);//[ 10, <1 empty item>, 30, 40, 50, 60 ]
 
+
+/**
+ * fill()
+ *    - The fill() method changes all elements in an array 
+ *      to a static value,and returns the modified array.
+ *    - it changes the original array
+ *    - it returns the modified array
+ * syntax:
+ *     array.fill(value, start, end)
+ * value: The value to fill the array with.
+ * start: The starting index.(default is 0)(optional)
+ * end: The ending index.(default is the length of the array)(optional)
+       (exclusive) 
+*/
+let arr12=[10,20,30,40,50,60];
+arr12.fill(100);//[ 100, 100, 100, 100, 100, 100 ]
+console.log(arr12);
+arr12.fill(100,5)//[ 10, 20, 30, 40, 100, 100 ]
+arr12.fill(200,3,5)//[ 10, 20, 30, 200, 200, 60 ]
