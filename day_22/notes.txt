@@ -72,33 +72,19 @@ work with objects   yes                 no                  yes
 ---------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
-       findIndex()
-       some()
-       reverse()
-       toString()
-       Array.form()
-       join()
-       slice()
+   length()   -- it returns size of an array
+   push()     -- it is used to add element at the end
+   unShift()  -- it is used to add element at the beginning
+   pop()      -- it is used to remove element from the end
+   shift()    -- it is used to remove element from the beginning
        flat()
        flatMap()
-       forEach()
-       for of()
-       for in()
-       indexOf()
+       
        fill()
-       length()
+       
        delete()
-       push()
-       unShift()
-       pop()
-       shift()
+       
+       
        padStart()
        padEnd()
        trimStart()

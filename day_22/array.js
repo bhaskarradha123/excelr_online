@@ -153,3 +153,14 @@ let output10=arr10.indexOf(20);//1
 console.log(arr10.indexOf(100));//-1
 console.log(arr10.indexOf(100,0));//-1
 
+
+/**
+ * delete
+ *    - The delete operator removes a property from an object/array.
+ *    - it deletes the value but not the key/index position
+ *    - it returns true if the property is deleted, otherwise false
+ */
+let arr11=[10,20,30,40,50,60];
+delete arr11[1];
+console.log(arr11);//[ 10, <1 empty item>, 30, 40, 50, 60 ]
+
