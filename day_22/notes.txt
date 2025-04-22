@@ -77,21 +77,8 @@ work with objects   yes                 no                  yes
    unShift()  -- it is used to add element at the beginning
    pop()      -- it is used to remove element from the end
    shift()    -- it is used to remove element from the beginning
-       flat()
-       flatMap()
+      
        
 
-       padStart()
-       padEnd()
-       trimStart()
-       trimEnd()
-       trim()
-       sort()
-       reduceRight()
-       lastIndexOf()
-       copyWithIn()
-       repeat()
-       split()
-       subString()
-       substr()
-       replace()
+     
+       

@@ -313,3 +313,75 @@ console.log(arr16);
  */
 let str3='hello';
 console.log(str3.repeat(3));//hellohellohello
+
+/**
+ * split()
+ *     - The split() method splits a string into an array
+ *       of substrings, and returns the new array.
+ *     - it returns the new array
+ *     - it does not change the original string
+ * syntax:
+ *     string.split(separator, limit)
+ * separator: The separator to use to split the string.
+ * limit: The maximum number of substrings to return.
+ *        (optional)
+ */
+
+let str4='hellohellohello';
+console.log(str4.split('h'));
+
+/**
+ * subString()
+ *     - The substring() method returns the characters
+ *       within a range of indices in a string.
+ *     - it returns the substring
+ *     - it does not change the original string
+ * syntax:
+ *     string.substring(start, end)
+ * start: The starting index (inclusive).
+ * end: The ending index (exclusive).
+ */
+let str5='hello';
+console.log(str5);
+console.log(str5[0]);
+console.log(str5.substring(2,4));
+console.log(str5.replace('e','ee'));
+console.log(str5.substr(2,4));//deprecated
+
+/**
+ * replace()
+ *     - The replace() method returns a new string
+ *       with some or all matches of a pattern replaced
+ *       by a replacement.
+ *     - it returns the new string
+ *     - it does not change the original string
+ * syntax:  
+ *     string.replace(searchValue, replaceValue)
+ * searchValue: The value to search for.    
+ * replaceValue: The value to replace the search value with.
+ *               (optional)
+ *               (default is an empty string)
+ */
+
+/**
+ * nested array-array inside another array
+ * flat()
+ *    -it is used to flat an nested array
+ *    -
+ * 
+ */
+let arr17=[[1,2,3],[4,5,6],[7,8,9]];
+console.log(arr17);
+console.log(arr17.flat());
+
+/**
+ * flatMap()
+ *     -it is used to flat an nested array
+ *     -it process the data on flat array
+ */
+
+let arr18=[[1,2,3],[4,5,6],[7,8,9]];
+console.log(arr18);
+console.log(arr18.flat().flatMap((element)=>{
+    return element+10;
+}))
