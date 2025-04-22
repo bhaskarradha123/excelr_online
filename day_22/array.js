@@ -86,9 +86,30 @@ console.log(output6);
  * syntax:
  * array.slice(start, end)
  *  start: it is used to specify the starting index
- *  end: it is used to specify the ending index(exclusive)
+ *  end: it is used to specify the ending index(exclusive)(optional)
  * 
  */
 let arr7=[10,20,30,40,50,60];
 let output7=arr7.slice(2,4);//[30,40]
 console.log(output7);//[ 30, 40 ]
+console.log(arr7.slice(3));//[ 40, 50, 60 ]
+
+/**
+ * forEach() method
+ *    -The forEach() method executes a provided function once
+ *    for each array element.
+ *    -it works like looping through the array elements.
+ *    -The forEach() method does not return a value.
+ *syntax:
+        arr.forEach(
+            (currentValue, index, array) => {
+                // code block
+            }
+ */
+
+let arr8=[10,20,30,40,50,60];
+arr8.forEach(
+    (element,index,array)=>{
+        console.log(`element: ${element} - index: ${index} `);
+    }
+)
