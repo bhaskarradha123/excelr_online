@@ -28,4 +28,10 @@ for (let e of pList) {
     e.style.fontSize='40px';
 }
 
+//creation of element with createElement()
 
+let pCreate=document.createElement('p');
+pCreate.textContent='this is a new paragraph created by using textContent property';
+
+let container=document.querySelector('.container');
+container.appendChild(pCreate);

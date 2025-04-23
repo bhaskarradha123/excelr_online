@@ -57,3 +57,26 @@ DOM Manipulation:
       3.getElementsByTagName() -- accessing element by tag name->returns multiple elements
       4.querySelector()--accessing element by css selector(first match)-->returns single element
       5.querySelectorAll()-->accessing element by css selector(all matches)-->returns multiple elements
+
+--------------------------------------------------------------------------
+2.Element creation
+             - creating element by DOM methods
+      1.createElement()
+                --> creating element by tag name
+                -->returns single element
+                -->it creates content in memory
+                -->to appear in document we need to use
+                        1.appendChild()
+                        2.insertBefore()
+                        3.replaceChild()
+                        4.prepend()
+------------------------------------------------------------------------------
+3.Element Manipulation
+             - modifying element by DOM methods
+        1.appendChild()
+        2.insertBefore()
+        3.replaceChild()
+        4.prepend()
+        5.removeChild()
+        6.cloneNode()
+        
