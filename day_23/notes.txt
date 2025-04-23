@@ -37,3 +37,23 @@ use cases:
 purpose         interact with the HTML document          interact with the browser
 
 Main Object     document                                 window
+
+---------------------------------------------------------------------------------
+
+DOM Manipulation:
+++++++++++++++++++
+           1.Element accessing
+           2.Element creation
+           3.Element removal
+           4.Element modification/Manipulation
+           5.Attribute Manipulation
+           6.Css Manipulation
+           7.Event Manipulation/Handling
+
+1.Element accessing
+             - accessing element by DOM methods
+      1.getElementById()
+      2.getElementsByClassName()
+      3.getElementsByTagName()
+      4.querySelector()
+      5.querySelectorAll()
