@@ -73,10 +73,36 @@ DOM Manipulation:
 ------------------------------------------------------------------------------
 3.Element Manipulation
              - modifying element by DOM methods
-        1.appendChild()
-        2.insertBefore()
-        3.replaceChild()
-        4.prepend()
-        5.removeChild()
-        6.cloneNode()
-        
+        1.appendChild() -- adding element at the end
+        2.insertBefore() -- adding element at the position(sibling element)
+        3.replaceChild() -- replacing element
+        4.prepend()-- adding element at the beginning
+        5.removeChild() -- removing element
+        6.cloneNode()-- cloning element
+
+
+                     appendChild()          insertBefore()          prepend()
+----------------------------------------------------------------------------------
+parent  tag               yes                         yes                     yes
+
+sibling tag               no                          yes                     no
+
+where it inserts         at the end        at the position          at the beginning
+
+------------------------------------------------------------------------------------
+Attribute Manipulation:
+             - modifying attribute by DOM methods
+        1.setAttribute() -- adding attribute
+        2.removeAttribute() -- removing attribute
+        3.getAttribute() -- accessing attribute
+        4.hasAttribute() -- checking attribute presence
+----------------------------------------------------------------------------------
+Css Manipulation:
+             - modifying Css by DOM methods
+        1.style -- adding Css
+        2.getComputedStyle() -- accessing Css
+        3.classList.add() -- adding class
+        4.classList.remove() -- removing class
+        5.classList.toggle() -- toggling class
+        6.classList.contains() -- checking class presence
+----------------------------------------------------------------------------------

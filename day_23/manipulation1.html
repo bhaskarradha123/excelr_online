@@ -9,6 +9,12 @@
     
     <div id="div1">
         <!-- p tag -->
+         <p id="removedP">this is a removed text</p>
+         <p id="replaceP">this is a replaced text</p>
+
+         <i id="insertedP">this is adjacent text</i>
+
+         <p id="clone">it is cloned text</p>
     </div>
 
 
@@ -34,6 +40,22 @@
        }
        div.appendChild(ul);
        
+       let removedP=document.getElementById("removedP")
+       div.removeChild(removedP);
+
+       let replacedP=document.getElementById("replaceP");
+       let newP=document.createElement('p');
+       newP.innerHTML='this is a new paragraph';
+       div.replaceChild(newP,replacedP);
+
+        let adjacentP =document.createElement('i');
+        adjacentP.innerHTML='this is an adjacent paragraph  ';
+        div.insertBefore(adjacentP,document.getElementById('insertedP'));
+
+        let cloneP=document.getElementById('clone');
+        let clonedP= cloneP.cloneNode(true);
+        div.insertBefore(clonedP,cloneP);
+
 
     </script>
 </body>
