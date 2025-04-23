@@ -52,8 +52,8 @@ DOM Manipulation:
 
 1.Element accessing
              - accessing element by DOM methods
-      1.getElementById()
-      2.getElementsByClassName()
-      3.getElementsByTagName()
-      4.querySelector()
-      5.querySelectorAll()
+      1.getElementById() -- accessing element by id(unique) -->returns single element
+      2.getElementsByClassName() -- accessing element by class name-->returns multiple elements
+      3.getElementsByTagName() -- accessing element by tag name->returns multiple elements
+      4.querySelector()--accessing element by css selector(first match)-->returns single element
+      5.querySelectorAll()-->accessing element by css selector(all matches)-->returns multiple elements
