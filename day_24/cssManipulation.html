@@ -17,17 +17,26 @@
   <body>
     <div id="div1">this is a div</div>
     <div id="container">this is another container</div>
-    <button onclick="addHighlight()">click to add highlight</button>
+    <button onclick="addHighlight()">click to ad    d highlight</button>
 
     <div id="container2" class="highlight">this is css removed container</div>
     <button onclick="removeHighlight()">click to remove highlight</button>
 
-
-    
     <div id="container3">this is for toggle</div>
     <button onclick="toggleHighlight()">click to toggle</button>
 
+    <div id="container4" class="highlight">checking the highlight</div>
+    <button onclick="check()">check highlight</button>
     <script>
+      let container4 = document.getElementById("container4");
+      function check() {
+        if (container4.classList.contains("highlight")) {
+          alert("highlight present");
+        } else {
+          alert("highlight not present");
+        }
+      }
+
       let container3 = document.getElementById("container3");
       function toggleHighlight() {
         container3.classList.toggle("highlight");
