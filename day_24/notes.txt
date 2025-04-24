@@ -1,0 +1,9 @@
+
+Css Manipulation:
+             - modifying Css by DOM methods
+        1.style -- adding Css(inline css)
+        2.getComputedStyle() -- accessing Css
+        3.classList.add() -- adding class
+        4.classList.remove() -- removing class
+        5.classList.toggle() -- toggling class
+        6.classList.contains() -- checking class presence
