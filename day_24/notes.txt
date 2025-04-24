@@ -33,3 +33,20 @@ Event Handling:
         1.addEventListener() -- adding event listener
         2.removeEventListener() -- removing event listener
         3.dispatchEvent() -- dispatching event
+-----------------------------------------------------------------------
+Event bubbling:
+             - event propagation in the DOM
+             - event is propagated from child to parent
+             DOM
+             |
+             Root Element
+             |
+             head body
+                  |
+                  div outside
+                  |
+                  div inside
+                  |
+                  button
+ex: button--->div(inside)--->div(outside)--->body--->html--->document
+-----------------------------------------------------------------------
