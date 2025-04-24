@@ -40,10 +40,9 @@
 
       box2.addEventListener("click", function () {
         console.log("box2 is clicked");
-      });
-
-      
-      button.addEventListener("click", function () {
+      });  
+      button.addEventListener("click", function (event) {
+        // event.stopPropagation(); // stopping event propagation
         console.log("button is clicked");
       });
     </script>

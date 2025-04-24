@@ -50,3 +50,13 @@ Event bubbling:
                   button
 ex: button--->div(inside)--->div(outside)--->body--->html--->document
 -----------------------------------------------------------------------
+
+Event bubbling:
+       button-->div(inside)-->div(outside)
+Event capturing/trickling:
+       div(outside)-->div(inside)-->button
+       - event is propagated from parent to child
+       -default propagation is from child to parent
+       -to achieve event capturing, we can use addEventListener() 
+       method with third argument as true
+-------------------------------------------------------------------
