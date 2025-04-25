@@ -15,3 +15,43 @@ this:
      -it is used to access the properties and methods 
       of the current object
 ----------------------------------------------------------------------
+
+extensions:
+
+git hub codespaces
+git hub pull request
+git hub repositories
+
+
+remote explorer-->allow-->authorize vscode
+
+---------------------------------------------------------------------
+call():
+-------
+    -it is a method that is used to call a function
+    -when you need to invoke a function immediately with
+     a specific value(this)
+     -pass arguments to a function as a value
+------------------------------------------------------------------------
+apply():
+-------
+    -it is a method that is used to call a function
+    -when you need to invoke a function immediately with
+     a specific value(this)
+     -pass arguments to a function as an array
+----------------------------------------------------------------------
+bind():
+------
+    -it is a method that is used to call a function
+    -used when we want to create new function with a specific value
+     but not execute immediately
+
+differences between call() and apply() and bind():
+------------------------------------------------------------------
+
+           call()            apply()           bind()
+---------------------------------------------------------------------
+args       value             array             value
+this       current object    current object    current object
+           (invoked)         (invoked)         (return function)
+--------------------------------------------------------------------------
