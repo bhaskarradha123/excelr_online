@@ -43,8 +43,17 @@
     }
     let btn=document.getElementById('btn');
     btn.addEventListener('click',createClickHandler('Hello buddy...!!!'));
-    
-    
+    //------------------factory function-------------------------
+
+    function multiply(multiplier){
+         return function(n){
+             return multiplier*n;
+         }
+    }
+    let double=multiply(2);
+    console.log(double(10));
+    console.log(double(14));
+    // --------------------------------------------------------------
     
     
     </script>

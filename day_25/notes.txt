@@ -9,3 +9,9 @@ Use case:
     -it is used to create private variables and functions
     -Data Hiding(encapsulation)
 ----------------------------------------------------------------------
+this:
++++++
+     -it is a keyword that refers to the current object
+     -it is used to access the properties and methods 
+      of the current object
+----------------------------------------------------------------------
