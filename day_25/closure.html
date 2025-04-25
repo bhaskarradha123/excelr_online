@@ -6,6 +6,8 @@
     <title>Closure</title>
 </head>
 <body>
+
+    <button id="btn">Click</button>
     <script>
 
         function outer(){
@@ -31,6 +33,20 @@
         } 
        let ClosureChild= parent();
        ClosureChild();
+
+
+    //    --------------------------------------------------------------
+    function createClickHandler(msg){
+       return function(){
+           console.log(msg, 'clicked from Closure');
+       }    
+    }
+    let btn=document.getElementById('btn');
+    btn.addEventListener('click',createClickHandler('Hello buddy...!!!'));
+    
+    
+    
+    
     </script>
 </body>
 </html>

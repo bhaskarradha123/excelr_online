@@ -8,3 +8,4 @@ closuers:
 Use case: 
     -it is used to create private variables and functions
     -Data Hiding(encapsulation)
+----------------------------------------------------------------------
