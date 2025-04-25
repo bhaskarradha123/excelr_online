@@ -1,0 +1,10 @@
+closuers:
+-----------------------
+    -it is a function that has access to the parent scope
+    -it can access the variables and functions of the parent scope
+    -it is a special kind of function , it allows a function to remember 
+    and access the variables and functions of its parent scope(outer function)
+
+Use case: 
+    -it is used to create private variables and functions
+    -Data Hiding(encapsulation)
