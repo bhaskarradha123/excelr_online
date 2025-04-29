@@ -11,6 +11,7 @@ React:
      - React is used to develop web applications/mobile
        applications/desktop applications.
 
+---------------------------------------------------------------------------
 Who uses react:
     -Facebook
     -Netflix
@@ -74,3 +75,5 @@ components:
 4.export the component 
 5.use the component in remaining jsx file 
           (import in main.jsx file)
+
+------------------------------------------------------------------------
