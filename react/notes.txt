@@ -23,7 +23,7 @@ Who uses react:
     -Tinder
 ----------------------------------------------------------------
 Why use react:
-    -High performance with virtual DOM
+    -High performance with virtual DOM(document object model)
     -Single page applications
     -Easy to learn and implement
     -It is free and open source
