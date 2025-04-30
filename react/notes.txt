@@ -111,3 +111,14 @@ class component_name extends React.Component{
         )
     }
 }
+---------------------------------------------------------------------
+                         function                        class
+            ------------------------------------------------------
+syntax:                 js function                 Es6 class syntax
+render()                not required                required
+state                   useState                    this.state
+props                   props                       this.props
+this key                not required                required
+readability             clean                       more boilerplate
+preferred               modern standard             older standard(deprecated)
+------------------------------------------------------------------
