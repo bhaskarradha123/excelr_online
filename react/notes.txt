@@ -77,3 +77,11 @@ components:
           (import in main.jsx file)
 
 ------------------------------------------------------------------------
+component : 
+   ex: header component , footer component , sidebar component etc ..
+   - it is a function/class that returns jsx code
+   - it is a reusable component
+   - it is a file that contains jsx code(html in js file)
+   - we can create a component in two ways 
+             1. function component
+             2. class component
