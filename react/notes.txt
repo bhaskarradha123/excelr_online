@@ -8,7 +8,7 @@ React:
      - it is used to develop single-page applications.
      - React is a component-based front-end library.
      - React makes it painless to create interactive UIs.
-     - React is used to develop web applications/mobile
+     - React is used to develop web applications/mobile.
        applications/desktop applications.
 
 ---------------------------------------------------------------------------
