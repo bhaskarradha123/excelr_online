@@ -122,3 +122,49 @@ this key                not required                required
 readability             clean                       more boilerplate
 preferred               modern standard             older standard(deprecated)
 ------------------------------------------------------------------
+State :
+    -state is an object that contains data that the component needs.
+    -it is used to store/update/manage data that the component needs 
+      to render.
+    -we can  modify the state in the component with the help of
+      setState() method. or this.setState() method.
+
+syntax: let [state /data, setState]=useState(initialState)
+ex: 
+   1.let [count, setCount] = useState(0)
+   2.let [name , setName] = useState('')
+   3.let [user , setUser] = useState({})
+   4.let[fruits, setFruits] = useState([])
+   5.let[isTrue, setIsTrue] = useState(true)
+
+setState() method:
+    -it is used to update the state of the component.
+    -it is a function used to update
+
+useState() hook:
+      -it is a hook that returns an array of two elements.
+      -the first element is the state variable.
+      -the second element is the function that updates the state variable.
+      -it is used to manage the state of the component.
+
+hooks:
+   -it is a function(special) that returns jsx code.
+   ex: useState(), useEffect(), useRef(), useContext()
+---------------------------------------------------------------------
+props:(properties)
+   -props is an object that contains data that the component needs.
+   -it is used to pass data from parent component to child component.
+   -we can access the props data in the component with the help of props.
+   -props are read-only.
+   -we can't modify the props data in the component.
+   -props are immutable.
+--------------------------------------------------------------------------------
+                           state                          props
+            ----------------------------------------------------------------------
+definition             used to update             used to pass/transfer(parent->child)
+mutability             mutable(can be modified)   immutable (can't be modified)
+managed                by itself                   by parent component
+access                 by itself                   by child component
+                       this.state/useState()       props/{name,age}
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

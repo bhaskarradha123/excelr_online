@@ -7,6 +7,8 @@ import Footer from './components/Footer.jsx'
 import Example1 from './states/Example1.jsx'
 import Example2 from './states/Example2.jsx'
 import Example3 from './states/Example3.jsx'
+import Parent from './props/Parent.jsx'
+import Parent2 from './props/Parent2.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,6 +16,8 @@ createRoot(document.getElementById('root')).render(
    <Footer/> */}
    {/* <Example1/> */}
    {/* <Example2/> */}
-   <Example3/>
+   {/* <Example3/> */}
+   {/* <Parent/> */}
+   <Parent2/>
   </StrictMode>,
 )
