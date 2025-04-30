@@ -1,5 +1,5 @@
+//counter app
 import { useState } from "react";
-
 const Example2 = () => {
   let [count, setCount] = useState(0);
   return (
