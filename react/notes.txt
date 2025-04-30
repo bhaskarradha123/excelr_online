@@ -77,7 +77,7 @@ components:
           (import in main.jsx file)
 
 ------------------------------------------------------------------------
-component : 
+component : (ui component)
    ex: header component , footer component , sidebar component etc ..
    - it is a function/class that returns jsx code
    - it is a reusable component
@@ -85,3 +85,29 @@ component :
    - we can create a component in two ways 
              1. function component
              2. class component
+
+1.function component:
+
+syntax : 
+
+function component_name(){
+    return(
+        <>
+        //jsx code
+        </>
+    )
+}
+
+2.class component:
+
+syntax :
+
+class component_name extends React.Component{
+    render(){
+        return(
+            <>
+            //jsx code
+            </>
+        )
+    }
+}
