@@ -4,10 +4,14 @@ import './index.css'
 import App from './App.jsx'
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
+import Example1 from './states/Example1.jsx'
+import Example2 from './states/Example2.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <Header/>
-   <Footer/>
+   {/* <Header/>
+   <Footer/> */}
+   {/* <Example1/> */}
+   <Example2/>
   </StrictMode>,
 )
