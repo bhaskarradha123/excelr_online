@@ -1,33 +1,36 @@
 import React from "react";
 
 const GrandParent = () => {
+    let property='hyderabad';
   return (
     <>
       <div>GrandParent</div>
-      <Parent />
+      <Parent  property={property}/>
     </>
   );
 };
-const Parent = () => {
+const Parent = ({property}) => {
   return (
     <div>
       <div>Parent</div>
-      <Child />
+      <Child  property={property}/>
     </div>
   );
 };
-const Child = () => {
+const Child = ({property}) => {
   return (
     <>
       <div>Child</div>
-      <GrandChild />
+      <GrandChild  property={property}/>
     </>
   );
 };
-const GrandChild = () => {
+const GrandChild = ({property}) => {
   return (
     <>
+    
       <div>GrandChild</div>
+      <div>{property}</div>
     </>
   );
 };
