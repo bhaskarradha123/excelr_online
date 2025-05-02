@@ -176,4 +176,9 @@ props drilling :
     -it is a technique that is used to pass data from parent component
      to child component.
 ex:  Grand Parent--->Parent--->Child---->Grand Child
+    -it makes difficult to code
+    -it causes deep component hierarchy
+    -it causes code maintainability
+    -to avoid props drilling we can use context api or redux
+--------------------------------------------------------------------
 
