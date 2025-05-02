@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import AuthContext from "./AuthContext";
+
 /**
  * Login
  * Dashboard
@@ -6,10 +9,20 @@
  *
  */
 const Login = () => {
+    let obj={
+        "username":"raj",
+        "password":"123",
+        "email":"raj@example.com",
+        "age":20,
+        "mobile":1234567890
+
+    }
   return (
     <>
       <div>Login</div>
-      <Dashboard />
+      <AuthContext.Provider value={obj}>
+       <Dashboard />
+      </AuthContext.Provider>
     </>
   );
 };
@@ -30,7 +43,9 @@ const NavBar = () => {
   );
 };
 const Edit = () => {
+    let loginObject=useContext(AuthContext);
   return <> 
+  <div>{loginObject.username} , {loginObject.email}</div>
   <div>edit</div>
   </>
 };
