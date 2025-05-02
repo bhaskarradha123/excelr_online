@@ -9,6 +9,8 @@ import Example2 from './states/Example2.jsx'
 import Example3 from './states/Example3.jsx'
 import Parent from './props/Parent.jsx'
 import Parent2 from './props/Parent2.jsx'
+import Parent3 from './props/Parent3.jsx'
+import Parent4 from './props/Parent4.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +20,8 @@ createRoot(document.getElementById('root')).render(
    {/* <Example2/> */}
    {/* <Example3/> */}
    {/* <Parent/> */}
-   <Parent2/>
+   {/* <Parent2/> */}
+   {/* <Parent3/> */}
+   <Parent4/>
   </StrictMode>,
 )
