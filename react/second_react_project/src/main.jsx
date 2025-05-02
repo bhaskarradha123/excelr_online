@@ -11,6 +11,7 @@ import Parent from './props/Parent.jsx'
 import Parent2 from './props/Parent2.jsx'
 import Parent3 from './props/Parent3.jsx'
 import Parent4 from './props/Parent4.jsx'
+import GrandParent from './props/PropsDrilling.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')).render(
    {/* <Parent/> */}
    {/* <Parent2/> */}
    {/* <Parent3/> */}
-   <Parent4/>
+   {/* <Parent4/> */}
+   <GrandParent/>
   </StrictMode>,
 )

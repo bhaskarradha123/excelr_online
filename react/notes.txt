@@ -158,6 +158,7 @@ props:(properties)
    -props are read-only.
    -we can't modify the props data in the component.
    -props are immutable.
+   -passing data: number, String , Object , Array, Function etc ..
 --------------------------------------------------------------------------------
                            state                          props
             ----------------------------------------------------------------------
@@ -168,3 +169,11 @@ access                 by itself                   by child component
                        this.state/useState()       props/{name,age}
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
+Day 29:
+-------
+
+props drilling :
+    -it is a technique that is used to pass data from parent component
+     to child component.
+ex:  Grand Parent--->Parent--->Child---->Grand Child
+
