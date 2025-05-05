@@ -240,3 +240,38 @@ Mouse events:
         9. onMouseDown
         10.onMouseWheel
         11.onScroll
+
+
+---------------------------------------------------------------------
+style in react:
+         1. inline style
+         2. External Style
+         3. external framework/library(bootstrap)
+
+1.inline style:
+  -it is used to provide style with the help of
+   style attribute and object
+ex:
+<button style ={ { key: value} }>click</button>
+2.external style:
+   -it is used to provide style with the help of
+    external css file 
+   -then impost css file in respective jsx file
+
+ex: 
+import './style.css'
+<button>click</button>
+
+3.external framework/library(bootstrap):
+   -it is used to provide style with the help of
+    cdn or node packages
+   -then import bootstrap css file in respective jsx file - for css
+   -then import bootstrap js file in respective jsx file - for js
+
+ex:
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.min.js'
+
+node packages:
+cmd: npm install bootstrap@5.3.5
+
