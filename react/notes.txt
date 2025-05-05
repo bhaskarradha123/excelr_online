@@ -221,3 +221,22 @@ Presentational Component:
       -it holds the UI of its child components.
       -it is used to manage the UI of its child components.
 ---------------------------------------------------------------------
+Day 30:
+-------
+
+Events :
+    -events are used to handle user interactions/actions by calling functions.
+
+click events:
+        1. onClick
+        2. onDoubleClick
+Mouse events:
+        3. onMouseEnter
+        4. onMouseLeave
+        5. onMouseMove
+        6. onMouseOver
+        7. onMouseOut
+        8. onMouseUp
+        9. onMouseDown
+        10.onMouseWheel
+        11.onScroll

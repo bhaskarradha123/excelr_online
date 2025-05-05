@@ -15,6 +15,9 @@ import GrandParent from './props/PropsDrilling.jsx'
 import GrandParentContext from './context/ContextParent.jsx'
 import Login from './context/Application.jsx'
 import Container from './components/Presentational_Container.jsx'
+import EventTask1 from './Events/EventTask1.jsx'
+import InlineStyle from './Styles/InlineStyle.jsx'
+import ExternalStyle from './Styles/ExternalStyle.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -30,6 +33,9 @@ createRoot(document.getElementById('root')).render(
    {/* <GrandParent/> */}
    {/* <GrandParentContext/> */}
    {/* <Login/> */}
-   <Container/>
+   {/* <EventTask1/> */}
+   {/* <Container/> */}
+   {/* <InlineStyle/> */}
+   <ExternalStyle/>
   </StrictMode>,
 )
