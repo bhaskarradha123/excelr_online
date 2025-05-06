@@ -241,6 +241,8 @@ Mouse events:
         10.onMouseWheel
         11.onScroll
 
+html:  <button onClick={function_name()}>click</button>
+react: <button onClick={function_name}>click</button>
 
 ---------------------------------------------------------------------
 style in react:
