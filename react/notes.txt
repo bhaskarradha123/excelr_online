@@ -280,10 +280,15 @@ cmd: npm install bootstrap@5.3.5
 day 31:
 -------
  controlled component: 
-         - it is a component controlled by the react state
+         - it is a component controlled by the react state(useState hook)
          - it is used to manage the state/props of the component
          - mainly used for form validations , tracking form data
-         - accessing the data with the help of value and onChange event
+         - accessing the data with the help of value(target) and onChange event
 
  Uncontrolled component:
+        - it is a component controlled by the DOM (useRef hook)
+        - it is used to manage the DOM elements of the component
+        - mainly used for quick forms, simple forms
+        - accessing the data with the help of value(current) and onSubmit / onClick event
+      
 
