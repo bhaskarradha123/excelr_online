@@ -291,4 +291,13 @@ day 31:
         - mainly used for quick forms, simple forms
         - accessing the data with the help of value(current) and onSubmit / onClick event
       
+---------------------------------------------------------------------------------
+useRef hook:
+        -it is a hook that returns an object.
+        -the object contains a current property.
+        -the current property contains the DOM element.
+        -it is used to manage the DOM elements of the component.
+        -it is used to access the DOM elements of the component.
 
+---------------------------------------------------------------------------------
+useNavigate hook:
