@@ -52,6 +52,8 @@ steps:
                    variant : JavaScript
    4.cd project_name
    5.npm install (installing dependencies /node packages) 
+    npm install bootstrap (installing bootstrap)
+    npm install react-router-dom (installing react router dom)
      (npm- node package manager)
    6.npm run dev
 
@@ -301,3 +303,10 @@ useRef hook:
 
 ---------------------------------------------------------------------------------
 useNavigate hook:
+     -it is a hook that returns a function.
+     -it is used to navigate to another page.
+     -it is used to redirect to another page.
+     -it must be enclosed in <Route> tag.
+     -<Route> tag must be enclosed in <Routes> tag.
+     -<Routes> tag must be enclosed in <BrowserRouter> tag.
+----------------------------------------------------------------------------------

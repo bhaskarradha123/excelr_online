@@ -1,17 +1,18 @@
 import React, { useRef } from "react";
-
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  let navigate = useNavigate();
   let userName = useRef(null);
   let userPassword = useRef(null);
   const handleSubmit = (event) => {
-    event.preventDefault();
+    // event.preventDefault(); for console output
     if (
       userName.current.value == "admin" &&
       userPassword.current.value == "1234"
     ) {
-      alert("Login Successfull");
+      navigate('/dashboard')
     } else {
-      alert("Login Failed");
+      navigate('/error')
     }
   };
   return (
