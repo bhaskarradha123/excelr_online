@@ -276,4 +276,14 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 
 node packages:
 cmd: npm install bootstrap@5.3.5
+----------------------------------------------------------------------------------------------
+day 31:
+-------
+ controlled component: 
+         - it is a component controlled by the react state
+         - it is used to manage the state/props of the component
+         - mainly used for form validations , tracking form data
+         - accessing the data with the help of value and onChange event
+
+ Uncontrolled component:
 
