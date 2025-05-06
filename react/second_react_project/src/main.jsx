@@ -24,6 +24,7 @@ import BootStrapTask1 from './Styles/BootStrapTask1.jsx'
 import BootstrapTask2 from './Styles/BootstrapTask2.jsx'
 import EventTask2 from './Events/EventTask2.jsx'
 import Controlled from './components/Controlled.jsx'
+import UnControlled from './components/UnControlled.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -46,6 +47,7 @@ createRoot(document.getElementById('root')).render(
    {/* <BootStrapTask1/> */}
    {/* <BootstrapTask2/> */}
    {/* <EventTask2/> */}
-   <Controlled/>
+   {/* <Controlled/> */}
+   <UnControlled/>
   </StrictMode>,
 )
