@@ -315,6 +315,8 @@ useNavigate hook:
 ex: 
  form submission, condition rendering
 ----------------------------------------------------------------------------------
+Day 32:
+-------
 Link:
      -component based navigation
      -it is used inside a jsx  like anchor tag(clickable links )

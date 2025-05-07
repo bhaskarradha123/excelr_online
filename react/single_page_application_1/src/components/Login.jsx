@@ -1,6 +1,8 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { GlobalAuthContext } from "./GlobalAuthContext";
 const Login = () => {
+  const { setUser } = useContext(GlobalAuthContext);
   let navigate = useNavigate();
   let userName = useRef(null);
   let userPassword = useRef(null);
@@ -10,9 +12,15 @@ const Login = () => {
       userName.current.value == "admin" &&
       userPassword.current.value == "1234"
     ) {
-      navigate('/dashboard')
+      let obj = {
+        username: userName.current.value,
+        password: userPassword.current.value,
+      };
+      setUser(obj);
+
+      navigate("/dashboard");
     } else {
-      navigate('/error')
+      navigate("/error");
     }
   };
   return (

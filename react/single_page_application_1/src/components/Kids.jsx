@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalAuthContext } from './GlobalAuthContext'
 
 const Kids = () => {
+    let {user}=useContext(GlobalAuthContext);
   return (
-    <div>Kids</div>
+    <div>Kids {user.username}</div>
   )
 }
 
