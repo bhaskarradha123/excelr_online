@@ -326,3 +326,39 @@ Link:
      -<Routes> tag must be enclosed in <BrowserRouter> tag.
 ex:
    navbar links , footer links , sidebar links etc ..
+------------------------------------------------------------------------
+
+Single page application:(spa)
+     -it is a web application that has only one page.
+     -SPA is developed by using React,Angular and Vue.
+     -this approach allows us for more fluid and responsive 
+     user experience.
+     -it wont reload/refresh the entire page.
+
+key -characteristics:
+      1.dynamic content/ui
+      2.client side rendering
+      3.DOM manipulation    
+      4.State manipulation
+      5.API-calls
+      6.Server communication
+      7.Fast loading time
+----------------------------------------------------------------
+Dealing with global data (context in react):
+-----------------------
+  1.creation of context object
+      - we are creating a jsx file with the help of createContext() method
+      ex : export const GlobalAuthContext = createContext(null);
+  2.provider component
+      - with the help of provider we are modifying the context object
+      ex : <GlobalAuthContext.Provider value={value}>
+           </GlobalAuthContext.Provider>
+               or
+            <GlobalAuthContext.Provider value={{value ,setValue}}>
+               {children}
+            </GlobalAuthContext.Provider>
+
+  3.Consumer Component
+      -with the help os useContext() hook we are consuming the data
+      ex : const data = useContext(GlobalAuthContext);
+
