@@ -303,10 +303,24 @@ useRef hook:
 
 ---------------------------------------------------------------------------------
 useNavigate hook:
+     -hook based navigation
+     -it is used inside a jsx (JavaScript logic like functions etc)
+     -it gives programmatic control over navigation
      -it is a hook that returns a function.
      -it is used to navigate to another page.
      -it is used to redirect to another page.
      -it must be enclosed in <Route> tag.
      -<Route> tag must be enclosed in <Routes> tag.
      -<Routes> tag must be enclosed in <BrowserRouter> tag.
+ex: 
+ form submission, condition rendering
 ----------------------------------------------------------------------------------
+Link:
+     -component based navigation
+     -it is used inside a jsx  like anchor tag(clickable links )
+     -it is a component that is used to navigate to another page.
+     -it must be enclosed in <Route> tag.
+     -<Route> tag must be enclosed in <Routes> tag.
+     -<Routes> tag must be enclosed in <BrowserRouter> tag.
+ex:
+   navbar links , footer links , sidebar links etc ..
