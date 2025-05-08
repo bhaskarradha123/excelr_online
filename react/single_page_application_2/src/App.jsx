@@ -1,16 +1,17 @@
 import "./App.css";
 import FetchProducts from "./components/FetchProducts";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Link to="/products">
-          <button className="btn btn-outline-primary">
-            Products
-          </button>
-        </Link>
-        
+       
+       <Navbar/>
+
+
+      
+
         <Routes>
           <Route path="/products" element={<FetchProducts />}></Route>
         </Routes>
