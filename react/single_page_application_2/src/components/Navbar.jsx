@@ -9,6 +9,9 @@ const Navbar = () => {
           <Link to="/products">
             <button className="btn btn-outline-primary">Products</button>
           </Link>
+          <Link to="/users">
+            <button className="btn btn-outline-primary">Users</button>
+          </Link>
           <form className="d-flex" role="search">
             <input
               className="form-control me-2"
