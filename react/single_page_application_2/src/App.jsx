@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import FetchUsers from "./components/FetchUsers";
 import SearchInput from "./components/SearchInput";
 import DeleteProduct from "./components/DeleteProduct";
+import UpdateProduct from "./components/UpdateProduct";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/products" element={<FetchProducts />}></Route>
           <Route path="/users" element={<FetchUsers />}></Route>
           <Route path="/deleteProduct" element={<DeleteProduct />}></Route>
+          <Route path="/updateProduct" element={<UpdateProduct />}></Route>
           <Route path="/search/:name" element={<SearchInput />}></Route>
           {/* try to fetch list of users */}
         </Routes>
