@@ -1,23 +1,26 @@
-import axios from 'axios';
-import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const SearchInput = () => {
-   let{name}= useParams();//it helps to get the value from url
+  let { name } = useParams();
+  let [searchData, setSearchData] = useState([]);
 
-   let searchFunc=()=>{
-       axios.get('https://fakestoreapi.com/products')
-       .then((res)=>console.log(res.data))
-       .catch((err)=>console.log(err));
-   }
-   //loading function in to dom with the help of useEffect
-   useEffect(() => {
-       searchFunc();
-   }, [])
+  useEffect(() => {
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then((res) => setSearchData(res.data))
+      .catch((err) => console.log(err));
+  }, []);
+
+
 
   return (
-    <div>SearchInput...{name}</div>
-  )
-}
+    <div className="container">
+      
+    </div>
+  );
+};
 
-export default SearchInput
+export default SearchInput;
+

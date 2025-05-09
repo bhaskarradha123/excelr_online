@@ -20,6 +20,9 @@ const Navbar = () => {
           <Link to="/users">
             <button className="btn btn-outline-primary">Users</button>
           </Link>
+          <Link to="/deleteProduct">
+            <button className="btn btn-outline-primary">DeleteProduct</button>
+          </Link>
           <form className="d-flex" role="search">
             <input
               className="form-control me-2"
