@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import axios from 'axios';
 import '../styles/FetchProducts.css';
+import { Link } from "react-router-dom";
 const FetchProducts = () => {
   let [products, setProducts] = React.useState([]);
   //fetching backend data with the help of fetch api
@@ -33,6 +34,12 @@ let fetchData=()=>{
                   <h3>{product.title.slice(0,15)}</h3>
                   <p className="price">${product.price}</p>
                   <p className="category">{product.category}</p>
+
+
+
+                  
+                 <Link to={`/updateUser/${user.id} `} className="btn btn-outline-primary">Update</Link>
+                 <Link to={`/deleteUser/${user.id}`} className="btn btn-outline-danger">delete</Link>
                 </div>
               )
             }

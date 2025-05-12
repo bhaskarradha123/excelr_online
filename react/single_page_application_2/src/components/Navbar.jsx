@@ -26,6 +26,14 @@ const Navbar = () => {
           <Link to="/updateProduct">
             <button className="btn btn-outline-primary">UpdateProduct</button>
           </Link>
+
+          
+          <Link to="/saveProduct">
+            <button className="btn btn-outline-primary">saveProduct</button>
+          </Link>
+
+
+
           <form className="d-flex" role="search">
             <input
               className="form-control me-2"
