@@ -14,7 +14,8 @@ const SaveProduct = () => {
       [e.target.name]: e.target.value,
     });
   };
-  let handleSubmit = () => {
+  let handleSubmit = (e) => {
+    e.preventDefault()
     axios
       .post("https://fakestoreapi.com/products", product)
       .then((res) => alert("saved successfully"))
