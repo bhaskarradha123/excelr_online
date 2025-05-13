@@ -460,3 +460,25 @@ useReducer hook:it is used to manage the state of the component.
     dispatch: it is a function which triggers the reducer function to
               change the state
 
+
+-------------------------------------------------------------------
+       useState hook                        useReducer hook
+    ---------------------------------------------------------------
+simple state management                  complex state management
+primitive data type                      complex data type
+single value                             multiple values
+less code /boilerplate                   more code/boilerplate
+
+-------------------------------------------------------------------
+custom hook:
+           -the hook created by the developer/programmer
+           -prefix must be use
+           -by using inbuilt hooks we can create custom hooks
+
+  syntax :
+
+  function customHookName(){
+      //set of sentences that performs a task
+      return ;
+  }
+  export default customHookName;
