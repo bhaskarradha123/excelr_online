@@ -396,3 +396,67 @@ Axios:
  syntax             simple syntax         complex syntax   
  json response      auto parse            .json() method      
  ----------------------------------------------------------------------------------
+
+ ex:
+ post - https://fakestoreapi.com/products -save operation
+ get -  https://fakestoreapi.com/products -fetch operation
+ get -  https://fakestoreapi.com/products/{id} -fetch operation
+ get -  https://fakestoreapi.com/products/{name} -fetch operation
+    (in browser default method is get)
+ put -  https://fakestoreapi.com/products -update operation
+ patch - https://fakestoreapi.com/products -update operation
+ delete - https://fakestoreapi.com/products -delete operation
+
+----------------------------------------------------------------------------------
+hooks:
+      - hooks are predefined functions in react.
+      - hooks have a prefix use. 
+
+useState hook:it is used to manage the state of the component.
+
+    ex:  number
+    let[number,setNumber]=useState(0);
+    let[var_Name, func_to_Manage_value]=useState(initialValue);
+
+useParam hook:it is used to access the params/values from url
+    
+    ex: https://localhost:3000/products/1
+     let {id}=useParams();
+
+useRef hook:it is used to manage the DOM elements of the component.
+
+    ex: let userName_reference=useRef();
+    <input type="text" ref={userName_reference} />
+
+useEffect hook:it is used to perform side effects in the component.
+               and to add elements to the DOM implicitly.
+
+    ex: useEffect(//code,[])
+
+useContext hook:it is used to access the data from the 
+                 context object.(global object)
+        ex: const data = useContext(GlobalAuthContext);
+
+useReducer hook:it is used to manage the state of the component.
+               :it is just like useState hook.
+               :it is used when the state is complex/nested/large
+    when:
+       the state have more than one value.
+       the state have more than one function.
+
+    syntax:
+
+    let[state,dispatch]=useReducer(reducerFunction,initialState)
+
+    initialState:it is used to set the initial value of the state.
+    reducerFunction:it is used to update/manage the state of the component.
+                   :it is a function which accepts two arguments.
+                   :the first argument is the state.
+                   :the second argument is the action.
+              syntax: reduce(state,action){
+                         //set of sentences that performs a task
+                         return newState
+                    }
+    dispatch: it is a function which triggers the reducer function to
+              change the state
+
