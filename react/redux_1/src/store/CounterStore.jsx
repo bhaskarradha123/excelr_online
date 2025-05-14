@@ -1,6 +1,7 @@
-import { createStore } from 'redux';
+import { applyMiddleware, createStore } from 'redux';
 import CounterReducer from '../reducers/CounterReducer';
-const store=createStore(CounterReducer);
+import {thunk} from 'redux-thunk';
+const store=createStore(CounterReducer, applyMiddleware(thunk));
 export default store;
 
 //npm install @reduxjs/toolkit

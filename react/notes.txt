@@ -542,8 +542,25 @@ Components:
     |__actions -CounterActions.jsx
     |__reducers -CounterReducers.jsx
 
-1.creation of action
-2.creation of reducer
-3.creation of store
+flow:
+      view(UI) - creating a jsx file to display the UI
+        |
+calling functions when event triggers- creating a action.jsx file 
+        |                           to create a function to handle event
+        |
+        |dispatch()--created by using useDispatch hook
+        |
+dispatching action to the reducer- creating a reducer.jsx file 
+        |                           to update the state of the application
+        |
+        |
+updating the state of the application- 
+        |                           creating a store.jsx file 
+        |                           to store the state of the application
+        |
+        |  the redux context need to be enclosed in <Provider> tag
+        |
+ view (UI) displaying the output  -by accessing data from store using
+                                   useSelector hook
   
     

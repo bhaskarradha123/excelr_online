@@ -9,3 +9,11 @@ export let decrement = () => {
         type: "DECREMENT"
     }
 }
+
+export let incrementTimeOut = () => {
+    return (dispatch) => {
+        setTimeout(() => {
+            dispatch(increment())
+        }, 3000);
+    }
+}
