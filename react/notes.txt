@@ -505,4 +505,45 @@ Components:
 4.reducer-it is used to update/manage the state of the application.
 5.store - it is used to store the state of the application.
 6.dispatch- it is dispatch the action to the reducer.
+7.Middleware - it is used to modify the action before it is dispatched to the reducer.
+             - it intercepts the action before it is dispatched to the reducer.
+             - it is used to add extra logic,functionality, validations,
+              logging,security etc to the action.
+              -it provides a third party extension point to 
+              modify the action before it is dispatched to the reducer.
+              -mainly used for logging,security, api calls etc
+             
+  1.thunk- middleware function which handles async logic
+  2.saga- middleware function(generator) which handles async logic
+  -----------------------------------------------------------------------------
+   commands:       
+            npm install redux
+            npm install react-redux
+            npm install redux-thunk
+            npm install redux-saga
+    
+    npm create vite@latest
+    provide project_name
+    framework: react
+    variant: JavaScript
+    cd project_name
+    npm install bootstrap redux react-redux
+    npm run dev
 
+
+    project structure
+    ----------------
+    src
+    |__App.jsx
+    |__main.css
+    |__main.jsx
+    |__App.css
+    |__store -CounterStore.jsx
+    |__actions -CounterActions.jsx
+    |__reducers -CounterReducers.jsx
+
+1.creation of action
+2.creation of reducer
+3.creation of store
+  
+    
