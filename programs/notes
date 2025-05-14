@@ -33,7 +33,16 @@ Number - 143
               5!=5*4*3*2*1=120
               -----------
               sum -145
-
+      11.perfect number: the sum of factors(excluding itself) of a number is equal to the original number 
+          6-1,2,3,6-1+2+3=6
+      12.perfect number in a range
+      13.Automorphic number: the square of a number ends with
+                           the same digit as the original number
+          5*5=25
+          6*6=36
+          25*25=625
+          76*76=5776
+ 
 
 
       

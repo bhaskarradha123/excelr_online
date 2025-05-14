@@ -482,3 +482,27 @@ custom hook:
       return ;
   }
   export default customHookName;
+  -------------------------------------------------------------------
+
+  Redux:
+  ------
+    - it is a state management library.
+    - it is a predictable state container for js(mainly used in react).
+    - it is used to manage the state of the application.
+
+redux architecture: 
+    -it follows uni directional data flow.
+
+        flow:
+        ui-->action-->dispatch--->reducer-->store
+
+Components:
+-----------
+1.view(UI)
+2.state-it is a data
+3.action- it is an event(trigger)
+        -it is an object it consist type and payload(describes the data of the event)
+4.reducer-it is used to update/manage the state of the application.
+5.store - it is used to store the state of the application.
+6.dispatch- it is dispatch the action to the reducer.
+
