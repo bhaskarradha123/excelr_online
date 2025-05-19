@@ -585,3 +585,17 @@ cmd:
 npm install @reduxjs/toolkit
 npm install redux react-redux redux-thunk @reduxjs/toolkit bootstrap axios
 
+------------------------------------------------------------------------
+@reduxjs/toolkit: state management
+createAsyncThunk: async logic
+createSlice: reducer
+
+project structure:
+src
+|__App.jsx
+|__main.css
+|__main.jsx
+|__App.css
+|__store -UsersStore.jsx
+|__Users-Userslice.jsx
+|__components - UsersList.jsx
