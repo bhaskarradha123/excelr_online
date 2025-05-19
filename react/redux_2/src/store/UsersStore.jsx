@@ -1,8 +1,8 @@
-
+import usersReducer from '../users/UsersSlice'
 import { configureStore } from '@reduxjs/toolkit'
 let store=configureStore({
     reducer:{
-        // Add your reducers here
+        users:usersReducer
     }
 })
 export default store
