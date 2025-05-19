@@ -1,4 +1,5 @@
 import './App.css'
+import ProductList from './components/ProductList'
 import UsersList from './components/UsersList'
 
 const App = () => {
@@ -7,6 +8,8 @@ const App = () => {
     <div>
           <div>Fetch Example using redux toolkit</div>
           <UsersList/>
+          <hr />
+          <ProductList/>
 
     </div>
   )

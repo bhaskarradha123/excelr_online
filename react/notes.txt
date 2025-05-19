@@ -599,3 +599,31 @@ src
 |__store -UsersStore.jsx/UserStore.js
 |__Users-UserSlice.jsx/UserSlice.js
 |__components - UsersList.jsx
+
+-------------------------------------------------------------------------------------------
+
+flow of redux toolkit:
+
+            ui
+            |
+          main.jsx --wrapped component with provider tag and store
+            |
+          App.jsx
+            |
+        ProductList.jsx--displaying fetch data from store
+            |          -- fetched data from store using useSelector hook
+            |          -- {products, state, error}
+            |          -- printing data based on status
+            |
+            |
+        dispatching action to the middleware   -fetchProducts() - created by using createAsyncThunk
+                                               -which returns a function (state, action)  
+            |
+            |
+        ProductSlice.jsx  --reducer - created by using createSlice
+            |
+            |
+        UsersStore.jsx  --store - created by using configureStore
+            |
+            |
+        UI  --displaying data from store using useSelector hook based on status
