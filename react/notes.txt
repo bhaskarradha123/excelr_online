@@ -596,6 +596,6 @@ src
 |__main.css
 |__main.jsx
 |__App.css
-|__store -UsersStore.jsx
-|__Users-Userslice.jsx
+|__store -UsersStore.jsx/UserStore.js
+|__Users-UserSlice.jsx/UserSlice.js
 |__components - UsersList.jsx
