@@ -1,4 +1,4 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 
 
@@ -20,7 +20,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 //createAsyncThunk is a function that creates an action creator for async actions
 // It takes two arguments: a string action type and a function that returns a promise
-
+//it automatically dispatches the pending, fulfilled, and rejected actions for you
 
 
 export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
@@ -32,4 +32,37 @@ export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
     return data;
 }
      
-)
+);
+
+const userSlice=createSlice({
+     name: 'users',
+     initialState:{
+        users:[],
+        status: 'idle', // idle, loading, succeeded, failed
+        /*
+        idle: initial state , nothing happened yet
+        loading: request is being made
+        succeeded: request is successful
+        failed: request failed
+        */
+        error: null
+     },
+     reducers:{},
+     extraReducers:(builder)=>{
+            builder
+            .addCase(fetchUsers.pending,(state,action)=>{
+                state.status='loading';
+            })
+            .addCase(fetchUsers.fulfilled,(state,action)=>{
+                state.status='succeeded';
+                state.users=action.payload
+            })
+            .addCase(fetchUsers.rejected,(state,action)=>{
+                state.status='failed';
+                state.error=action.error.message
+            })
+
+     }
+})
+
+export default userSlice.reducer;
