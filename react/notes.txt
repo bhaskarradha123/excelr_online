@@ -713,6 +713,23 @@ create a project to perform crud operations:
         cd bookCrud
         npm init -y
         npm install express mongoose cors nodemon dotenv
+2.Project structure:
+   
+   
+    bookCrud
+        |
+        |__server.js
+        |__.env
+        |
+        |__routes
+        |    |
+        |    |__bookRoutes.js
+        |
+        |__models
+        |    |
+        |    |__bookSchema.js
+     
+    
         
       
        
