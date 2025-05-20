@@ -627,3 +627,92 @@ flow of redux toolkit:
             |
             |
         UI  --displaying data from store using useSelector hook based on status
+---------------------------------------------------------------------------
+
+MERN (mongodb,express,react,nodejs):
+    -it is a full stack web development framework.
+    -mongodb-database(no sql)
+    -express-server(backend web framework)
+    -react-client(UI)
+    -nodejs-server(JavaScript server -backend)
+
+database: db(container) is used to store the data. 
+        : it use a language(sql and nosql)
+        -sql: structured query language
+            : which stores the data in tables.
+        -Nosql: non-structured query language
+            : which stores the data in documents/objects.
+-------------------------------------------------------------------
+                   sql(relational)               nosql(non-relational)
+    --------------------------------------------------------------- 
+model             table                         document/collection
+              (rows and columns)                (json/ key-value/graphs)
+
+schema         fixed                             flexible
+ex             mysql , oracle                     mongodb, Cassandra
+-------------------------------------------------------------------
+
+Steps for mongodb:
+ 
+
+ 1.sign in
+ 2.create a project
+          : click on new project button
+          : provide project name-->next-->add members(optional)---> create
+ 3.create a cluster for project
+          :let side -->clusters-->create cluster
+          :deploy -- choose free --->provide cluster name --->create
+ 4.create a database user for project
+        -it is important to create a database and connect to backend
+        -database access(left side)-->  add new db user
+            : Password :
+                  userName:bookUser
+                  Password:Book123
+                  Database User Privileges: Atlas Admin
+            :click on create user
+ 5.Access IP Address:
+         :Network access(left side)-->Access IP Address
+         - add new ip address
+         -click on add ip address
+         -allow access from anywhere (0.0.0.0/0)
+         -click on confirm
+ 6.create db and collections
+       : clusters-->
+       browse collections--->
+       create database(inside collections)--->
+       provide : database name
+       provide : collection name
+       click on create
+ 7.create a connection links
+     -->clusters-->connect--->choose driver--->
+        copy the connection string-->click on done
+
+
+mongodb+srv://bookUser:Book123@bookcluster.wve30ts.mongodb.net/?retryWrites=true&w=majority&appName=bookCluster
+    
+
+
+
+
+atlas  --> project -->cluster-->database--->collection
+                                        --->collection
+                                        --->collection
+                            --->database--->collection
+                                        --->collection
+                                        --->collection
+--------------------------------------------------------------------------
+create a project to perform crud operations:
+    1.saveBook-post method---   /saveBook
+    2.getBooks-get method---    /getBooks
+    3.updateBook-put method---  /updateBook
+    4.deleteBook-delete method--/deleteBook
+
+1.create a project
+    cmd :
+        mkdir bookCrud
+        cd bookCrud
+        npm init -y
+        npm install express mongoose cors nodemon dotenv
+        
+      
+       
