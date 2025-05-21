@@ -730,6 +730,46 @@ create a project to perform crud operations:
         |    |__bookSchema.js
      
     
-        
+------------------------------------------------------------------------------------------
+
+express crud methods :
+
+1. setup the server.js---connect your database(mongodb/mongoose) and frontend(cors)
+2. created a schema/model --- bookSchema.js
+3. created a routes --- bookRoutes.js-- used to create endpoints/apis
+
+creating api/endpoints :
+
+Router methods: it is used to create endpoints/apis
+              : obtained from express router object
+    router.post() -save
+    router.get()  -fetch
+    router.put()  -update
+    router.delete() -delete
+
+
+these are methods from model providing by mongoose.schema:
+    save():it is used to save the data to the database.
+    find():it is used to fetch(fetchAll) the data from the database.
+    findByIdAndUpdate():it is used to update the data in the database.
+    findByIdAndDelete():it is used to delete the data from the database.
+            
       
+cors : it is used to enable cross origin resource sharing between 
+       different domains.(frontend and backend)
+cors error: cors policy not allow origin 
+
+we are avoiding cors error by using 
+     1. adding cors middleware in server.js
+
+            app.use(cors({
+                origin :'http://localhost:5173'// front end url
+            }))
+     2.adding server(proxy) in vite.config.js
+            server: {
+                proxy: {
+                    '/api': 'http://localhost:5000'// backend url
+                }
+            }
+     
        
