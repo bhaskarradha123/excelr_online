@@ -61,4 +61,51 @@ java features:
                  multiple tasks at the same time
 7.java is dynamic language and case sensitive
 8.java has rich standard library
+------------------------------------------------------------------------
+
+java structure:
+---------------
+
+   class className{
+    
+    public static void main(String[]args){
+        ------
+        ------
+        ------
+        }
+    }
+
+Note : main method is the entry point of java program
+       without main method java program will not run but we can compile
          
+-----------------------------------------------------------------------------
+Tokens :
+      - tokens are the basic building blocks of a java program
+      - tokens are used to define the structure of a java program
+      - tokens are the elements of a java program 
+      - types :
+              1.keywords
+                        :inbuilt words and reserved words
+                        :all keywords are in lowercase
+                    ex: public static void if else for while switch case 
+
+              2.identifiers
+                       : names providing by programmer or developer
+                       
+                Rules:(mandatory)
+                       : keywords cannot be used as identifiers
+                       : identifiers are not start with digits and 
+                         special characters except $ and _
+                Conventions:(optional but recommended)
+                       : identifiers should be in camel case
+                       ex: firstNameProgram
+                       : for class/interface name use pascal case
+                       ex: FirstNameProgram
+                       : for method and variable name use snake case/camel case
+                       ex: first_name
+
+              3.literals
+              4.operators
+              5.separators
+Note : tokens are case sensitive
+    
