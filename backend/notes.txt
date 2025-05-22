@@ -36,4 +36,29 @@ platform independent:
 
          2.interpreter:
                    - it is a jvm which executes bytecode
-                   
+
+Note : java is a platform independent but jvm dependent
+
+java features:
+-------------
+1.platform independent
+2.object oriented:
+               1.inheritance
+               2.polymorphism
+               3.encapsulation
+               4.abstraction
+3.java is simple and easy to learn
+4.java is secure :
+               -no pointers, which eliminate the need for memory management
+               -java has a inbuilt security manager which prevents
+                 unauthorised access to the system
+5.java is robust:
+                 -strong management of memory
+                 -it has a garbage collector which deletes
+                  unused objects
+6.java is multi threaded
+                - supports multi threading, allowing you to run 
+                 multiple tasks at the same time
+7.java is dynamic language and case sensitive
+8.java has rich standard library
+         
