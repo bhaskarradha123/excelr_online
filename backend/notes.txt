@@ -105,6 +105,27 @@ Tokens :
                        ex: first_name
 
               3.literals
+                        : literal is a value/data assigned to a variable
+
+                ex:    int        valueName        =        10
+                     datatype    identifier   assigning   value/literal
+
+Data types:
+           1.primitive data types
+                1.byte  - 1 byte - 8 bits    -128 to 127
+                2.short - 2 bytes - 16 bits  -32768 to 32767
+                3.int   - 4 bytes - 32 bits  -2147483648 to 2147483647
+                4.long  - 8 bytes - 64 bits  -9223372036854775808 to 9223372036854775807
+                5.float - 4 bytes - 32 bits  -3.4E38 to 3.4E38
+                6.double- 8 bytes - 64 bits  -1.7E308 to 1.7E308
+                7.char  - 2 bytes - 16 bits  -32768 to 32767
+                8.boolean - 1 byte - 8 bits  -true or false
+           2.non primitive data types
+
+
+
+
+
               4.operators
               5.separators
 Note : tokens are case sensitive
