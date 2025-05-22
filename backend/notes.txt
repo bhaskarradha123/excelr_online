@@ -112,6 +112,18 @@ Tokens :
 
 Data types:
            1.primitive data types
+
+                      Number
+                        |
+        ------------------------------------
+        |                                  |
+        Integer                        Decimal
+        |                                  |
+        -----------------------      ----------------   
+    |      |        |         |      |              |                     
+   byte   short    int       long    float        double 
+
+              datatype         size             range
                 1.byte  - 1 byte - 8 bits    -128 to 127
                 2.short - 2 bytes - 16 bits  -32768 to 32767
                 3.int   - 4 bytes - 32 bits  -2147483648 to 2147483647
@@ -121,7 +133,33 @@ Data types:
                 7.char  - 2 bytes - 16 bits  -32768 to 32767
                 8.boolean - 1 byte - 8 bits  -true or false
            2.non primitive data types
+                1.string
+                2.array
+                3.object
+                4.wrapper classes
+                5.enum
+                6.annotation
+                7.Collections
+-----------------------------------------------------------------------------
+variables:
+-----------
+        - variables are used to store data/ values
 
+      based on datatype:  
+        - if we storing primitive datatype then it is called primitive variable
+            int a=10;   (a- primitive variable)
+        - if we storing non primitive datatype then it is called non primitive variable
+            String b="hello";  (b- non primitive variable)
+
+      based on scope:
+        - if we storing variable inside method/constructor then it is called local variable
+         Note : local variable can be accessed only inside method/constructor but not outside
+        - if we storing variable inside class and outside method then it is called global variable
+         Note : global variable can be accessed inside and outside method
+                global variables are two types:   1.static variable
+                     2.instance/non static variable
+                  
+                  
 
 
 
