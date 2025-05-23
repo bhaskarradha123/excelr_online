@@ -51,7 +51,7 @@ java features:
 4.java is secure :
                -no pointers, which eliminate the need for memory management
                -java has a inbuilt security manager which prevents
-                 unauthorised access to the system
+                 unauthorized access to the system
 5.java is robust:
                  -strong management of memory
                  -it has a garbage collector which deletes
@@ -85,11 +85,13 @@ Tokens :
       - tokens are the elements of a java program 
       - types :
               1.keywords
+              ++++++++++
                         :inbuilt words and reserved words
                         :all keywords are in lowercase
                     ex: public static void if else for while switch case 
 
               2.identifiers
+              +++++++++++++
                        : names providing by programmer or developer
                        
                 Rules:(mandatory)
@@ -105,6 +107,7 @@ Tokens :
                        ex: first_name
 
               3.literals
+              +++++++++++
                         : literal is a value/data assigned to a variable
 
                 ex:    int        valueName        =        10
@@ -156,15 +159,68 @@ variables:
          Note : local variable can be accessed only inside method/constructor but not outside
         - if we storing variable inside class and outside method then it is called global variable
          Note : global variable can be accessed inside and outside method
-                global variables are two types:   1.static variable
+                global variables are two types:   
+                     1.static variable
                      2.instance/non static variable
-                  
-                  
 
 
+variable declaration:
+             -providing name to a variable
+ex: int a;
+variable initialization: 
+              -assigning a value to a variable
+ex:  a=10;    ex2: int b=30;
+variable reinitialization:
+              -reassigning a value to a variable
+              (removing old value and adding new value)
+ex: int a=20;    
+        a=30;
 
+Note : local variable can be used after it is initialized
+       global variable can be used before it is initialized and it gives
+       default value according to datatype
 
-              4.operators
+              4.operators:
+              +++++++++++
+                       1.arithmetic operators  
+                               ---> + - * / %  (binary operator)
+                       2.relational operators  
+                               ---> < > <= >= == != (binary operator)
+                       3.logical operators     
+                               ---> && || (binary operator) !(unary operator)
+                       4.assignment operators  
+                              ---> = += -= *= /= %= (binary operator)
+                       5.bitwise operators     
+                              ---> & | ^ ~ << >> (binary operator)
+                       6.conditional operators 
+                              ---> (operand1?operand2:operand3) (ternary operator)
+                       7.increment/decrement operators
+                              ---> ++ -- (unary operator)
+                       8.access operator (.) -unary operator
+
+Precedence / priority of operators:   
+              1.()
+              2.unary operators
+              3.multiplication/division
+              4.addition/subtraction
+              5.relational operators
+              6.equality operators
+              7.logical  and operator
+              8.logical or operator
+              9.ternary operator
+
               5.separators
+              ++++++++++++
+                       1.comma
+                       2.semicolon
+                       3.curly brackets
+                       4.parenthesis
+
+
 Note : tokens are case sensitive
+-----------------------------------------------------------------------------
+creating java project in eclipse:
+
+        clt+N---->choose java project in wizard----->next
+        provide projectName ---->next---->finish 
     
