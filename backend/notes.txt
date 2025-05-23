@@ -223,4 +223,46 @@ creating java project in eclipse:
 
         clt+N---->choose java project in wizard----->next
         provide projectName ---->next---->finish 
+
+package: 
+       - it is a folder which contains java classes and interface.
+       - a file must be unique in a package.
+library (jar file):
+       - it consist collection of packages
+jre system library:
+       - it consist collection of jar files(libraries)
+------------------------------------------------------------------------------------
+
+Casting :
+        -converting one data type to another data type
+        -there are two types of casting:
+            1.primitive type casting
+                   - convert one primitive data type to another primitive data type
+                   -1.implicit casting : it is done automatically by the compiler
+                   -2.explicit casting : it is done manually by the developer ,
+                                         so need to use cast operator ()
+-------------------------------------------------------------------------------------
+                                    implicit                         explicit
+-------------------------------------------------------------------------------------
+also known as                      widening  typecasting        narrowing typecasting
+conversion                         small to big                 big to small 
+cast operator                      optional                     mandatory
+loss of data                       no                           yes
+example                            byte-->double                double------>byte 
+-------------------------------------------------------------------------------------
+order of data types:
+  byte (8 bits)<short(16 bits)
+                               <int (32 bits)<long (64 bits)<float (32 bits)<double(64 bits)
+               <char(16 bits)
+   
+
+
+
+
+
+
+            2.Non primitive type casting
+------------------------------------------------------------------------------------
+
+
     
