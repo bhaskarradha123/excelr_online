@@ -256,13 +256,29 @@ order of data types:
                <char(16 bits)
    
 
-
-
-
-
-
             2.Non primitive type casting
 ------------------------------------------------------------------------------------
+Statements :
+    1.Conditional Statements:
+             - statements(block of code) will execute based on condition
+             Types :
+                 1.if statement
+                        syntax:
+                        if(condition){
+                            // if condition satisfy block of code will execute
+                        }
+                 2.if-else statement
+                        syntax:
+                        if(condition){
+                            // if condition satisfy block of code will execute
+                        }else{
+                            // if condition not satisfy block of code will execute
+                        }
+                 3.if-else-if ladder
+                 4.switch statement
+                 5.Nested if statement
 
+    2.Looping Statements
+             - statements(block of code) will execute multiple times based on condition
 
     
