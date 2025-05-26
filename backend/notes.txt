@@ -275,10 +275,80 @@ Statements :
                             // if condition not satisfy block of code will execute
                         }
                  3.if-else-if ladder
+                    syntax:
+                    if(condition){
+                        // if condition satisfy block of code will execute
+                    }
+                    else if(condition){
+                        // if condition satisfy block of code will execute
+                    }
+                    .
+                    .
+                    else{
+                        // if all conditions not satisfy block of code will execute
+                    }
                  4.switch statement
+                    syntax:
+
+                    switch(expression/value/variable/constant/){
+                         case value1:{
+                            // if value matches  block of code will execute  
+                         } break;
+                         case value2:{
+                            // if value matches block of code will execute
+                         }break;
+                         .
+                         .
+                         case valueN:{
+                            // if value matches block of code will execute
+                         }break;
+                         default:{
+                            // if all cases not matches block of code will execute
+                         }break;
+                    }
+
+Note : 1.break statement is used to terminate the flow(optional)
+       2.default statement is used to execute block of code when all 
+          cases not matches(optional)
+       3.cases must be unique and must be in ascending order
+       4.switch will accept only int ,byte,short,char and string and enums
+
+
+
                  5.Nested if statement
+                   syntax:
+                   if(condition){
+                     if(condition){
+                            ...
+                     }
+                   }
+
 
     2.Looping Statements
              - statements(block of code) will execute multiple times based on condition
+             Types:
+              1.while loop
+                  syntax:
+                  while(condition){
+                      // block of code will execute
+                  }
+
+              2.do-while loop
+                  syntax:
+                  do{
+                      // block of code will execute
+                  }while(condition);
+
+---------------------------------------------------------------------------------------
+                            while                                     do-while
+           ----------------------------------------------------------------------------
+no of iterations            0                                            1
+reason                   it will check the condition,     it will execute the code 
+                         if condition satisfy,            without checking the condition
+                         block of code will execute       for the first time.
+           ------------------------------------------------------------------------------       
+
+              3.for loop
+              4.for-each loop(advanced for loop)
 
     
