@@ -368,6 +368,19 @@ Note: initialization, condition and updation are optional
 
 
               4.for-each loop(advanced for loop)
+              syntax:
+              for(datatype variableName:arrayName){
+                  //code will execute
+              }
+
+          -------------------------------------------------------------
+          for                                      foreach
+    --------------------------------------------------------------
+    initialization,condition,updation
+     is required                               is not required 
+     performed only slow                       performed fast 
+    ---------------------------------------------------------------
+        
               5.nested loop:loop inside another loop
 
   3.Other Statements:
