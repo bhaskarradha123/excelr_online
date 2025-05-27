@@ -10,8 +10,7 @@ public class Break_Continue_Program {
 			   System.out.println(i);
 				
 		}
-		
-		
+			
 		for(char i='a';i<='z';i++) {
 			if(i=='e') {
 				continue;

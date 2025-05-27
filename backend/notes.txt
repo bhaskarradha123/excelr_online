@@ -404,4 +404,23 @@ Note: initialization, condition and updation are optional
 
 
 ------------------------------------------------------------------------- 
-Arrays :
+Arrays : 
+        -arrays are used to store multiple values in a single variable
+        ex: int []arr={1,2,3,4};
+        -arrays will store same data type values
+        ex: int []arr={1,2,3,4};
+            String []arr={"a","b","c","d"};
+        -arrays are fixed in size;
+        -non primitive data types.
+    1.Creation of Arrays:
+        -declaring an array
+        -initializing an array
+      ex: int []arr={1,2,3,4}; //declaring and initializing an array
+          int []arr=new int[5]; //declaring and providing a size
+          int []arr=new int[]{1,2,3,4}; //declaring and initializing an array
+          int []arr=new int[5]{1,2,3,4,5}; //declaring and providing a size
+
+    2.Accessing Arrays:
+        -accessing through index position
+        -accessing through for loop or for each loop
+
