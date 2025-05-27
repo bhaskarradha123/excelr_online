@@ -260,6 +260,7 @@ order of data types:
 ------------------------------------------------------------------------------------
 Statements :
     1.Conditional Statements:
+    --------------------------
              - statements(block of code) will execute based on condition
              Types :
                  1.if statement
@@ -325,6 +326,7 @@ Note : 1.break statement is used to terminate the flow(optional)
 
 
     2.Looping Statements
+    --------------------
              - statements(block of code) will execute multiple times based on condition
              Types:
               1.while loop
@@ -348,7 +350,58 @@ reason                   it will check the condition,     it will execute the co
                          block of code will execute       for the first time.
            ------------------------------------------------------------------------------       
 
-              3.for loop
-              4.for-each loop(advanced for loop)
+              3.for loop:
+             
+             syntax:
+             for(initialization;condition;updation){
+                 //code will execute 
+             }
+                
+Note: initialization, condition and updation are optional
+      
+       //initialization
+       for(;;){
+        //condition
+        //updation
+       }
 
-    
+
+
+              4.for-each loop(advanced for loop)
+              5.nested loop:loop inside another loop
+
+  3.Other Statements:
+  -------------------
+             1.input statements:
+                   Scanner sc=new Scanner(System.in);
+                   byte a=sc.nextByte();
+                   short b=sc.nextShort();
+                   int c=sc.nextInt();
+                   long d=sc.nextLong();
+                   float e=sc.nextFloat();
+                   double f=sc.nextDouble();
+                   char g=sc.next().charAt(0);
+                   String s=sc.next();
+                   boolean h=sc.nextBoolean();
+             2.Output statements:
+                   System.out.println(); -it will print the value 
+                                         and move the cursor to next line
+                                         -empty value is also accepted
+                   System.out.print(); -it will print the value and 
+                                        not move the cursor to next line
+                                        -empty value will not accepted
+                  ex: System.out.println();//CTS
+                      System.out.print();//CTE
+            3.break statement:
+                   it is used to terminate the flow
+                   ex: break;
+            4.continue statement:
+                   it is used to skip the current iteration and continue the flow
+                   ex: continue;
+
+                    
+
+
+
+------------------------------------------------------------------------- 
+Arrays :

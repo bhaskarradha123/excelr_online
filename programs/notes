@@ -56,13 +56,26 @@ Number - 143
         19.Decimal to Binary Number
            decimal number-0,1,2,3,4,5,6,7,8,9
            binary number-0,1
-ex:    13  
+            ex: 13  
           1.first we need divide the number by 2
           13/2=6 remainder=1
           6/2=3 remainder=0
           3/2=1 remainder=1
           1/2=0 remainder=1
           so the binary number is 1101
+        20. Binary to Decimal Number
+        
+        21. Counting Distinct Elements in an Array
+        22. Finding Repeating elements in an Array
+        23. Removing Duplicate elements from an array
+        24. Find the Smallest and largest element in an array
+        25. Find Second Smallest Element in an Array
+        26. Calculate the sum of elements in an array
+        27. Reverse an Array
+        29. Sort the elements of an array
+    
+ 
+
 
 
 
