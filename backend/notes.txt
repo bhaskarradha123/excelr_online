@@ -437,3 +437,37 @@ Arrays :
         -accessing through index position
         -accessing through for loop or for each loop
 
+Arrays class Methods:
+   -Arrays is a class present in java.util package
+   -it consist n number of static methods.
+
+   1.Arrays.toString(): used to print the values of an array
+       syntax:
+       System.out.println(Arrays.toString(arr));
+
+   2.Arrays.sort(): used to sort the values of an array
+      syntax:
+      Arrays.sort(arr); //ascending order
+      Arrays.sort(arr,Collections.reverseOrder());//descending order
+
+   3.Arrays.equals(): used to compare two arrays and returns true if 
+                     they are equal or  returns false
+      syntax:
+      boolean b=Arrays.equals(arr1,arr2);
+    
+    4.Arrays.mismatch(): used to compare two arrays and if it is same
+                         it returns the index of first element or else
+                         it returns -1
+      syntax:
+      int index=Arrays.mismatch(arr1,arr2); 
+    5.Arrays.binarySearch(): used to search an element in an array,
+                            if element is present it returns the index
+                            of that element or else it returns negative number
+        Note: it is applicable only for sorted arrays 
+      syntax:
+      int index=Arrays.binarySearch(arr,element);
+     6.Arrays.copyOfRange(): used to create a copy of an array based on copyOfRange
+        syntax:
+        int []arr1=Arrays.copyOf(arr,startingIndex,endingIndex-excluding);    
+                    
+
