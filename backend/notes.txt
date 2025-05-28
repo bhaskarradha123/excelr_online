@@ -471,3 +471,14 @@ Arrays class Methods:
         int []arr1=Arrays.copyOf(arr,startingIndex,endingIndex-excluding);    
                     
 
+Multidimensional Arrays:
+           -array of arrays
+           -declaring and initializing a multidimensional array
+        
+        int [][]arr={{1,2,3},{4,5,6},{7,8,9}}; // 2D array
+        int [][]arr=new int[3][3]; //declaring and providing a size
+
+        int [][]arr={{1,2,3},{4,5},{5,6,7,8}}// jagged arrays
+         // different rows have different number of columns
+
+  Arrays.deepToString(): used to print the values of a multidimensional array
