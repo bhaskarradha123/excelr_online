@@ -36,8 +36,8 @@ public class Program2 {
 		  String s5="this is java program";
 		  System.out.println(s4.equals(s5));//false
 		  System.out.println(s4.equalsIgnoreCase(s5));//true
-		  
-		  System.out.println(s4.matches(".*Java.*"));
+//  matches compare based on regex		  
+		  System.out.println(s4.matches("Java"));
 		  
 //		  based on unicode/ASCII values
 		  System.out.println("Dog".compareTo("Dog")); //0 both are same

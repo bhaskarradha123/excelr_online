@@ -72,7 +72,15 @@ Number - 143
         25.Find duplicates in an array
         26.Find the count of duplicate elements in an array
         27.Find distinct elements in an array
-        
+
+        28.Find the characters in a string
+        29.Find the Numbers in a string
+        30.Find Ascii value of a character
+        31.Find length of a string with length() method
+        32.Find vowels and consonants in a string
+        33.Find count of vowels and consonants in a string
+
+
         21. Counting Distinct Elements in an Array
         23. Removing Duplicate elements from an array
         24. Find the Smallest and largest element in an array
