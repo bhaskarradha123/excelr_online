@@ -1,6 +1,5 @@
 package array_programs;
 
-import java.util.Iterator;
 
 public class Array_Program6 {
 
@@ -10,7 +9,7 @@ public class Array_Program6 {
 
 		for(int i=0;i<arr.length;i++) {
 			for (int j = 0; j < arr[i].length; j++) {
-				System.out.println(arr[i][j]+" + "+arr1[i][i]+" = "+(arr[i][j]+arr1[i][j]));
+				System.out.println(arr[i][j]+" * "+arr1[i][i]+" = "+(arr[i][j]*arr1[i][j]));
 			}
 			System.out.println();
 		}

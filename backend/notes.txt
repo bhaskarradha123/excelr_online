@@ -482,3 +482,35 @@ Multidimensional Arrays:
          // different rows have different number of columns
 
   Arrays.deepToString(): used to print the values of a multidimensional array
+----------------------------------------------------------------------------------
+
+String :
+        -String is a class present in java.lang package
+        -it is used to store a sequence of characters
+        -it is immutable
+        -it is a non primitive data type
+    
+    creation of String :
+             1.with string literal
+             2.with string constructor
+
+        1.with string literal:
+            String s1="hello"; //it will create in constant pool area/string constant area
+            String s2="hello";
+            System.out.println(s1==s2);//true 
+
+        2.with string constructor:
+            String s2=new String("hello"); //it will create in heap area
+            String s3=new String("hello");
+            System.out.println(s2==s3);//false
+
+String methods:
+            1.length(): used to get the length of a string
+            2.charAt(index position): used to get the character at a particular index position ,
+                                    if index is out of range then it will throw 
+                                    an exception(StringIndexOutOfBoundsException)
+
+            3.substring(stating index,ending index): used to get a substring/part of a string
+            4.toCharArray(): used to convert a string to an array of characters
+            5.indexOf('a'): used to get the  first index of a character in a string,
+                           if character is not present then it will return -1
