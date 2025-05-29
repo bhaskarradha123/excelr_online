@@ -21,7 +21,6 @@ public class FindVowels {
 				consonantCount++;
 			}
 		}
-		
 		System.out.println("vowel count "+vowelCount+" \nConsonant Count "+consonantCount);
 	}
 }
