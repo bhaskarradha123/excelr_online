@@ -514,3 +514,28 @@ String methods:
             4.toCharArray(): used to convert a string to an array of characters
             5.indexOf('a'): used to get the  first index of a character in a string,
                            if character is not present then it will return -1
+            6.lastIndexOf('a'): used to get the last index of a character in a string,
+                           if character is not present then it will return -1
+            7.contains("abc"): used to check if a string contains a substring,if 
+                              it is present then it will return true or else it will return false
+            8.startsWith("abc"): used to check if a string starts with a substring,if 
+                              it is present then it will return true or else it will return false
+            9.endsWith("abc"): used to check if a string ends with a substring,if 
+                              it is present then it will return true or else it will return false
+            10.toUpperCase(): used to convert a string to uppercase
+            11.toLowerCase(): used to convert a string to lowercase
+            12.trim(): used to remove the leading and trailing spaces from a string
+            13.split(" "): used to split a string into an array of substrings based 
+                          on a delimiter
+            14.equals("abc"): used to check if a string is equal to another string, if 
+                             it is equal then it will return true or else it will return false
+            15.equalsIgnoreCase("abc"): used to check if a string is equal to another string
+                                        ignoring the case, if it is equal then it will return true
+                                        or else it will return false
+            16.matches("abc"): used to check if a string matches a regular expression, if
+                              it matches then it will return true or else it will return false
+            17.compareTo("abc"): used to compare two strings,
+                                if they are equal then it will return 0,
+                                if first string is less than second string then it will return -1,
+                                if first string is greater than second string then it will return 1
+                             
