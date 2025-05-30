@@ -600,4 +600,10 @@ Methods in StringBuffer and StringBuilder:
         syntax:
         sb.indexOf(character);
 13.lastIndexOf(): used to get the last index of a character in a string
+15.capacity(): used to get the capacity of a string buffer
+        syntax:
+        sb.capacity();
+16.ensureCapacity(): used to ensure the capacity of a string buffer
+        syntax:
+        sb.ensureCapacity(capacity);    
 
