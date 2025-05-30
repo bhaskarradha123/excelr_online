@@ -18,7 +18,6 @@ public class CaptilizeFirstAndLastLetter {
 			 }
 			 sb.append(" ");
 		}
-		
 		System.out.println(sb);
 	}
 }

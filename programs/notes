@@ -86,6 +86,9 @@ Number - 143
         38.Product of digits in a string
         39.count of digits in a string
         40.Capitalize a  first and last letter in a string
+        41.remove vowels from a string
+        42.remove consonants from a string
+        43.remove numbers from a string
 
 
 
