@@ -578,4 +578,26 @@ Methods in StringBuffer and StringBuilder:
 6.reverse(): used to reverse a string
         syntax:
         sb.reverse();
+7.length(): used to get the length of a string
+        syntax:
+        sb.length();
+8.setLength(): used to set the length of a string
+        syntax:
+        sb.setLength(length);
+9.substring(): used to get a substring/part of a string
+        syntax:
+        sb.substring(start,end);
+10.toString(): used to convert a string to a string buffer
+        syntax:
+        sb.toString();
+11.charAt(): used to get the character at a particular index position
+        syntax:
+        sb.charAt(index);
+12.setCharAt(): used to set the character at a particular index position
+        syntax:
+        sb.setCharAt(index,character);
+12.indexOf(): used to get the first index of a character in a string
+        syntax:
+        sb.indexOf(character);
+13.lastIndexOf(): used to get the last index of a character in a string
 
