@@ -673,9 +673,37 @@ Class:
     - it consist of variables and methods
     - it is a collection of related data and functions
     - class is created by using class keyword
+    - class is a non primitive data type
 
 ex: Bike:  
      action/method/function :riding(), start(), stop()
      variable/properties/data :name, color, price
-           
+    
+Object :
+        - object is a real world entity
+        - object is created by using new keyword and class constructor;
+        - object is created in heap memory
+    
+    syntax : 
+    class ClassName{
+        //variables and methods
+    }
+
+    ClassName obj=new ClassName();
+
+Note : static members can call by using Class name
+       Non static members can call by using object reference variable
+
+
+Encapsulation:
+++++++++++++++++
+- it is a process of wrapping/binding the data(variables) and methods
+  into a single unit is called encapsulation
+- hiding the internal state of an object from the outside world(by using access modifiers-private)
+- providing access with the help of getter and setter methods
+
+Note : getter and setter methods are used to access private variables
+       getter are used to get/access/retrieve the value of private variable
+       setter are used to set/assign/write the value of private variable
+       -
     
