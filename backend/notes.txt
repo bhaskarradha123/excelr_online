@@ -657,10 +657,25 @@ value/literal/expression                             datatype variableName
 
 Method Overloading:
 ++++++++++++++++++
- - multiple methods with same name but different parameters in same class or interface
+ - multiple methods with same name but different parameters or formal arguments in same class or interface
 is called method overloading
  - method overloading is used to increase the reusability of code
 
  Note : number of parameters should be different
         datatype of parameters should be different
         order of parameters should be different
+---------------------------------------------------------------------------------------
+
+Class:
+++++++
+    - class is a blue print of an object or a real world entity
+    - class is used to create objects
+    - it consist of variables and methods
+    - it is a collection of related data and functions
+    - class is created by using class keyword
+
+ex: Bike:  
+     action/method/function :riding(), start(), stop()
+     variable/properties/data :name, color, price
+           
+    
