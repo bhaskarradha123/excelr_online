@@ -607,3 +607,22 @@ Methods in StringBuffer and StringBuilder:
         syntax:
         sb.ensureCapacity(capacity);    
 
+------------------------------------------------------------------------------------------
+Methods :
+      - it is a block of code that performs a specific task
+      - methods should be enclosed in {}
+      - methods should be declared inside a class or interface or abstract class
+      - methods can invoke/call with the help of method name or method signature
+      - used to reuse the code, increases the reusability, readability of the code
+
+syntax: 
+access modifier  specifier return_type method_name(parameters){
+    
+    ----
+    ----
+    return statement;
+}
+
+method signature: methodName+ parameters/arguments
+method declaration: access modifier+specifier+return_type+method_name+parameters
+method definition: method declaration+body
