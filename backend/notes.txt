@@ -615,6 +615,9 @@ Methods :
       - methods can invoke/call with the help of method name or method signature
       - used to reuse the code, increases the reusability, readability of the code
 
+Note : without calling a method ,it will not run
+     : calling method is called method invocation/ method calling statement 
+
 syntax: 
 access modifier  specifier return_type method_name(parameters){
     
@@ -626,3 +629,26 @@ access modifier  specifier return_type method_name(parameters){
 method signature: methodName+ parameters/arguments
 method declaration: access modifier+specifier+return_type+method_name+parameters
 method definition: method declaration+body
+
+
+Methods are two types based on arguments:
+----------------------------------------
+1. no-argument methods/zero-argument methods/non parameterized methods
+                ex:
+                public static void m1() {
+                    
+                }
+                m1();//method invocation
+2. argument methods/parameterized methods
+                ex:
+                public static void m1(int a) {
+                    
+                }
+                m1(10);//method invocation
+    
+    -----------------------------------------------------------------------------
+     actual arguments                                formal arguments
+    ------------------------------------------------------------------------------
+parameters passed to a method                        parameters declared in a method
+value/literal/expression                             datatype variableName
+    ------------------------------------------------------------------------------
