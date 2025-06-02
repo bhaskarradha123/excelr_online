@@ -652,3 +652,15 @@ Methods are two types based on arguments:
 parameters passed to a method                        parameters declared in a method
 value/literal/expression                             datatype variableName
     ------------------------------------------------------------------------------
+
+
+
+Method Overloading:
+++++++++++++++++++
+ - multiple methods with same name but different parameters in same class or interface
+is called method overloading
+ - method overloading is used to increase the reusability of code
+
+ Note : number of parameters should be different
+        datatype of parameters should be different
+        order of parameters should be different
