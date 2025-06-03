@@ -738,6 +738,16 @@ Abstraction:
         functionality to the user is called abstraction
        - we can achieve abstraction by using abstract classes and interfaces
 
+abstract class:
+--------------
+        - class can be declared as abstract by using abstract keyword
+        - abstract class cannot be instantiated/can't create object ,
+          because it is abstract/incomplete
+        - we can have (abstract methods , concrete methods)non static and static methods
+        - we can have (abstract variables, concrete variables)non static and static variables
+        - we can have constructor for reinitialization of non static variables
+
+
 
 Inheritance:
 +++++++++++

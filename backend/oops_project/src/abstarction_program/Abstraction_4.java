@@ -7,9 +7,14 @@ interface A{
 	
 }
 
+interface C extends A{
+	
+}
 class B implements A{
 	
 }
 //interface  c extends B{
 //	
 //}
+
+
