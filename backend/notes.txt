@@ -664,7 +664,7 @@ Methods are two types based on return type:
       - method returns a value/data to the caller
       - return type is not void(primitive or non primitive)
       - return statement is mandatory
-      
+
 Note : return is a keyword 
        return statement is used to return a value/data to the caller
        return statement is used to terminate a method
@@ -712,15 +712,43 @@ Note : static members can call by using Class name
        Non static members can call by using object reference variable
 
 
+OOPS (Object Oriented Programming):
++++++++++++++++++++++++++++++++++
+      1.Encapsulation
+      2.Abstraction
+      3.Inheritance
+      4.Polymorphism
+
 Encapsulation:
 ++++++++++++++++
 - it is a process of wrapping/binding the data(variables) and methods
   into a single unit is called encapsulation
+- we can achieve data hiding and data security
 - hiding the internal state of an object from the outside world(by using access modifiers-private)
 - providing access with the help of getter and setter methods
 
 Note : getter and setter methods are used to access private variables
        getter are used to get/access/retrieve the value of private variable
        setter are used to set/assign/write the value of private variable
-       -
-    
+
+-----------------------------------------------------------------------------
+Abstraction:
+++++++++++++
+       -The process of hiding implementation  and showing only the
+        functionality to the user is called abstraction
+       - we can achieve abstraction by using abstract classes and interfaces
+
+
+Inheritance:
++++++++++++
+       -The process of inheriting properties and methods from a parent class
+       to a child class is called inheritance
+       -we can achieve inheritance by using extends and implements keyword
+       Types:
+            1.single level inheritance:
+                - a class can inherit properties and methods from only
+                  one parent class to a child class
+            2.multilevel inheritance
+            3.hierarchical inheritance
+            4.multiple inheritance
+            5.hybrid inheritance

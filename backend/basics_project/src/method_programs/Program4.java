@@ -22,8 +22,16 @@ public class Program4 {
 
 	public static int m2() {
 		return 646;
+		
 	}
 	public static String m3() {
-		return "hello";
+		int a=34;
+		if(a%2==0) {
+			return "it is an even number";
+		}
+		else {
+			return "it is not an even number";
+		}
+		
 	}
 }
