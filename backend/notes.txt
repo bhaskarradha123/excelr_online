@@ -744,11 +744,36 @@ Inheritance:
        -The process of inheriting properties and methods from a parent class
        to a child class is called inheritance
        -we can achieve inheritance by using extends and implements keyword
+            class A{
+            //parent 
+            }
+
+            class B extends A{
+            //child
+            }
+
+ extends: is a keyword used to achieve inheritance in java 
+          Child class--(extends)----->Parent class
+          Child class----(extends)--->abstract Parent class
+          abstract Child class----(extends)--->Parent class  
+
+implements : is a keyword used to achieve inheritance in java
+            class ---(implements)------>interface
+            interface----(extends)------>interface
+
+
+ parent             interface                     class/abstract class
+                        |                                 |
+                        | (achievable by implements)      |(cant achieve  )
+ child           class/abstarct class                 interface
+
+
        Types:
             1.single level inheritance:
                 - a class can inherit properties and methods from only
                   one parent class to a child class
             2.multilevel inheritance
+                - a class can inherit properties and methods from more than one parent class
             3.hierarchical inheritance
             4.multiple inheritance
             5.hybrid inheritance
