@@ -818,4 +818,23 @@ rules:
       2. different number of parameters
       3. different type of parameters
       4. different order of parameters
+    
+method overriding:
+++++++++++++++++++
+            - The process of changing the implementation of a parent class method
+              in a child class
+            - overriding is used to achieve run time polymorphism
+            - inheritance is mandatory for method overriding
+Note :
+     method signature should be same in parent class and child class
+     method return type should be same in parent class and child class
+---------------------------------------------------------------------------------------
+method overloading                                        method overriding
+-----------------------------------------------------------------------------------
+multiple methods with same name                          changing the implementation
+ but different parameters                                of parent class method
 
+inheritance is not mandatory                             inheritance is mandatory
+
+compile time binding                                      run time binding
+-----------------------------------------------------------------------------------
