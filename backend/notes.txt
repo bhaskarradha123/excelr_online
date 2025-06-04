@@ -744,8 +744,10 @@ abstract class:
         - abstract class cannot be instantiated/can't create object ,
           because it is abstract/incomplete
         - we can have (abstract methods , concrete methods)non static and static methods
-        - we can have (abstract variables, concrete variables)non static and static variables
-        - we can have constructor for reinitialization of non static variables
+        - we can have non static and static variables
+        - we can have constructor for reinitialization of non static variables,
+          not for object creation
+        - static and final methods cant be abstract methods
 
 
 
@@ -783,10 +785,25 @@ implements : is a keyword used to achieve inheritance in java
                 - a class can inherit properties and methods from only
                   one parent class to a child class
             2.multilevel inheritance
-                - a class can inherit properties and methods from more than one parent class
+                - a class can inherit properties and methods from more
+                  than one parent class
             3.hierarchical inheritance
-            4.multiple inheritance
+                 - a class can inherit properties and methods from one parent
+                   to multiple child classes
+            4.multiple inheritance 
+                - a child  inheriting properties and methods from more than one parent
+                - multiple inheritance is not allowed in java by using class
+                - it can be achieved by using interfaces
+
+Diamond Problem/Ambiguity Problem:
+++++++++++++++++++++++++++++++++++
+     when we try to perform multiple inheritance in java using class, child class
+     try to call parent class constructor and try to  override parental method
+     which causes ambiguity problem and diamond problem  
+
             5.hybrid inheritance
+                - hybrid inheritance is a combination of multiple
+                  and hierarchical inheritance
 ---------------------------------------------------------------------------
 constructor:
 ++++++++++++
