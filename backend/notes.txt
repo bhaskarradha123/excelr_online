@@ -787,3 +787,35 @@ implements : is a keyword used to achieve inheritance in java
             3.hierarchical inheritance
             4.multiple inheritance
             5.hybrid inheritance
+---------------------------------------------------------------------------
+constructor:
+++++++++++++
+           - constructor is a special method
+           - constructor is used to create the object/instance
+           - constructor is called automatically when an object is created
+           - constructor is used to assign values to non static variables
+           - constructor name should be same as class name
+           - constructor doesn't have return type
+    Types:
+          1.default constructor
+                         - no arguments constructor created by java compiler by default
+          2.user defined constructor
+                         - constructor created by user/developer/programmer
+                         1.parameterized constructor/argument constructor
+                         2.non-argument constructor/non- parameterized constructor
+
+Note : if we create an user defined constructor then default constructor 
+       will not be created by java compiler
+
+
+constructor overloading:
++++++++++++++++++++++++
+            -having multiple constructors with different parameters(formal arguments)
+             in same class is  called constructor overloading
+
+rules:
+      1. constructor name should be same as class name
+      2. different number of parameters
+      3. different type of parameters
+      4. different order of parameters
+

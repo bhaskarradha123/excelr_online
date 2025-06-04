@@ -13,7 +13,7 @@ public class Example_1 {
 }
 
 abstract class Animal{
-	public abstract void eats(); // functionality
+	public  abstract void eats(); // functionality
 	
 	public void sleep() {
 		 System.out.println("sleeping at night time");
