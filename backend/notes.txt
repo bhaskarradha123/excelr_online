@@ -828,6 +828,8 @@ method overriding:
 Note :
      method signature should be same in parent class and child class
      method return type should be same in parent class and child class
+     **final methods can't be overridden
+
 ---------------------------------------------------------------------------------------
 method overloading                                        method overriding
 -----------------------------------------------------------------------------------
@@ -838,3 +840,22 @@ inheritance is not mandatory                             inheritance is mandator
 
 compile time binding                                      run time binding
 -----------------------------------------------------------------------------------
+Object class
+++++++++++++
+         - Object class is an inbuilt class present in java.lang package from 1.0 version
+         - Object class is a parent/super/base/root class of all classes
+         - it consist 11 methods
+methods:
+-------
+1. toString()->returns a string representation of the object
+             - to print object values rather than object address/reference
+2. hashCode()->returns a hash code value for the object
+3. equals()->returns true if the specified object is equal to this object
+4. getClass()->returns the class of the object
+5. clone()->returns a copy of the object
+6. finalize()->called when the object is no longer reachable
+7. notify()->wakes up a single thread that is waiting on this object's monitor
+8. notifyAll()->wakes up all threads that are waiting on this object's monitor
+9. wait()->causes the current thread to wait until another thread invokes the notify() method or the notifyAll() method for this object
+10. wait(long timeout)->causes the current thread to wait until either another thread invokes the notify() method or the notifyAll() method for this object, or the specified amount of time has elapsed
+11. wait(long timeout, int nanos)->causes the current thread to wait until either another thread invokes the notify() method or the notifyAll() method for this object, or the specified amount of time has elapsed
