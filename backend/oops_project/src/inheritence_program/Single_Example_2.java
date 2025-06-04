@@ -1,5 +1,4 @@
 package inheritence_program;
-
 public class Single_Example_2  extends Object{
 
 	@Override
@@ -18,6 +17,7 @@ public class Single_Example_2  extends Object{
 //		s.clone();
 //		s.equals(s);
 //		s.finalize();
+		
 		
 		
 	}
