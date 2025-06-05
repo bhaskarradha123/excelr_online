@@ -749,7 +749,15 @@ abstract class:
           not for object creation
         - static and final methods cant be abstract methods
 
-
+interface:
+-----------
+     - interface can be create with interface keyword
+     - to achieve multiple inheritance and 100% abstraction
+     - it will allows only abstract methods and constants
+       (public static final data member) until java 8
+     - it wont allow constructor because all the data members
+       are static and final by default
+     - from java 8 , it allows static method and default methods
 
 
 

@@ -5,9 +5,13 @@ public class Main {
 //		Employee employee=new Employee("BOB","bob@gmail.com",345678665,786);
 		Developer developer=new Developer("Bob", "bob@gmail.com", 23456789, 753, "java");
 		developer.work();
-		
+//		UpCasting/ implicit casting/widening casting
 		Employee employee=new Developer("Allen", "allen@gmail.com", 34567, 56, "python");
 		employee.work();
+		
+//		DownCasting/explicit casting /narrowing casting
+		Developer developer2=(Developer)employee;
+			
 	}
 }
 abstract class Employee {
@@ -35,4 +39,5 @@ class Developer extends Employee {
 	public void work() {
 		System.out.println(name+" developer working on "+langugage);	
 	}
+	
 }
