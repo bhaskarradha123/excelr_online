@@ -932,6 +932,21 @@ Polymorphism:(many/ multiple forms)
                - constructor overloading
 -------------------------------------------------------------------------------------------------------------------
 
+final :
+------
+    - it is a keyword
+    - final dataMember /variable /field can't be changed/re assigned
+      need to initialize during declaration
+    - final method can't be abstract and can't be overridden
+    - final class can't be abstract and can't be inherited
+     
+
+
+
+
+
+
+
 Online Course management/platform:
 ++++++++++++++++++++++++++++++++
     
