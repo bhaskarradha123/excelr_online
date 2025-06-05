@@ -16,7 +16,7 @@ interface Mother{
 class Child_ implements Father,Mother{
 	@Override
 	public void propertyList() {
-		System.out.println("properties from both parents"+Father.propertyA);
+		System.out.println("properties from both parents");
 		
 	}
 }

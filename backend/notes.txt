@@ -760,14 +760,6 @@ interface:
      - from java 8 , it allows static method and default methods
 
 
-
-
-
-
-
-
-
-
 Non primitive typecasting:
 +++++++++++++++++++++++++
        -converting one non primitive data type to another non primitive data type
@@ -926,3 +918,53 @@ methods:
 10. wait(long timeout)->causes the current thread to wait until either another thread invokes the notify() method or the notifyAll() method for this object, or the specified amount of time has elapsed
 11. wait(long timeout, int nanos)->causes the current thread to wait until either another thread invokes the notify() method or the notifyAll() method for this object, or the specified amount of time has elapsed
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Polymorphism:(many/ multiple forms)
+++++++++++++
+    -the process of having many forms is called polymorphism
+    -it is used to achieve run time polymorphism and compile
+     time polymorphism
+    Run time polymorphism:
+    ---------------------
+               - method overriding
+    Compile time polymorphism:
+    -------------------------
+               - method overloading
+               - constructor overloading
+-------------------------------------------------------------------------------------------------------------------
+
+Online Course management/platform:
+++++++++++++++++++++++++++++++++
+    
+blueprint/class:  1.User class
+                  2.Student class
+                  3.Faculty class
+                  4.Course class etc
+Encapsulation: binding data and method  together in a class
+    ex: class User{
+        private int userId;
+        private String userName;
+        private String password;
+        //getter and setter methods
+    } 
+
+Abstraction and Inheritance :
+              we can make User class as abstract class,
+              Student and Faculty as child classes of User class 
+              for providing implementation
+
+Polymorphism : attending class by teacher and student
+          abstract  class User{   
+            attendingClass(); 
+          }  
+
+          class Student extends User{
+            takingClasses(){
+                system.out.println("Student attending classes");
+            }
+          }
+
+          class Faculty extends User{
+            teachingClasses(){
+                system.out.println("Faculty teaching classes");
+            }
+          }
