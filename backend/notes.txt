@@ -835,6 +835,19 @@ rules:
       2. different number of parameters
       3. different type of parameters
       4. different order of parameters
+
+constructor chaining:
+++++++++++++++++++++
+           - the process of calling one constructor from another constructor
+             is called constructor chaining
+           - used to assign values to non static variables from another constructor
+           - helps to avoid duplicate code(code duplication)
+           - can achieve with the help of this() and super() statements
+           -this() - this call statement is used to call current constructor
+           -super() - super call statement is used to call parent class constructor
+
+Note : 1.this() or super () must be the first statement in a constructor
+       2.both statements can't be used together in a constructor
     
 method overriding:
 ++++++++++++++++++
