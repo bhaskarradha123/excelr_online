@@ -751,6 +751,34 @@ abstract class:
 
 
 
+
+
+
+
+
+
+
+
+
+Non primitive typecasting:
++++++++++++++++++++++++++
+       -converting one non primitive data type to another non primitive data type
+       -there are two types of casting:
+            1.implicit casting : 
+                   - it is done automatically by the compiler
+                   - converting child data type to parent data type
+                   - can also called as widening typecasting(upcasting)
+            2.explicit casting : it is done manually by the programmer
+                  - it is done manually by the developer need to use cast operator ()
+                  - converting parent data type to child data type
+                  - can also called as narrowing typecasting(downcasting)
+
+
+
+
+
+
+
 Inheritance:
 +++++++++++
        -The process of inheriting properties and methods from a parent class
