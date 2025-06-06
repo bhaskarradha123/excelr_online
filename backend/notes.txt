@@ -931,14 +931,7 @@ Polymorphism:(many/ multiple forms)
                - method overloading
                - constructor overloading
 -------------------------------------------------------------------------------------------------------------------
-
-final :
-------
-    - it is a keyword
-    - final dataMember /variable /field can't be changed/re assigned
-      need to initialize during declaration
-    - final method can't be abstract and can't be overridden
-    - final class can't be abstract and can't be inherited
+   
      
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -1032,13 +1025,90 @@ in different package      yes          no                   no                 n
             1.can call directly by using refName/method() in non static method 
             2.can call with objRef.refName / objRef.method() in static method
      In different class:
-            - can call with objRef.refName / objRef.method() 
-
-      
-2.final
+            - can call with objRef.refName / objRef.method()      
+2.final: 
+    - it is a keyword
+    - final dataMember /variable /field can't be changed/re assigned
+      need to initialize during declaration
+    - final method can't be abstract and can't be overridden
+    - final class can't be abstract and can't be inherited 
+    
 3.abstract
+     -it is a keyword
+     -use for methods and class to make it as abstract
+     -abstract class can't be instantiated and can't be final
+     -abstract method need to override in child class and can't be final
+
 4.synchronized
 5.native
 6.strictfp
 7.volatile
 8.transient etc
+-------------------------------------------------------------------------------------------------------------
+
+Wrapper class:
++++++++++++++
+    -it is a class(present in java.lang package)
+    -it is used to convert primitive data types to object data types
+    -it is used to convert object data types to primitive data types
+    -and we can achieve 100% oops
+    -A class which is wrapping a primitive data type is called wrapper class 
+  
+  primitive data types                      Object class(wrapper class/non primitive data types)
+  ------------------------------------------------------------------
+       byte                                     Byte
+       short                                    Short
+       int                                      Integer
+       long                                     Long
+       float                                    Float
+       double                                   Double
+       char                                     Character
+       boolean                                  Boolean
+      
+
+converting primitive data types to object data types:
+---------------------------------------------------
+1. AutoBoxing: automatic conversion of primitive data types to object data types
+        WrapperClass refName=value;
+2. Boxing: manual conversion of primitive data types to object data types
+       WrapperClass refName=WrapperClass.valueOf(value);
+       ex:
+       Byte b=Byte.valueOf(10);
+       Short s=Short.valueOf(10);
+       Integer i=Integer.valueOf(10);
+       Long l=Long.valueOf(10);
+       Float f=Float.valueOf(10);
+       Double d=Double.valueOf(10);
+       Character c=Character.valueOf('A');
+       Boolean b1=Boolean.valueOf(true);
+
+
+converting object data types to primitive data types:
+---------------------------------------------------
+1.AutoUnBoxing: automatic conversion of object data types to primitive data types
+        primitiveDataType refName=value;
+2.UnBoxing: manual conversion of object data types to primitive data types
+       primitiveDataType refName=WrapperClassRefName.intValue();
+
+       ex:
+       byte b=b1.byteValue();
+       short s=s1.shortValue();
+       int i=i1.intValue();
+       long l=l1.longValue();
+       float f=f1.floatValue();
+       double d=d1.doubleValue();
+       char c=c1.charValue();
+       boolean b1=b1.booleanValue();
+
+Parsing
+--------
+    - it is used to convert string to primitive data types
+ex:
+    byte b=Byte.parseByte("10");
+    short s=Short.parseShort("10");
+    int i=Integer.parseInt("10");
+    long l=Long.parseLong("10");
+    float f=Float.parseFloat("10.5");
+    double d=Double.parseDouble("10.5");
+    char c=Character.parseChar("A");
+    boolean b1=Boolean.parseBoolean("true");

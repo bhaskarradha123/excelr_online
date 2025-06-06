@@ -65,6 +65,27 @@ Number - 143
           so the binary number is 1101
         20. Binary to Decimal Number
              1010-10
+        
+            Octal to Decimal Number:
+                    octal number=0,1,2,3,4,5,6,7
+                    decimal number =0,1,2,3,4,5,6,7,8,9
+
+             ex: octal - 157
+             157%10 =7  ---7*8^0== 7*1=7
+             15%10 =5  ---5*8^1== 5*8=40
+             1%10 =1  ---1*8^2== 1*64=64
+                        -------------------
+                        7+40+64=111
+             
+             decimal to octal number:
+                  ex: 111
+                  111%8=7 ="7"==7
+                  13%8=5 ="5"+"7"==57
+                  1%8=1 ="1"+"5"+"7"==157
+                 
+ 
+
+        
         21.Find largest and Smallest in an array
         22.Reverse an Array
         23.Sum of an Array    
