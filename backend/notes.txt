@@ -941,12 +941,7 @@ final :
     - final class can't be abstract and can't be inherited
      
 
-
-
-
-
-
-
+----------------------------------------------------------------------------------------------------------------------
 Online Course management/platform:
 ++++++++++++++++++++++++++++++++
     
@@ -983,3 +978,36 @@ Polymorphism : attending class by teacher and student
                 system.out.println("Faculty teaching classes");
             }
           }
+
+---------------------------------------------------------------------------------------------------------------------
+Modifiers:(specifiers- c language)
+++++++++++++
+         - modifiers are keywords
+         - used to modify the visibility of class members
+         - used to modify the accessibility of class members
+         - used to provide additional information about class members
+    Types:
+       1.access modifiers
+       2.non access modifiers
+
+1.Access modifiers:
+------------------
+      - it is used to modify the accessibility and visibility of class members
+      1.public ---public keyword
+      2.private --- private keyword
+      3.protected--- protected keyword
+      4.default---no keyword
+
+---------------------------------------------------------------------------------------
+                        public         protected             default            private
+---------------------------------------------------------------------------------------
+in same class             yes          yes                  yes                yes
+
+in same package           yes          yes                  yes                no
+but in different class                    
+
+in different package      yes          yes                  no                 no
+with sub class
+
+in different package      yes          no                   no                 no
+---------------------------------------------------------------------------------------
