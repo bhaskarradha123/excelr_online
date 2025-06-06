@@ -1011,3 +1011,34 @@ with sub class
 
 in different package      yes          no                   no                 no
 ---------------------------------------------------------------------------------------
+
+2.Non access modifiers:
+-----------------------
+        - it is used to provide additional information about class members
+
+1.static: 
+           - it is a keyword
+           - it belongs to class not object
+           - it will load members in memory only once(static area of memory) 
+  static:
+    In same class :
+            1. can call directly by using refName/method() in static method and non static method
+            2. can call with className.refName / className.method() in static and non static method
+    In different class:
+             -can call with  className.refName / className.method()
+
+  non static:
+     In same class:
+            1.can call directly by using refName/method() in non static method 
+            2.can call with objRef.refName / objRef.method() in static method
+     In different class:
+            - can call with objRef.refName / objRef.method() 
+
+      
+2.final
+3.abstract
+4.synchronized
+5.native
+6.strictfp
+7.volatile
+8.transient etc
