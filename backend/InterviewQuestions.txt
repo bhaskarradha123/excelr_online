@@ -134,4 +134,113 @@ Integer-non primitive data type/ wrapper class of int
               2.non primitive variable
 
 28.Can i use local variable without assigning ?
+No
+        public void m1(){
+            int a;
+            System.out.println(a);//CTE
+        }
+29.Can i use global variable without assigning ?
+yes
 
+        public class Task1{
+            int a;//global variable
+            public void m1(){
+                System.out.println(a);//0
+            }
+        }
+
+
+30. Can i call static members inside a non static method?
+Yes
+
+ -can call static members with the help of className
+
+31. Can i call non static members inside a static method?
+No (directly)
+
+-i need to call non static member inside a static method
+   then we can do with object creation
+
+
+32.What is operator and how many operators are there?
+operator: symbol which is used to perform some operation on operands
+operators:
+    1.arithmetic operators
+    2.relational operators
+    3.logical operators
+    4.assignment operators
+    5.bitwise operators
+    6.conditional operators
+    7.increment/decrement operators
+    8.access operator (.)
+
+33.What is conditional statements?and types?
+conditional statements: it is used to execute the block of code based on condition
+types:
+        1.if statement
+        2.if-else statement
+        3.if-else-if ladder
+        4.switch statement
+        5.nested if statement
+
+34.What is loop statement and its types?
+loop statement: it is used to execute the block of code multiple times based on condition
+types:
+        1.while loop
+        2.do-while loop
+        3.for loop
+        4.for-each loop
+        5.nested loop
+
+35.what is the difference between while and do-while loop?
+while loop: mim no.of iterations =0
+             first check the condition then execute the block of code
+do-while loop: min no.of iterations =1
+            first execute the block of code then check the condition
+
+36. what is the difference between for and for-each loop?
+for:initialization,condition,updation are required
+    iterates in an range
+    
+foreach:initialization,condition,updation are not required
+       :iterates in a collection/array
+
+37.What is an array?
+array: it is a collection of similar data types
+     : we can manipulate and access based on index , and starting index is 0
+     : it is a fixed size, array is an immutable object
+     : it is a non primitive data type
+
+limitations of array:
+    1.it is a fixed size
+    2.it is immutable(can't be modified)
+    3.it is a collection of similar data types
+
+38.What is String ?
+String : it is a collection of characters
+       : annotated with ""
+       : it is a non primitive data type
+       : it is a immutable object
+
+39.what is the difference between StringBuilder and StringBuffer?
+StringBuilder: it is a mutable object
+             : it is not thread safe
+             : it is fast
+             : it is not synchronized
+             : it won't supports multithreading(single thread)
+StringBuffer: it is a mutable object
+            : it is  thread safe
+            : it is slower than  StringBuilder but faster than String
+            : it is synchronized
+            : it supported multithreading
+
+            
+40.what is the difference between method overloading and method overriding?
+method overloading:
+                  : it will occur at compile time(compile time binding/ static binding)
+                  : Inheritance is not  mandatory 
+                  : having multiple methods with same name and different parameters
+method overriding:
+                 : it will occur at run time(runtime binding/ dynamic binding)
+                 : Inheritance is mandatory
+                 : changing the implementation of parent class method in child class
