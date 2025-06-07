@@ -79,4 +79,59 @@ constructor: constructor name should be same as class name
 
 
 17.what is the difference between int and Integer?
-                                            
+int- primitive data type
+       default value :0
+Integer-non primitive data type/ wrapper class of int
+       default value :null
+
+
+18.how many primitive data types are there?
+      8->byte , short , int , long , float , double , char , boolean
+
+19.how many non primitive data types are there?
+      String , array, class , interface , enum, annotation , Collections
+    
+20.How to convert primitive data types to object data types?
+  Boxing /AutoBoxing  using Wrapper class
+21.How to convert object data types to primitive data types?
+  UnBoxing/AutoUnBoxing
+22.What is Parsing
+    converting string to primitive data type
+
+23.What is typeCasting:
+    converting one data type to another data type
+    1.primitive type casting 
+                         1.Widening/implicit  -converts small to large 
+                         2.Narrowing/explicit -converts large to small
+    2.non primitive type casting
+                        1.UpCasting/widening/implicit - converts child to parent
+                        2.DownCasting/narrowing/explicit - converts parent to child
+
+24.What is return ?
+     -return keyword is used to return the value from the method
+     -return keyword is used to terminate the method
+     -return keyword must be the last statement in a method
+     -more than one return statement is not allowed in a method
+
+25.what is break and continue?
+    break-keyword is used to terminate the program
+    continue-keyword is used to skip the current iteration and move to next iteration
+
+26.What is Identifier?
+    -it is a name given to a variable , method , class , interface
+26.What is a literal?
+    -the values stored in a variable is called literal
+
+27.What is a variable?
+    -it is a container to store data
+    types:
+    Based on Scope:
+              1.local variable
+              2.Static variable
+              3.instance variable/Non static variable
+    Based on Datatype:
+              1.primitive variable
+              2.non primitive variable
+
+28.Can i use local variable without assigning ?
+
