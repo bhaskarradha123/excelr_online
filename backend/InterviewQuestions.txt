@@ -1,0 +1,82 @@
+1.What is the difference between jdk ,jre, jvm;
+jdk-java development kit, (jre+development tools)
+jre-java runtime environment , (jvm+set of libraries)
+jvm-java virtual machine, (bytecode interpreter, used to execute bytecode)
+
+
+2.what are the principles of oops?
+    1.Encapsulation-binding/wrapping data and methods into a single unit
+                   -data hiding and data security(private dataMembers -> getter and setter methods)
+    2.Abstraction-hiding implementation and showing only functionality
+                 -abstract keyword and interface
+    3.Inheritance-acquiring/inherit properties and methods from one class to another
+                  -extends and implements keyword
+    4.Polymorphism-the ability of an object to take on many forms
+
+3.Can i override abstract methods?
+yes, then we can provide implementation -- method overriding
+
+4.can i override static method?
+No, we can't override static method--method hiding /method shadowing
+
+5.can i override final method?
+No
+
+6.can i override non static method?
+Yes
+
+7.can i override a private method?
+no, private visibility/accessibility is in same class
+
+8.can i write non static member inside interface;
+yes, but it will consider as public static final member (by default added by compiler)
+
+
+9.what is the difference between abstract class and interface
+abstract class-abstract method+ complete/concrete methods
+              -constructor for reinitialization
+              -data members - static , non static , public , private , protected , final, default
+interface-abstract methods(java 7)
+         -no constructor
+         -data members- static , public , final (will act like constants)
+         -from java 8 static method and default methods are allowed
+
+10.types of Inheritance
+     1.single level inheritance
+     2.multilevel inheritance
+     3.hierarchical inheritance
+     4.multiple inheritance(can't achieve by using class -ambiguity problem/diamond problem)
+                           (can achieve by using interface)
+     5.hybrid inheritance
+
+11.what is the difference between super and this keyword?
+    super-keyword refers to parent class object
+        super() used to call parent class constructor from child class
+        inheritance is mandatory
+    this-keyword refers to current class object
+        this() used to call another constructor of same class
+
+12.What is  constructor?
+  -constructor is a special method , used to create the object/instance 
+   and assign values to non static variables
+  -Types: 
+        1.default constructor
+        2.user defined constructor 
+                1.parameterized constructor/argument constructor
+                2.non-argument constructor/non- parameterized constructor
+
+13.What is the difference between method and constructor?
+method:  method name can be anything
+      : return type can be anything(void , primitive , non primitive)
+constructor: constructor name should be same as class name
+      : constructor doesn't have return type
+
+14.can i declare constructor with public access modifier?yes
+15.can i declare constructor with private access modifier?
+ yes , but it will avoid object creation from outside the class
+ it will act like singleton class
+16.can i declare constructor with protected access modifier? yes
+
+
+17.what is the difference between int and Integer?
+                                            
