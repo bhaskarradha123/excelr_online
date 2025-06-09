@@ -10,7 +10,7 @@ public class Example_6 {
 	}
 	public static void main(String[] args) throws Exception {
 		try {
-			m1();
+			m1();//method caller / method calling statement
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

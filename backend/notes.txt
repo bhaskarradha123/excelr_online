@@ -1234,3 +1234,26 @@ scenarios:
 ex: void m1()throws Exception{
 
    }
+
+
+
+Exception Propagation:
+----------------------
+   -the process of passing exception from one method to another 
+   method is called exception propagation
+   -to achieve exception propagation we can use throws keyword
+   -to avoid exception propagation we can use try , catch and finally block
+
+Custom Exception:
+----------------
+   -it is a user defined exception
+   -the class must be child of Exception class
+    (any class of throwable hierarchy)
+   -if it is required , we can override methods of Exception class 
+
+throw                                  throws
+-------------------------------------------------------------------
+is used to throw exception     is used to declare exception in method signature
+
+inside a block                    in method signature
+---------------------------------------------------------------------------
