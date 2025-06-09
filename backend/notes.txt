@@ -1112,3 +1112,114 @@ ex:
     double d=Double.parseDouble("10.5");
     char c=Character.parseChar("A");
     boolean b1=Boolean.parseBoolean("true");
+---------------------------------------------------------------------------------------------------------------
+initializer:
+-----------
+   -block of code
+   -it doesn't have name , return type and access modifier
+   Types:
+   1.static initializer
+   2.non static initializer
+
+static initializer:
+-------------------
+    -it is used to initialize static data members
+    -it is executed only once when class is loaded in memory(static area of memory)
+    -it is called before main method
+
+    syntax:
+    static{
+      //block of code
+    }
+
+non static initializer:
+----------------------
+    -it is used to initialize non static data members
+    -it is executed when object is created (heap area)
+    -it is called before constructor
+
+    syntax:
+    {
+      //block of code
+    }
+
+----------------------------------------------------------------------
+Exception:
+---------
+   - it is an event that occurs during the execution of a program
+   - it disrupts the normal flow of the program
+   - It is a class present in java.lang package
+   Types:
+    1.checked exception
+    2.unchecked exception
+1.Checked Exception:(compiler aware exception)
+        -compiler checks the exception at compile time
+        -it is checked and handled  at compile time
+      ex: IOException, SQLException, 
+          FileNotFoundException,ClassNotFoundException etc
+
+2.Unchecked Exception:(compiler unaware exception)
+       -compiler checks the exception at run time
+       -it is not checked and handled at compile time
+    ex: ArithmeticException, ArrayIndexOutOfBoundException,
+        NullPointerException, NumberFormatException etc
+
+
+How to handle exception?
+------------------------
+1.try , catch and finally block
+2.throws keyword
+
+1.try , catch and finally block:
+--------------------------------
+   -try, catch, finally are keywords
+   -In try block will have problematic code/statements
+   -In catch block will have exception handling code/statements
+   -In finally block will have clean up code/statements
+
+Note : 1.without catch block we can't handle exception
+       1.without catch or finally try block will not write/complete
+
+scenarios:
+ 1.   try{
+
+    } 
+    catch(Exception e){
+      
+    }
+    
+2. try{
+
+    }
+    catch(Exception e){
+      
+    }
+    finally{
+      
+    }
+
+3. try{
+  
+  }
+  catch(IndexOutOfBoundsException e){
+    
+  }
+  catch(ArithmeticException e){
+    
+  }
+  catch(Exception e){
+    
+  }
+
+4. try{
+       try{
+
+       }
+       catch(Exception e){
+         
+       }
+  }
+  catch(Exception e){
+    
+  }
+ 
