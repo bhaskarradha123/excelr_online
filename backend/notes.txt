@@ -1211,6 +1211,7 @@ scenarios:
     
   }
 
+
 4. try{
        try{
 
@@ -1223,3 +1224,13 @@ scenarios:
     
   }
  
+ 2.throws :
+ ----------
+     - throws is a keyword
+     - it is used to declare exception in method signature
+     - it helps to throw exception from method to caller
+     - it makes the code more readable and maintainable
+
+ex: void m1()throws Exception{
+
+   }
