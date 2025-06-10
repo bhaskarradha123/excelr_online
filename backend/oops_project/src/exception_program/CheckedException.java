@@ -9,9 +9,9 @@ public class CheckedException {
 	public static void main(String[] args)  {
      
 		
-			FileReader file=new FileReader("notes");
-			FileInputStream stream=new FileInputStream("notes.txt");
-			Class.forName("");
+//			FileReader file=new FileReader("notes");
+//			FileInputStream stream=new FileInputStream("notes.txt");
+//			Class.forName("");
 		
 	}
 }
