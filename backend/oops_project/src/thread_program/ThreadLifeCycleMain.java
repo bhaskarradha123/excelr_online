@@ -19,8 +19,6 @@ class ThreadLifeCycle extends Thread {
 		try {
 		Thread.sleep(5000);// thread is in waiting phase
 		System.out.println(getName()+"- woke up from sleeping");
-		
-	
 //		wait();
 //		System.out.println("moved from waiting state");
 		}

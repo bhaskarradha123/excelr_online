@@ -1335,3 +1335,49 @@ Thread Life Cycle:
                   syntax: t.sleep();
             6.Terminated state--> thread is completed or terminated
                   syntax: t.stop();
+
+
+Note : 1.by using notify() or notifyAll() method we can notify a waiting thread
+       we can move thread from waiting state to running state
+
+       2.start() will create a new thread and it is responsible for the execution of run()
+-----------------------------------------------------------------------------
+
+synchronized:
+++++++++++++++
+       - it is a keyword , and non access modifier
+       - it is used to make a block synchronized
+       -synchronized blocks will ensure that only one thread can access at a time
+
+  -------------------------------------------------------------------------------
+                  with synchronized                            without synchronized
+  --------------------------------------------------------------------------------
+ safe         safe - proper thread handling          unsafe - no proper thread handling
+
+ performance       slower                            faster
+
+ output           always accurate                    may not be accurate
+ -------------------------------------------------------------------------------------
+
+
+Thread Scheduler:
+-----------------
+   - if multiple threads are waiting to execute, which thread will execute
+     1st is decided by Thread Scheduler , which is a part of jvm
+    -which algorithm or behavior is used by jvm to decide ,  which can't  be expected 
+
+    - we can provide priority to threads by using setPriority() method
+
+
+
+Q.what will happen when we have overloading methods for run()?
+A.start() method will only check for no args run() method, so it will call 
+  no args run() method
+
+Q.What will happen if we are not overriding run() method?
+A.start() method will invoke parental run() method , so it wont print anything
+
+
+
+
+

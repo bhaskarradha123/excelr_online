@@ -10,6 +10,7 @@ public class MyThread extends Thread {
 		
 		MyThread myThread2=new MyThread();
 		myThread2.start();
+		
 	}
 	
 }
