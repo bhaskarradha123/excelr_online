@@ -1257,3 +1257,61 @@ is used to throw exception     is used to declare exception in method signature
 
 inside a block                    in method signature
 ---------------------------------------------------------------------------
+thread:(task)
+-------
+   -it is a light weight process
+   -it is a smallest unit of execution
+   -it is a collection of instructions
+   -it is a collection of stack frames
+
+                    MultiTasking
+                        |
+                        |
+          ---------------------------------------
+          |                                      |
+    process based multitasking   thread based multitasking
+
+process based multitasking:
+--------------------------
+        - executing several tasks at the same time simultaneously 
+          where each task is independent of other task
+  
+  ex: In hotel ---multiple chefs --
+             chef---1task
+             chef---1task
+
+thread based multitasking:
+-------------------------
+             - executing several/multiple tasks at the same time simultaneously 
+               where each task is dependent on other task
+  ex: In hotel ---multiple chefs --
+         1chef---cutting vegetables
+              ----cooking
+              ----serving
+
+Note: multiple threads belongs to a single process, but a process is 
+      not just a collection of threads
+
+
+How to create a thread?
+----------------------
+            1.Thread class
+            2.Runnable interface
+
+1.Thread class:
+++++++++++++++++ 
+         by extending Thread class we can create a thread(user defined thread)
+         syntax:
+         class MyThread extends Thread{
+           
+         }
+
+2.Runnable interface:
++++++++++++++++++++
+         by implementing Runnable interface we can create a thread(user defined thread)
+         syntax:
+         class MyThread implements Runnable{
+           public void run(){
+             //code
+           }
+         }
