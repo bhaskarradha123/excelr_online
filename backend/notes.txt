@@ -1315,3 +1315,23 @@ How to create a thread?
              //code
            }
          }
+
+
+Thread Life Cycle:
+------------------
+            1.New state -> thread is created(user defined thread) - heap area
+               syntax: Thread t=new Thread();
+            2.Runnable state --> thread is ready to execute , but waiting  for
+                                 CPU to execute
+               syntax: t.start();
+            3.Running state--> thread is executing/Running
+               syntax:  t.run();
+              Note : run() method is called by start() method automatically
+
+            4.waited/blocked state --> thread is in waiting phase/paused/ blocked state
+                                       for another thread to be complete
+                  syntax: t.wait();
+            5.Timed Waiting state -->thread is waiting for specified time to complete
+                  syntax: t.sleep();
+            6.Terminated state--> thread is completed or terminated
+                  syntax: t.stop();
