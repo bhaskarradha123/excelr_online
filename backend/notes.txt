@@ -1431,3 +1431,13 @@ methods to control execution of a thread:
 
 6.join(long milliseconds) : used to wait for a thread to complete for specified time
 
+7.yield() : used to give a chance to other threads to execute
+
+8.interrupt() : used to interrupt a thread
+
+9.isInterrupted() : used to check whether a thread is interrupted or not
+                  : it returns true if thread is interrupted otherwise false
+
+10.stop() : used to terminate a thread forcefully (unsafe operation)
+            (RUNNING---->TERMINATED)
+
