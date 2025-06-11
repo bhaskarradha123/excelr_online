@@ -1411,3 +1411,23 @@ constructor of Thread class:
 			System.out.println("creating with lambda expression"); 
 		 });
 		 System.out.println(t5);
+
+
+methods to control execution of a thread:
+---------------------------------------
+1.start() : used to start a new thread  (NEW---->RUNNABLE)
+          : it calls run() method automatically (RUNNABLE---->RUNNING)
+
+2.run() : used to execute a thread (RUNNABLE---->RUNNING)
+        :it won't create a new thread
+
+3.sleep(long milliseconds) : used to pause a thread for specified time
+                            (RUNNING---->TIMED WAITING/BLOCKED)
+
+4.sleep(long milliseconds,int nanoseconds) : used to pause a thread for specified time
+                                             (RUNNING---->TIMED WAITING/BLOCKED)
+
+5.join() : used to wait for a thread to complete/finish
+
+6.join(long milliseconds) : used to wait for a thread to complete for specified time
+
