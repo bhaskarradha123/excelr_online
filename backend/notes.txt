@@ -1441,3 +1441,9 @@ methods to control execution of a thread:
 10.stop() : used to terminate a thread forcefully (unsafe operation)
             (RUNNING---->TERMINATED)
 
+11.wait(): used to wait for a thread to complete (RUNNING---->TIMED WAITING/BLOCKED)
+
+12.notify(): used to notify a waiting thread (TIMED WAITING/BLOCKED---->RUNNING)
+
+13.notifyAll(): used to notify all waiting threads (TIMED WAITING/BLOCKED---->RUNNING)
+
