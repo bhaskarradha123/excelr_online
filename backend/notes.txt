@@ -1379,5 +1379,35 @@ A.start() method will invoke parental run() method , so it wont print anything
 
 
 
+Getter and Setter in Thread class:
+----------------------------------
+  getter : are used to get the info about a thread
+           like getName() , getState() etc
 
+  setter : are used to set the info about a thread
+           like setName() , setState() etc
 
+constructor of Thread class:
+---------------------------
+      - Thread class consist overloading constructor used to create
+       a thread in different ways
+// default constructor
+     Thread t1=new Thread(); 
+		 System.out.println(t1);
+		 
+		 Runnable r1=new Thread(); //upCasting
+		 System.out.println(r1);
+// parameterized constructor used to create a thread with name	 
+		 Thread t2=new Thread("ThreadA"); 
+		 System.out.println(t2);
+// arg const	used to create a thread with target object (thread/runnable) 
+		 Thread t3=new Thread(r1);
+		 System.out.println(t3);
+// arg const used to create a thread with target object (thread/runnable) and name		 
+		 Thread t4=new Thread(r1,"Thread B");
+		 System.out.println(t4);
+		 
+		 Thread t5=new Thread(()->{
+			System.out.println("creating with lamdba expression"); 
+		 });
+		 System.out.println(t5);
