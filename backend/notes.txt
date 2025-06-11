@@ -1406,8 +1406,8 @@ constructor of Thread class:
 // arg const used to create a thread with target object (thread/runnable) and name		 
 		 Thread t4=new Thread(r1,"Thread B");
 		 System.out.println(t4);
-		 
+// arg const used to create a thread with a  concise task(lambda expression) 
 		 Thread t5=new Thread(()->{
-			System.out.println("creating with lamdba expression"); 
+			System.out.println("creating with lambda expression"); 
 		 });
 		 System.out.println(t5);
