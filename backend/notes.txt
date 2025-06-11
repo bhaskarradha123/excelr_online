@@ -1368,6 +1368,15 @@ Thread Scheduler:
 
     - we can provide priority to threads by using setPriority() method
 
+Thread Priority:
+----------------
+     Thread.MIN_PRIORITY-1
+     Thread.NORM_PRIORITY-5
+     Thread.MAX_PRIORITY-10
+
+ Note:Thread.NORM_PRIORITY is default priority
+
+
 
 
 Q.what will happen when we have overloading methods for run()?
@@ -1447,3 +1456,14 @@ methods to control execution of a thread:
 
 13.notifyAll(): used to notify all waiting threads (TIMED WAITING/BLOCKED---->RUNNING)
 
+-----------------------------------------------------------------------------------------------------------------------
+Dead Lock:
+++++++++++
+    -when two threads are waiting for each other to complete their execution
+                          or
+    -when two or more  threads are waiting for each other to release a lock
+    -it is called deadlock
+    -it can be handled by using synchronized blocks
+
+ Ex: two persons are walking in a narrow road and they want to cross the road
+     by blocking each other-----both will wait forever
