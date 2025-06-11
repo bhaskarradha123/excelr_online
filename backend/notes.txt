@@ -1462,7 +1462,7 @@ Dead Lock:
     -when two threads are waiting for each other to complete their execution
                           or
     -when two or more  threads are waiting for each other to release a lock
-    -it is called deadlock
+    it is called deadlock
     -it can be handled by using synchronized blocks
 
  Ex: two persons are walking in a narrow road and they want to cross the road
