@@ -1516,4 +1516,15 @@ Thread Group:
       getName()-- used to get the name of the group
       setName()-- used to set the name of the group
 ---------------------------------------------------------------------------------
-       
+Lock and ReentrantLock:
++++++++++++++++++++++
+   - both belongs to java.util.concurrent package and used
+    to handle synchronization manually
+
+Lock:
+-----
+    - it is an interface that tells about locking mechanism
+    - it consist lock() , unlock(), tryLock(), lockInterruptibly() methods
+ReentrantLock:
+-------------
+    - it is a (child/concrete)class that implements Lock interface
