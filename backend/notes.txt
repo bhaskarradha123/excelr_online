@@ -1477,3 +1477,43 @@ can overcome :
            1.use a consistent locking order(recommended)
            2.use tryLock() from ReentrantLock
            3.avoid nested locks
+
+----------------------------------------------------------------------------------
+Daemon Thread:
+++++++++++++++
+    - the daemon thread is a thread that is automatically started 
+      by the JVM
+    - a daemon thread is a background service thread that runs continuously
+      and performs a task in the background
+    - we can make a thread as a daemon thread by using setDaemon(true) method
+    - mainly used for garbage collection , file monitoring ,background logging etc
+
+    -setDaemon() - used to make a thread as a daemon thread
+                 - default value is false , so it is not a daemon thread 
+    -a daemon thread is mainly used to perform background tasks that should not prevent 
+      the  jvm exiting , when the application is in running.
+
+    -isDaemon() - used to check whether a thread is a daemon thread or not
+ex:
+   main thread --Main worker /manager
+   daemon thread --assistant workers
+
+-----------------------------------------------------------------------------------------
+Thread Group:
++++++++++++++
+          -it is a way to group threads together/ collection of threads
+          -so that we can control them together as a single unit
+        ex: checking priority, joining threads, interrupting threads etc
+          -it can achieve by using ThreadGroup class present in java.lang package
+  
+  methods in ThreadGroup
+  ---------------------
+      list()-- used to get the list of threads in the group
+      activeCount()-- used to get the number of active threads in the group
+      activeGroupCount()-- used to get the number of active groups in the group
+      interrupt()-- used to interrupt all the threads in the group
+      destroy()-- used to destroy all the threads in the group
+      getName()-- used to get the name of the group
+      setName()-- used to set the name of the group
+---------------------------------------------------------------------------------
+       
