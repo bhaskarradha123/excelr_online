@@ -1467,3 +1467,13 @@ Dead Lock:
 
  Ex: two persons are walking in a narrow road and they want to cross the road
      by blocking each other-----both will wait forever
+
+
+DeadLock happens when:
+              1.two or more  threads hold resources(locks)
+              2.Each thread waits for other thread to complete or release task
+
+can overcome :
+           1.use a consistent locking order(recommended)
+           2.use tryLock() from ReentrantLock
+           3.avoid nested locks
