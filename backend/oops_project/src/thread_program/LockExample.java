@@ -4,9 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class LockExample {
-
 	static Lock lock = new ReentrantLock();
-
 	public static void main(String[] args) {
 		Runnable task = () -> {
 			lock.lock();// acquires lock behavior

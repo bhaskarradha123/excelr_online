@@ -1528,3 +1528,39 @@ Lock:
 ReentrantLock:
 -------------
     - it is a (child/concrete)class that implements Lock interface
+
+lock(): used to acquire the lock
+unlock(): used to release the lock
+tryLock(): used to try to acquire the lock and return 
+          true if lock is acquired otherwise false
+lockInterruptibly(): used to acquire the lock and if thread
+                  is interrupted then it throws InterruptedException
+
+-----------------------------------------------------------------------
+drawback of arrays:
+-----------------
+  - arrays are collection of data /value/objects
+  - arrays are fixed in size(risk in over/under size allocation)
+  - arrays are not thread safe
+  - arrays are not synchronized
+  - arrays will accept same data type values only
+  - manipulations of arrays are slow(there are no inbuilt methods )
+  - arrays are low level and not user friendly
+    (sorting , searching , insertion , deletion , element shifting etc)
+  
+
+
+Collection Framework:
++++++++++++++++++++++
+   - it is a framework that provides collection of objects
+   - it works only for non -primitive data type/ objects
+   - A group/multiple  of individual data/objects is called collection
+   - it is introduced in java 1.2 version 
+   - In collection framework , mainly we have two(root) types of interfaces
+        1. Collection interface
+        2. Map interface
+
+Framework: 
+---------
+  -a framework is a collection/set of classes and interfaces that provides
+  a ready made solution for a particular problem
