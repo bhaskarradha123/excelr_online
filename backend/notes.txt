@@ -1564,3 +1564,225 @@ Framework:
 ---------
   -a framework is a collection/set of classes and interfaces that provides
   a ready made solution for a particular problem
+
+
+1.collection interface:  
+-----------------------
+      - It is a interface present in java.util package since java 1.2
+      - It is a child interface of Iterable interface
+      - it consist three child interfaces
+              1.List -ArrayList, LinkedList, Vector
+              2.Set - HashSet, LinkedHashSet, TreeSet
+              3.Queue - ArrayDeque, LinkedBlockingQueue, PriorityQueue
+
+methods of collection interface:
+--------------------------------
+size()  :used to get the size of collection
+        :returns int , size of collection
+        :if collection is empty returns []
+
+add(element)  :used to add an element to collection
+              :returns boolean , if element is added returns true,
+              if element is not added returns false
+
+addAll(collection):used to add multiple elements to collection
+                  :returns boolean , if elements are added returns true,
+                  if elements are not added returns false
+remove(element):used to remove an element from collection
+                :returns boolean , if element is removed returns true,
+                if element is not removed returns false
+removeAll(collection):used to remove multiple elements from collection
+                     :returns boolean , if elements are removed returns true,
+                     if elements are not removed returns false
+
+removeIf(predicate):used to remove elements from collection
+                   :returns boolean , if elements are removed returns true,
+                   if elements are not removed returns false
+
+retainAll(collection):used to retain elements from collection
+                     :returns boolean , if elements are retained returns true,
+                     if elements are not retained returns false
+
+contains(element):used to check if an element is present in collection
+                   :returns boolean , if element is present returns true,
+                   if element is not present returns false
+containsAll(collection):used to check if all the elements are present in collection
+                       :returns boolean , if all the elements are present returns true,
+                       if all the elements are not present returns false
+
+isEmpty():used to check if collection is empty
+          :returns boolean , if collection is empty returns true,
+          if collection is not empty returns false
+
+clear():used to clear all the elements from collection
+         :returns boolean , if collection is cleared returns true,
+         if collection is not cleared returns false
+
+toArray() :used to convert collection to array
+          :returns Object[] , array of objects
+          :if collection is empty returns []
+
+iterator(): used to get the iterator of collection
+            :returns Iterator , iterator of collection
+            :if collection is empty returns null
+
+spiltIterator():used to get the split iterator of collection
+                :returns SpiltIterator , split iterator of collection
+                :if collection is empty returns null
+
+forEach():used to iterate over collection
+          :returns void , it will iterate over collection
+          :if collection is empty returns null
+
+stream():used to get the stream of collection
+          :returns Stream , stream of collection
+          :if collection is empty returns null
+
+parallelStream():used to get the parallel stream of collection
+          :returns Stream , parallel stream of collection
+          :if collection is empty returns null
+
+equals():used to check if two collections are equal
+          :returns boolean , if two collections are equal returns true,
+          if two collections are not equal returns false
+
+hashCode():used to get the hash code of collection
+            :returns int , hash code of collection
+            :if collection is empty returns 0
+
+toString():used to get the string representation of collection
+            :returns String , string representation of collection
+            :if collection is empty returns ""
+
+
+
+List interface:
+---------------
+add(index,e): used to add an element at a particular index position
+
+addAll(index,collection):used to add multiple elements at a particular index position
+
+addFirst(e):used to add an element at the beginning of the list
+
+addLast(e):used to add an element at the end of the list
+
+get(index): used to get the element at a particular index position
+          :returns E , element at a particular index position
+          :if index is out of range then it will throw IndexOutOfBoundsException
+
+getFirst():used to get the first element of the list
+
+getLast():used to get the last element of the list
+
+indexOf(e):used to get the index of an element
+          :returns int , index of element
+          :if element is not present returns -1
+
+lastIndexOf(e):used to get the last index of an element
+          :returns int , last index of element
+          :if element is not present returns -1
+
+listIterator():used to get the list iterator of the list
+              :returns ListIterator , list iterator of the list
+              :if list is empty returns null
+
+listIterator(index):used to get the list iterator of the list at a particular index position
+                    :returns ListIterator , list iterator of the list at a particular index position
+                    :if index is out of range then it will throw IndexOutOfBoundsException
+
+remove(index):used to remove an element at a particular index position
+             :returns E , element at a particular index position
+             :if index is out of range then it will throw IndexOutOfBoundsException
+
+removeFirst():used to remove the first element of the list
+
+removeLast():used to remove the last element of the list
+
+replaceAll(collection):used to replace all the elements of the list
+
+retainAll(collection):used to retain all the elements of the list
+                     :returns boolean , if elements are retained returns true,
+                     if elements are not retained returns false
+
+reverse():used to reverse the list
+         
+set(index,e):used to set the element at a particular index position 
+            :returns E , element at a particular index position
+            :if index is out of range then it will throw IndexOutOfBoundsException
+
+sort(comparator):used to sort the list
+
+subList(startIndex,endIndex):used to get the sub list of the list
+                            :returns List , sub list of the list
+                            :if startIndex is greater than endIndex then it will throw IndexOutOfBoundsException
+
+
+Set interface:
+--------------
+   -No extra methods beyond what is inherited from Collection.
+
+Feature                   	List                         	Set
+------------------------------------------------------------------------------------
+Order	          Maintains insertion order	    May or may not (depends on implementation)
+Duplicates  	  Allowed	                      Not allowed
+Indexed Access	Yes                        	  No
+Implementations	ArrayList, LinkedList	        HashSet, LinkedHashSet, TreeSet
+-----------------------------------------------------------------------------------
+
+
+Queue interface:
+---------------
+offer(e):used to add an element to the queue
+         :returns boolean , if element is added returns true,
+         if element is not added returns false
+
+poll():used to remove an element from the queue
+       :returns E , element from the queue
+       :if queue is empty returns null
+
+peek():used to get the first element of the queue
+      :returns E , first element of the queue
+      :if queue is empty returns null
+
+element():used to get the first element of the queue
+          :returns E , first element of the queue
+          :if queue is empty returns null
+
+remove():used to remove an element from the queue
+         :returns E , element from the queue
+         :if queue is empty returns null
+
+
+Feature                 	List              	Set                	Queue
+------------------------------------------------------------------------------------------
+Duplicates Allowed	       Yes                 No                  Yes
+Maintains Order	           Yes (index)	     Depends               Yes (FIFO)
+Indexed Access	           Yes	               No	                  No
+Special Methods	       get, set etc.	      None extra	  offer, poll, peek etc.
+Main Usage	           Random access	    Unique elements	    FIFO processing
+
+
+---------------------------------------------------------------------------------------------
+Feature                     	ArrayList                              	LinkedList
+-------------------------------------------------------------------------------------------
+Structure	                   Dynamic Array                     	Doubly Linked List
+thread safe                  not thread safe                       not thread safe
+Access Speed             	    Fast (O(1))	                      Slow (O(n))
+Insert/Delete at Start	      Slow (O(n))                       Fast (O(1))
+Insert/Delete in Middle	      Slow (O(n))	                      Moderate (O(n))
+Memory Efficiency	         Better (less overhead)	             Higher (node pointers)
+                                                             Extra memory for pointers (next & prev) in each node
+Use Case	                Best for read-heavy apps	           Best for write-heavy apps
+-------------------------------------------------------------------------------------
+
+
+
+Vector:
+-------
+   -Vector is a legacy class that also implements the List interface.
+   -It is similar to ArrayList, but with one major difference:
+   -Vector is synchronized (i.e., thread-safe).
+   -Vector is slower than ArrayList. 
+   -Vector is deprecated and is replaced by ArrayList.
+   -mainly used for Multi-threaded list (without external sync)
+  
