@@ -22,5 +22,13 @@ public class Set_Program1 {
 	public static void main(String[] args) {
 		
 		Set<String>s=new HashSet<String>();
+		s.add("ONE");
+		s.add("TWO");
+		s.add("THREE");
+		s.add("ONE");
+		System.out.println(s.size());//3
+		System.out.println(s);//[ONE, TWO, THREE]
+		s.remove("ONE");
+		System.out.println(s);//[ TWO, THREE]
 	}
 }

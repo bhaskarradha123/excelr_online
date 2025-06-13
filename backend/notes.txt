@@ -1727,6 +1727,9 @@ subList(startIndex,endIndex):used to get the sub list of the list
 
 Set interface:
 --------------
+   -Set is a child interface of Collection interface present in java.util package since java 1.2
+   -Set is a collection of unique elements(won't allow duplicates)
+   -Set is a collection of unordered elements
    -No extra methods beyond what is inherited from Collection.
 
 Feature                   	List                         	Set
