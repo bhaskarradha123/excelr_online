@@ -1658,9 +1658,17 @@ toString():used to get the string representation of collection
 
 List interface:
 ---------------
+       -it is a child of collection interface , present in java.util package since java 1.2
+       -it is a collection of ordered elements(index based)
+       -it allows duplicates
+
+    
+
 add(index,e): used to add an element at a particular index position
+            :if index is out of range then it will throw IndexOutOfBoundsException
 
 addAll(index,collection):used to add multiple elements at a particular index position
+                        :if index is out of range then it will throw IndexOutOfBoundsException
 
 addFirst(e):used to add an element at the beginning of the list
 
@@ -1706,7 +1714,7 @@ retainAll(collection):used to retain all the elements of the list
 
 reverse():used to reverse the list
          
-set(index,e):used to set the element at a particular index position 
+set(index,e):used to set/update/replace the element at a particular index position 
             :returns E , element at a particular index position
             :if index is out of range then it will throw IndexOutOfBoundsException
 
