@@ -19,6 +19,7 @@ public class Queue_Program1 {
 	 *
 	 */
 	public static void main(String[] args) {
+//		FIFO-FirstInFirstOut
 	Queue<String>q=new 	PriorityQueue<String>();
 //	q.add("Green");
 //	q.add("Blue");
@@ -29,19 +30,19 @@ public class Queue_Program1 {
 	System.out.println(q);
 	
 	
-//	String peek = q.peek();//gives the element
+//	String peek = q.peek();//gives the first element   
 //	System.out.println(peek);
 //	System.out.println(q);
 //	
-//	String poll = q.poll();//removes and gives the element
+//	String poll = q.poll();//removes and gives the first element
 //	System.out.println(poll);
 //	System.out.println(q);
 	
-	String remove=q.remove();
+	String remove=q.remove();//removes and gives the first element
 	System.out.println(remove+"removed ");
 	System.out.println(q);
 
-	String element=q.element();
+	String element=q.element();//gives the first element
 	System.out.println(element+"element");
 	System.out.println(q);
 

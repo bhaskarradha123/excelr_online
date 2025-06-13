@@ -1743,6 +1743,9 @@ Implementations	ArrayList, LinkedList	        HashSet, LinkedHashSet, TreeSet
 
 Queue interface:
 ---------------
+     - Queue is a child interface of Collection interface present in java.util package since java 1.2
+     - Queue is a collection of ordered elements(first in first out)
+
 offer(e):used to add an element to the queue
          :returns boolean , if element is added returns true,
          if element is not added returns false
@@ -1771,6 +1774,8 @@ Maintains Order	           Yes (index)	     Depends               Yes (FIFO)
 Indexed Access	           Yes	               No	                  No
 Special Methods	       get, set etc.	      None extra	  offer, poll, peek etc.
 Main Usage	           Random access	    Unique elements	    FIFO processing
+
+
 
 
 ---------------------------------------------------------------------------------------------
