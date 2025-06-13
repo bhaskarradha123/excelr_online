@@ -1579,7 +1579,7 @@ methods of collection interface:
 --------------------------------
 size()  :used to get the size of collection
         :returns int , size of collection
-        :if collection is empty returns []
+        :if collection is empty returns [] /0 
 
 add(element)  :used to add an element to collection
               :returns boolean , if element is added returns true,
