@@ -1757,11 +1757,11 @@ peek():used to get the first element of the queue
 
 element():used to get the first element of the queue
           :returns E , first element of the queue
-          :if queue is empty returns null
+          :if queue is empty returns NoSuchElementException
 
 remove():used to remove an element from the queue
          :returns E , element from the queue
-         :if queue is empty returns null
+         :if queue is empty returns NoSuchElementException
 
 
 Feature                 	List              	Set                	Queue
