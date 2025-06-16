@@ -1910,7 +1910,6 @@ tryAdvance():	tries to advance the iterator
               :returns true if successful, else returns false
 forEachRemaining():	performs an action for each remaining element
 
-estimateSize():	estimates the number of remaining elements
 
 Map:
 ------
