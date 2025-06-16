@@ -121,5 +121,14 @@ Number - 143
                l-2
                o-1
 
-      
-                
+       48.Finding the frequency of elements in an array
+       49.Find the frequency of each word in a string
+              ex: "hello world hello"
+                hello-2
+                world-1
+      50.Sorting elements of an array by frequency
+      ex:{10,20,10,30,30,10}
+          10-3
+          20-1
+          30-2
+        sorted array: {10,10,10,30,30,20}
