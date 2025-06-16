@@ -1894,6 +1894,24 @@ add(E e)	:Adds an element
 set(E e)  :Updates the last returned element
 
 
+SpiltIterator
+-------------
+    -Used only with List implementations.
+    -Can traverse in both forward and backward directions.
+    -Can add, update, and remove elements during traversal.
+    -Can split into multiple iterators.
+    -added in java 8
+
+methods:
+-------
+trySplit():	tries to split the iterator into multiple iterators
+            :returns Spliterator<T> if successful, else returns null  
+tryAdvance():	tries to advance the iterator
+              :returns true if successful, else returns false
+forEachRemaining():	performs an action for each remaining element
+
+estimateSize():	estimates the number of remaining elements
+
 Map:
 ------
    -Map is a  interface present in java.util package since java 1.2

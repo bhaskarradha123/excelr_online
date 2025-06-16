@@ -24,11 +24,11 @@ public class List_Program2 {
 //		}  ConcurrentModificationException
 		System.out.println(l);//[Orange, Yellow, Pink, Green]
 		
-		Iterator<String> itertaor = l.iterator();
-		while(itertaor.hasNext()) {
-			 String s=itertaor.next();
+		Iterator<String> itertaor = l.iterator(); //converts list to iterator
+		while(itertaor.hasNext()) {// elements present or not
+			 String s=itertaor.next(); //used to access 
 			 if(s.equals("Yellow"))
-				 itertaor.remove();
+				 itertaor.remove(); //removing element from iterator
 		}
 		
 		System.out.println(l);
