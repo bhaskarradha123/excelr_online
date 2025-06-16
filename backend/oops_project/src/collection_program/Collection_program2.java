@@ -1,6 +1,7 @@
 package collection_program;
 
 import java.util.*; // importing all classes and interfaces from java.util
+import java.util.function.IntFunction;
 
 public class Collection_program2 {
 
@@ -55,6 +56,9 @@ public class Collection_program2 {
 		
 		String s = c1.toString();// converts collection into string
 		System.out.println(s);
+		
+		Object[] arr = c1.toArray();
+		System.out.println(Arrays.toString(arr)+"converts to array type");
 
 		
 		

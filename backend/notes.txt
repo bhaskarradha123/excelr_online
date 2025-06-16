@@ -1654,6 +1654,14 @@ toString():used to get the string representation of collection
             :returns String , string representation of collection
             :if collection is empty returns ""
 
+---------------------------------------------------------------------
+removeAll()                             retainAll()
+------------------------------------------------------------
+removes all the elements from         removes all the elements 
+collection (matching elements)        except the elements (matching elements)
+
+
+
 
 
 List interface:
@@ -1712,7 +1720,8 @@ retainAll(collection):used to retain all the elements of the list
                      :returns boolean , if elements are retained returns true,
                      if elements are not retained returns false
 
-reverse():used to reverse the list
+reversed():used to reverse the list
+          :returns reversed List
          
 set(index,e):used to set/update/replace the element at a particular index position 
             :returns E , element at a particular index position
@@ -1744,7 +1753,7 @@ Implementations	ArrayList, LinkedList	        HashSet, LinkedHashSet, TreeSet
 Queue interface:
 ---------------
      - Queue is a child interface of Collection interface present in java.util package since java 1.2
-     - Queue is a collection of ordered elements(first in first out)
+     - Queue is a collection of ordered elements(first in first out - FIFO)
 
 offer(e):used to add an element to the queue
          :returns boolean , if element is added returns true,
@@ -1776,13 +1785,60 @@ Special Methods	       get, set etc.	      None extra	  offer, poll, peek etc.
 Main Usage	           Random access	    Unique elements	    FIFO processing
 
 
+ArrayList: 
+---------
+   -ArrayList is a implementation class that implements the List interface.
+   -ArrayList is a dynamic array that can grow and shrink as needed.
+   -ArrayList is not thread-safe.
+   -ArrayList is slower than LinkedList.
+   -mainly used for read-write operations
+   -initial capacity is 10
+methods of ArrayList:
+---------------------
+ensureCapacity(int minCapacity):used to ensure that the capacity of the ArrayList is at least minCapacity
+                               :if minCapacity is less than current capacity then it will not change the capacity
+                               :if minCapacity is greater than current capacity then it will change the capacity
+                               :returns boolean , if capacity is changed returns true,
+                               if capacity is not changed returns false
 
+capacity():used to get the capacity of the ArrayList
+          :returns int , capacity of the ArrayList
+
+trimToSize():used to trim the size of the ArrayList to the current size
+            :returns void , it will trim the size of the ArrayList to the current size
+
+clone():used to clone the ArrayList
+       :returns Object , clone of the ArrayList
+
+LinkedList:
+-----------
+   -LinkedList is a implementation class that implements the List interface.
+   -LinkedList is a doubly linked list that can grow and shrink as needed.
+   -LinkedList is thread-safe.
+   -LinkedList is faster than ArrayList.
+   -mainly used for read-write operations
+   -initial capacity is 0
+
+methods of LinkedList:
+---------------------
+removeFirst()	:	Removes first element
+removeLast()	:	Removes last element
+offerFirst(E e)	:	Offers to the front
+offerLast(E e)	:	Offers to the end
+pollFirst()	:	Retrieves and removes first
+pollLast()	:	Retrieves and removes last
+peekFirst()	:	Peeks first element
+peekLast()	:	Peeks last element
+push(E e)	:	Pushes onto stack (head)
+pop()	:	Pops from stack (head)
+descendingIterator()	:	Returns reverse iterator
 
 ---------------------------------------------------------------------------------------------
 Feature                     	ArrayList                              	LinkedList
 -------------------------------------------------------------------------------------------
+default capacity                10                              doesn't have
 Structure	                   Dynamic Array                     	Doubly Linked List
-thread safe                  not thread safe                       not thread safe
+thread safe                  not thread safe                    not thread safe
 Access Speed             	    Fast (O(1))	                      Slow (O(n))
 Insert/Delete at Start	      Slow (O(n))                       Fast (O(1))
 Insert/Delete in Middle	      Slow (O(n))	                      Moderate (O(n))
@@ -1801,4 +1857,68 @@ Vector:
    -Vector is slower than ArrayList. 
    -Vector is deprecated and is replaced by ArrayList.
    -mainly used for Multi-threaded list (without external sync)
-  
+
+
+ Iterator
+----------
+    -Used to traverse elements in forward direction only.
+    -Works on any Collection (e.g., List, Set, Queue).
+    -Allows safe removal of elements during iteration.
+Method	
+-------
+hasNext()	:Returns true if there are more elements
+          :Returns false if there are no more elements 
+next()	:Returns the next element
+        :Throws NoSuchElementException if there are no more elements
+remove()	:Removes the current element (optional)
+          :Throws UnsupportedOperationException if remove() is not supported
+
+ ListIterator
+ ------------
+    -Used only with List implementations.
+    -Can traverse in both forward and backward directions.
+    -Can add, update, and remove elements during traversal.
+
+Method
+-------
+hasPrevious():	Checks for element in reverse
+             :Returns true if there are more elements
+             :Returns false if there are no more elements
+previous()	:Gets the previous element
+            :Throws NoSuchElementException if there are no more elements
+nextIndex()	:Returns the index of the next element
+            :Throws UnsupportedOperationException if nextIndex() is not supported
+previousIndex()	:Returns the index of the previous element
+                :Throws UnsupportedOperationException if previousIndex() is not supported
+add(E e)	:Adds an element
+set(E e)  :Updates the last returned element
+
+
+Map:
+------
+   -Map is a  interface present in java.util package since java 1.2
+   -Map is a collection of key-value pairs
+   -Map is a collection of unique keys
+   -Map is a collection of ordered elements(key based)
+   -Map allows duplicates
+   -Map allows null keys
+   -Map allows null values
+
+methods:
+-------
+put(K key, V value):	Adds or updates a key-value pair                                
+get(Object key)	:Returns the value for the given key
+remove(Object key):	Removes the entry for the key
+containsKey(Object key)	:Checks if the key exists
+containsValue(Object value):	Checks if the value exists
+size()	:Returns number of entries
+isEmpty():	Checks if the map is empty
+clear():	Removes all entries
+keySet():	Returns a set of keys
+values():	Returns a collection of values
+entrySet():	Returns a set of key-value pairs
+putIfAbsent(K key, V value):	Puts value if key not already mapped
+replace(K key, V value)	:Replaces value for given key
+replace(K key, V oldValue, V newValue)	:Replaces value if key is mapped to oldValue
+getOrDefault(Object key, V defaultValue):	Returns value or default if key not found
+

@@ -57,8 +57,8 @@ public class List_Program1 {
 		
 		
 //		l.remove(indexposition);
-//		l.removeFirst();
-//		l.removeLast();
+		l.removeFirst();
+		l.removeLast();
 		
 		
 		System.out.println(l.get(0));
