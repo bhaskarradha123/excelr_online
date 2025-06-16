@@ -23,9 +23,9 @@ public class FrequnecySorting {
          }
          
          
-		System.out.println(map);
+		System.out.println(map);  //{20=1, 10=3, 30=2}
 		System.out.println(list);//[10, 20, 10, 30, 30, 10]
-		
+//		 custom comparison by using lambda expression
 		Collections.sort(list, (a,b)->{
 			 int freqA=map.get(a);
 			 int freqB=map.get(b);
