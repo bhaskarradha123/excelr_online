@@ -114,15 +114,12 @@ Number - 143
         45.Find second largest number in an array
         46.Find second smallest number in an array
 
-
-
-
-   
-    
- 
-
-
-
+       47. find the frequency of each character in a string
+           ex: "hello"
+               h-1
+               e-1
+               l-2
+               o-1
 
       
                 

@@ -1917,7 +1917,7 @@ Map:
    -Map is a collection of key-value pairs
    -Map is a collection of unique keys
    -Map is a collection of ordered elements(key based)
-   -Map allows duplicates
+   -Map allows duplicates(values)
    -Map allows null keys
    -Map allows null values
 
