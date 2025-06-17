@@ -1953,4 +1953,24 @@ thread safe       no                no                 yes                 no
 
 performance       fast             slow             slow                slightly slower
 
-internal ds       hashtable      red-black tree      hashtable        doubly linked list
+internal ds       hashTable      red-black tree      hashTable        doubly linked list
+--------------------------------------------------------------------------------------------
+
+Generic and Non Generic collections:
+------------------------------------
+
+Generic Collection :
+++++++++++++++++++
+      -it specifies the type of data/objects to be stored in the collection
+      -it is enclosed in < > brackets
+      -compile time checking
+      -no need of type casting
+      -code is more readable and understandable 
+
+Non Generic Collection :
+++++++++++++++++++++++
+      -it doesn't specify the type of data/objects to be stored in the collection
+      -it is not enclosed in < > brackets
+      -run time checking
+      -need of type casting    
+      -Maintains less code readability and maintainability
