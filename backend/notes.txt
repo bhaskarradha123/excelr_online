@@ -1741,6 +1741,24 @@ Set interface:
    -Set is a collection of unordered elements
    -No extra methods beyond what is inherited from Collection.
 
+------------------------------------------------------------------------------------
+                    HashSet              LinkedHashSet             TreeSet
+-----------------------------------------------------------------------------------
+order                no                  insertion order         sorting order
+
+null values          yes                   yes                       no
+
+duplicates           no                    no                        no
+
+indexed access       no                    no                        no
+
+performance          faster               slower                    slower
+
+thread-safe          no                    no                        no
+------------------------------------------------------------------------------------
+
+
+
 Feature                   	List                         	Set
 ------------------------------------------------------------------------------------
 Order	          Maintains insertion order	    May or may not (depends on implementation)
