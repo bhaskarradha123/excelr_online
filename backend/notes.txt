@@ -1939,3 +1939,18 @@ replace(K key, V value)	:Replaces value for given key
 replace(K key, V oldValue, V newValue)	:Replaces value if key is mapped to oldValue
 getOrDefault(Object key, V defaultValue):	Returns value or default if key not found
 
+------------------------------------------------------------------------------------
+
+                  HashMap          TreeMap          HashTable           LinkedHashMap
+-----------------------------------------------------------------------------------
+ordering          no order        key based         no order            insertion order
+
+null key          allow           not allow         not allow           allow  
+
+null values      allow             allow           not allow           allow
+
+thread safe       no                no                 yes                 no
+
+performance       fast             slow             slow                slightly slower
+
+internal ds       hashtable      red-black tree      hashtable        doubly linked list
