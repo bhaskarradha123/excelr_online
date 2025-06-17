@@ -1794,6 +1794,25 @@ remove():used to remove an element from the queue
          :if queue is empty returns NoSuchElementException
 
 
+-------------------------------------------------------------------------------
+                    PriorityQueue            LinkedList                   ArrayDeque
+--------------------------------------------------------------------------------
+parent interface         Queue              List,Deque,Queue             Deque,Queue
+
+random access             no                   yes (index)                  no
+
+ordering           priority order           insertion order            insertion order
+                   (natural order)             (fifo)              
+
+null values               no                   yes                         no
+
+useCase            priority matters         both list and queue        both stack and queue
+-----------------------------------------------------------------------------------------
+
+
+
+
+
 Feature                 	List              	Set                	Queue
 ------------------------------------------------------------------------------------------
 Duplicates Allowed	       Yes                 No                  Yes

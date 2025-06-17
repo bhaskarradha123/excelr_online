@@ -132,3 +132,6 @@ Number - 143
           20-1
           30-2
         sorted array: {10,10,10,30,30,20}
+    
+        51.Find the longest palindrome in a array
+        52.Find the smallest palindrome in a array
