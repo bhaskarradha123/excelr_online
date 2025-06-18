@@ -2086,3 +2086,6 @@ Functional interface vs lambda expression:
   - once we create a functional interface then we can create a lambda expression
     for that abstract method
   -we can use functional interface to refer a lambda expression
+
+Note :the local variables mentioned in lambda expression are implicitly final, so that 
+      variable  cannot be modified.

@@ -140,3 +140,9 @@ Number - 143
         54.find the smallest palindrome in a array of numbers
 
           {121,34,5676,11,99 ,7};
+        
+      55.Sort first half of an array in ascending order and second half in descending order
+        ex:{10,32,12,34,56,87,45,67,89,90}
+            first half: {10,32,12,34,56}
+            second half: {87,45,67,89,90}
+            sorted array: {10,12,32,34,56,90,89,87,67,45}
