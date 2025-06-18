@@ -1802,7 +1802,7 @@ parent interface         Queue              List,Deque,Queue             Deque,Q
 random access             no                   yes (index)                  no
 
 ordering           priority order           insertion order            insertion order
-                   (natural order)             (fifo)              
+                                              (fifo)              
 
 null values               no                   yes                         no
 
@@ -2011,3 +2011,75 @@ Non Generic Collection :
       -run time checking
       -need of type casting    
       -Maintains less code readability and maintainability
+
+---------------------------------------------------------------------------
+java 8 features:
+----------------
+      after 1.5 version , java 8 version is the next major version
+1.lambda expression
+2.functional interface
+3.default method
+4.stream api
+5.optional class
+6.date and time api
+7.Double colon operator(::) etc..
+
+
+lambda expression:
+===================
+    - lambda expression is a small anonymous(without name) function
+    - it doesn't have method name, return type , modifiers
+    -lambda expression is also called as anonymous function or closures
+
+ex1:  public void m1(){
+      System.out.println("hello");
+      }
+
+      lambda expression: ()->{System.out.println("hello");}
+                         ()->System.out.println("hello");
+  
+Note : curly brackets are required when we are having more than one statement in lambda expression
+
+
+ex2: public void m2(int a,int b){
+      System.out.println(a+b);   
+     }
+
+     lambda expression: (int a,int b)->System.out.println(a+b);
+                      : (int a, int b)->{System.out.println(a+b);}
+                      : (a,b)->System.out.println(a+b);
+
+Note:if the type of parameters are same then we can skip the type of parameters
+     if the type of parameters can be decided by compiler then we can skip the type of parameters
+
+ex: public return type m3(int a,int b){
+    return a+b;
+   }
+
+   lambda expression: (int a,int b)-> return a+b;
+                    : (a,b)->return a+b;
+                    : (a,b)->a+b;
+    
+
+Functional interface:
+---------------------
+    -it is an interface which contains only one abstract method
+    -it also called as single abstract method interface(SAMI)
+    -then the single abstract method is called as functional interface method or
+     single abstract method (SAM) 
+    -in java 8 they introduced @FunctionalInterface annotation
+
+Note: Functional interface allows only one abstract method but
+      multiple default and static methods are allowed
+
+   ex:
+     Runnable interface=> void run();
+     Comparator interface=> int compare(T t1,T t2);
+     ActionListener interface=> void actionPerformed(ActionEvent e);
+     Predicate interface=> boolean test(T t);
+     Callable interface=> T call();
+     
+
+
+Functional interface vs lambda expression:
+------------------------------------------
