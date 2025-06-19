@@ -2169,3 +2169,13 @@ Stream Api:
       sum() - sum the elements of a collection
       average() - find the average of the elements of a collection
       reduce() - reduce the elements of a collection to a single value
+
+
+Stream Characteristics:
+-----------------------
+      1.lazy evaluation - intermediate operations are not executed until 
+                          terminal operation is called
+      2.pipeline     -multiple intermediate operations can be chained together
+      3.parallel processing - multiple streams can be processed in parallel
+      4.immutable - once a stream is created it cannot be modified original data
+      5.eager evaluation - intermediate operations are executed immediately
