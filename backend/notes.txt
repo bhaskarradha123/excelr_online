@@ -2182,3 +2182,19 @@ Stream Characteristics:
       3.parallel processing - multiple streams can be processed in parallel
       4.immutable - once a stream is created it cannot be modified original data
       5.eager evaluation - intermediate operations are executed immediately
+
+------------------------------------------------------------------------------
+                Predicate                                Function
+-----------------------------------------------------------------------------
+interface     functional interface                     functional interface   
+
+method        boolean test(T t)                            R  apply(T t)
+
+return type   boolean                                      R(any type) 
+
+purpose       to filter elements of a             to map elements of a collection to another
+            collection based on a condition        collection/ transforms each element
+
+used in      filter(), anyMatch(), allMatch()        map(), sorted(), distinct(), limit(), skip(), collect()
+------------------------------------------------------------------------------------
+                                          
