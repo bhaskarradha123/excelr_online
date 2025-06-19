@@ -2038,7 +2038,8 @@ ex1:  public void m1(){
       lambda expression: ()->{System.out.println("hello");}
                          ()->System.out.println("hello");
   
-Note : curly brackets are required when we are having more than one statement in lambda expression
+Note : curly brackets are required when we are having more than
+       one statement in lambda expression
 
 
 ex2: public void m2(int a,int b){
@@ -2049,8 +2050,10 @@ ex2: public void m2(int a,int b){
                       : (int a, int b)->{System.out.println(a+b);}
                       : (a,b)->System.out.println(a+b);
 
-Note:if the type of parameters are same then we can skip the type of parameters
-     if the type of parameters can be decided by compiler then we can skip the type of parameters
+Note:if the type of parameters are same then we can skip the type of
+    parameters ,if the type of parameters can be decided by compiler
+    then we can skip the type of parameters
+
 
 ex: public return type m3(int a,int b){
     return a+b;
@@ -2089,3 +2092,17 @@ Functional interface vs lambda expression:
 
 Note :the local variables mentioned in lambda expression are implicitly final, so that 
       variable  cannot be modified.
+
+
+
+default method:
+---------------
+     - it is a new feature introduced in java 8
+     - default methods are used in interfaces to provide default implementation of methods
+     - if we have a default method then we can break all implementation in child class
+
+syntax:
+
+        default void m1(){
+          System.out.println("hello");
+        }
