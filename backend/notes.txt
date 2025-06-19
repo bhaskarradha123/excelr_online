@@ -2106,3 +2106,12 @@ syntax:
         default void m1(){
           System.out.println("hello");
         }
+
+Note: we can override default method in child class 
+
+
+Q.what will happen if we have same default methods in both parents
+  of child class(multiple inheritance)?
+  
+ans: It causes ambiguity problem , it gets confuse to which method to call
+     can overcome by overriding default method in child class
