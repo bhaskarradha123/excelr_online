@@ -28,7 +28,7 @@ public class Program1 {
 			list.add(i);
 		System.out.println(list);
 		
-		List<Integer> out = list.stream() // list converting into stream
+		List<Integer> out =  list.stream() // list converting into stream
 				            .filter((a) -> a % 2 == 0) //filtering
 				            .map((a) -> a * a)//processing /mapping
 				            .collect(Collectors.toList());//collecting into list
