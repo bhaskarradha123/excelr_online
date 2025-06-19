@@ -2112,6 +2112,60 @@ Note: we can override default method in child class
 
 Q.what will happen if we have same default methods in both parents
   of child class(multiple inheritance)?
-  
+
 ans: It causes ambiguity problem , it gets confuse to which method to call
      can overcome by overriding default method in child class
+
+
+inner anonymous class:
+----------------------
+   - a class without name is called inner anonymous class
+   - it is also called as local class
+   - the class will declare inside a block or method (inner class)
+
+syntax:
+
+   MyInterface mi=new MyInterface(){
+
+   }
+
+Note: for interfaces/abstract classes if we are not ready to create a child class
+      then we can use inner anonymous class to create object of 
+      
+
+Stream Api:
+-----------
+     - it is a new feature introduced in java 8
+     - it is used to perform operations on collections(arrays,lists,sets)
+     - it is used to process data/collections in parallel
+     - it is not a ds , it is used to process data/collections(filtering ,
+       sorting , mapping ,reducing ,collecting etc.)
+    - mainly it process the data in two ways
+         1.intermediate operation
+         2.terminal operation
+
+1.Intermediate operation:
++++++++++++++++++++++++
+      filter() - filter elements of a collection based on a condition
+      map()   -  map elements of a collection to another collection/ transforms each element
+      sorted() - sort elements of a collection
+      distinct()- remove duplicate elements of a collection
+      limit(n)  - limit the number of elements of a collection
+      skip(N)   - skip the first n elements of a collection
+      peek()   - peek at the first element of a collection without removing it
+
+2.Terminal operation:
+++++++++++++++++++++
+      collect() - collect elements of a collection into another collection
+      forEach() - iterate over elements of a collection and perform an action on each element
+      findFirst() - find the first element of a collection that matches a condition
+      findAny() - find any element of a collection that matches a condition
+      count() - count the number of elements of a collection that match a condition
+      anyMatch() - check if any element of a collection matches a condition
+      allMatch() - check if all elements of a collection match a condition
+      noneMatch() - check if none of the elements of a collection match a condition
+      min() - find the minimum element of a collection
+      max() - find the maximum element of a collection
+      sum() - sum the elements of a collection
+      average() - find the average of the elements of a collection
+      reduce() - reduce the elements of a collection to a single value

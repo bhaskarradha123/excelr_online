@@ -11,7 +11,7 @@ interface Mother{
 	}
 }
 class Child implements Father ,Mother{
-	@Override
+	@Override 
 	public void m1() {
 		Father.super.m1();
 		Mother.super.m1();
