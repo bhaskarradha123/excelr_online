@@ -2183,18 +2183,24 @@ Stream Characteristics:
       4.immutable - once a stream is created it cannot be modified original data
       5.eager evaluation - intermediate operations are executed immediately
 
-------------------------------------------------------------------------------
-                Predicate                                Function
------------------------------------------------------------------------------
-interface     functional interface                     functional interface   
 
-method        boolean test(T t)                            R  apply(T t)
+--------------------------------------------------------------------------------------------------------------------------------
+                Predicate                                Function                                         Consumer
+------------------------------------------------------------------------------------------------------------------------------
+interface     functional interface                     functional interface                             functional interface
 
-return type   boolean                                      R(any type) 
+method        boolean test(T t)                            R  apply(T t)                                  void accept(T t)
 
-purpose       to filter elements of a             to map elements of a collection to another
+return type   boolean                                      R(any type)                                       void
+
+purpose       to filter elements of a             to map elements of a collection to another           printing,saving,logging
             collection based on a condition        collection/ transforms each element
 
-used in      filter(), anyMatch(), allMatch()        map(), sorted(), distinct(), limit(), skip(), collect()
-------------------------------------------------------------------------------------
+used in      filter(), anyMatch(), allMatch()        map(), sorted(), distinct(), limit(),             forEach(), andThen()
+                                                         skip(), collect() etc
+-----------------------------------------------------------------------------------------------------------------------------------
                                           
+
+Note: Stream Api processing methods dealing with functional interface 
+      so we need use lambda expression to create object of functional interface
+      and pass it to stream api processing methods
