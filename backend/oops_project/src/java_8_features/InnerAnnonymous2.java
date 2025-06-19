@@ -13,7 +13,7 @@ public class InnerAnnonymous2 {
 
 	public static void main(String[] args) {
 //		Runnable r=new MyThread();
-		
+//	  creating object for Runnable by using anonymous inner class	
 		Runnable r=new Runnable() {	
 			@Override
 			public void run() {
