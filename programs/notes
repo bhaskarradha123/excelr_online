@@ -146,3 +146,5 @@ Number - 143
             first half: {10,32,12,34,56}
             second half: {87,45,67,89,90}
             sorted array: {10,12,32,34,56,90,89,87,67,45}
+      
+      56.Count number of days in a month of year

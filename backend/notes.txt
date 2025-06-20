@@ -2206,7 +2206,7 @@ Note: Stream Api processing methods dealing with functional interface
 
 
 Date and Time Api:
------------------
++++++++++++++++++++
         - it is a new feature introduced in java 8
         - it is used to work with date and time
         - it is used to perform operations on date and time
@@ -2246,3 +2246,25 @@ class:
 8.DateTimeFormatter: Format date and time
            : it is used to format date and time
            : and parse date and time
+
+
+Optional Class:
+++++++++++++++++
+    - it is a new feature introduced in java 8
+    - it is used to handle null values
+    - so we can avoid null pointer exception
+
+methods :
+---------
+1.isPresent() - check if value is present
+2.get() - get value
+3.orElse() - get default value if value is not present
+4.isEmpty() - check if value is empty
+5.orElseThrow() - throw exception if value is not present
+6.ifPresent() - perform action if value is present
+7.ifPresentOrElse() - perform action if value is present or else perform 
+                      another action
+8.filter() - filter value if condition is true
+9.map() - map value if condition is true
+10.orElseGet() - get default value if value is not present  
+
