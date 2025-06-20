@@ -2268,3 +2268,11 @@ methods :
 9.map() - map value if condition is true
 10.orElseGet() - get default value if value is not present  
 
+
+(::)dot operator:
+----------------
+    - it is a new feature introduced in java 8
+    - it is used to deal with lambda expression
+    - it also called as method reference operator
+    - it is a shorthand syntax to call methods/ constructors in lambda expression
+    
