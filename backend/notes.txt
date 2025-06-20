@@ -2098,11 +2098,11 @@ Note :the local variables mentioned in lambda expression are implicitly final, s
 default method:
 ---------------
      - it is a new feature introduced in java 8
-     - default methods are used in interfaces to provide default implementation of methods
-     - if we have a default method then we can break all implementation in child class
-
+     - default methods are used in interfaces to provide
+       default implementation of methods
+     - if we have a default method then we can 
+       break the implementation in child class
 syntax:
-
         default void m1(){
           System.out.println("hello");
         }
@@ -2122,15 +2122,13 @@ inner anonymous class:
    - a class without name is called inner anonymous class
    - it is also called as local class
    - the class will declare inside a block or method (inner class)
-
 syntax:
-
    MyInterface mi=new MyInterface(){
 
    }
 
-Note: for interfaces/abstract classes if we are not ready to create a child class
-      then we can use inner anonymous class to create object of 
+Note: for interfaces/abstract classes if we are not ready to create
+  a child class then we can use inner anonymous class to create object  
       
 
 Stream Api:
@@ -2204,3 +2202,29 @@ used in      filter(), anyMatch(), allMatch()        map(), sorted(), distinct()
 Note: Stream Api processing methods dealing with functional interface 
       so we need use lambda expression to create object of functional interface
       and pass it to stream api processing methods
+
+
+
+Date and Time Api:
+-----------------
+        - it is a new feature introduced in java 8
+        - it is used to work with date and time
+        - it is used to perform operations on date and time
+        - it indicates in java.time package
+
+class:
+------
+1.LocalDate: Date without time
+           : it is immutable object
+           : it is used to represent date without time
+           : it is used to store date in yyyy-MM-dd format
+
+2.LocalTime: Time without date
+           : it is immutable object
+           : it is used to represent time without date
+           : it is used to store time in HH:mm:ss format
+
+3.LocalDateTime: Date and Time
+           : it is immutable object
+           : it is used to represent date and time
+           : it is used to store date and time in yyyy-MM-dd HH:mm:ss format

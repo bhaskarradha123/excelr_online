@@ -12,7 +12,7 @@ public class Program4 {
 		(Arrays.asList(20,12,34,25,56,78,89,34,25,20));
 		System.out.println(list);
 		
-		list.stream()
+		 list.stream()
 		.distinct()
 		.sorted()
 		.forEach((a)->System.out.print(a+","));
