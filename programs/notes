@@ -148,3 +148,23 @@ Number - 143
             sorted array: {10,12,32,34,56,90,89,87,67,45}
       
       56.Count number of days in a month of year
+
+      57.find factorial of a number using recursion
+         5! = 5 * 4 * 3 * 2 * 1 = 120
+
+         recursion: calling a function inside itself
+              public void m1(){
+                m1(); // calling itself
+              }
+// it causes stack overflow error
+             public void m1(int a){
+                if(a==0){
+                    return ; // base condition
+                }
+                System.out.println(a);
+                m1(a-1); // calling itself with a decremented value
+              }
+          
+      58.Find the sum of digits of a number using recursion
+      59.Find the product of digits of a number using recursion
+      61.find n th Fibonacci number using recursion
