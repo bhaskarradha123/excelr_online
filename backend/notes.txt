@@ -2211,20 +2211,38 @@ Date and Time Api:
         - it is used to work with date and time
         - it is used to perform operations on date and time
         - it indicates in java.time package
+        - all classes are immutable and thread safe
 
 class:
 ------
 1.LocalDate: Date without time
-           : it is immutable object
            : it is used to represent date without time
            : it is used to store date in yyyy-MM-dd format
 
 2.LocalTime: Time without date
-           : it is immutable object
            : it is used to represent time without date
            : it is used to store time in HH:mm:ss format
 
 3.LocalDateTime: Date and Time
-           : it is immutable object
            : it is used to represent date and time
            : it is used to store date and time in yyyy-MM-dd HH:mm:ss format
+
+4.ZoneDateTime: Date and Time with time zone
+           : it is used to represent date and time with time zone
+           : it is used to store date and time with time zone in yyyy-MM-dd HH:mm:ss Z format
+
+5.Period: Difference between two dates
+           : it is used to represent difference between two dates
+           : it is used to store difference between two dates in yyyy-MM-dd format
+
+6.Duration: Difference between two times
+           : it is used to represent difference between two times
+           : it is used to store difference between two times in HH:mm:ss format
+
+7.Instant: Date and Time with time zone
+           : it is used to represent date and time with time zone
+           : it is used to store date and time with time zone in yyyy-MM-dd HH:mm:ss Z format
+
+8.DateTimeFormatter: Format date and time
+           : it is used to format date and time
+           : and parse date and time
