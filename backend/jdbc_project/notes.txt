@@ -14,7 +14,20 @@ Steps:
 		       2.build path--->configure build path
 		       3.in libraries-->add jar-->select and apply and close.
 		 
-		2.Establish the connection
-		3.creation of Statement
+		2.Establish the connection: connecting java application with respective database
+		     url:  jdbc:mysql: //  localhost:  3306     / db_Name/Schema_Name
+		            protocol       Domain_Name  portNumber
+		
+		3.creation of Statement: creating statement objects
+		         Statement -i  --static query/commands
+		             |
+		             | 
+		         PreparedStatement-i -static and dynamic queries/commands
+		             |
+		             |
+		         CallableStatement-i -static and dynamic queries/command along with it helps to
+		                              execute stored procedures and functions
+		
+		  
 		4.Execution of Statement
 		5.close 

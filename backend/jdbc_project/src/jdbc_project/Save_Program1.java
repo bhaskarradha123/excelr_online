@@ -2,6 +2,7 @@ package jdbc_project;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -21,7 +22,7 @@ public class Save_Program1 {
 			  Statement s= con.createStatement();
 //	    execution of statement
 			   s.execute
-		("insert into table_1 values(1,'Alice','a@gmail.com',7765654423,'Banglore') ");
+		("insert into table_1 values(4,'Alice','a@gmail.com',8795694423,'Banglore') ");
 //	    close
 			  s.close();
 			  con.close();
