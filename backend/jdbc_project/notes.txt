@@ -1,0 +1,11 @@
+JDBC: java data base connectivity
+    : it is a library(java.sql package)
+    : used to connect java application to db and vice versa
+    
+Steps:
+------
+		1.load and register  
+		2.Establish the connection
+		3.creation of Statement
+		4.Execution of Statement
+		5.close 
