@@ -1,10 +1,14 @@
 JDBC: java data base connectivity
+    : it acts like a mediator /translator
     : it is a library(java.sql package)
     : used to connect java application to db and vice versa
     
 Steps:
 ------
-		1.load and register  
+		1.load and register 
+		  (driver)download link: https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.29
+		
+		 
 		2.Establish the connection
 		3.creation of Statement
 		4.Execution of Statement
