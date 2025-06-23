@@ -6,8 +6,13 @@ JDBC: java data base connectivity
 Steps:
 ------
 		1.load and register 
-		  (driver)download link: https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.29
-		
+		  -(driver)download link: https://mvnrepository.com/artifact/mysql/mysql-connector-java/8.0.29
+		  -after downloading copy into your project
+		  -then set jar file into your projects
+		  -steps:
+		       1.right click on project
+		       2.build path--->configure build path
+		       3.in libraries-->add jar-->select and apply and close.
 		 
 		2.Establish the connection
 		3.creation of Statement
