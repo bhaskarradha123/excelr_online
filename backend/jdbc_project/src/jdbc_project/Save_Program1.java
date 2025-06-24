@@ -22,7 +22,7 @@ public class Save_Program1 {
 			  Statement s= con.createStatement();
 //	    execution of statement
 			   s.execute
-		("insert into table_1 values(4,'Alice','a@gmail.com',8795694423,'Banglore') ");
+		("insert into table_1 values(1,'Bob','b@gmail.com',9095696423,'Banglore') ");
 //	    close
 			  s.close();
 			  con.close();
