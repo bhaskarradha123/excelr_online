@@ -15,6 +15,12 @@ Servlet api: it is an api/library used to connect webpages with java
                                download and install/browse the installed location-->finish)
    -->next-->next--->select web.xml-->finish
    
+  - after creating project add mysql connector java jar into project by copying into it
+  - once copy mysql connector java.jar file -->right click-->buildpath-->configure buildpath-->
+   In libraries--->choose classpath-->add jar -->select jar in current project -->apply and close
+   -once added into project setup-->right click-->buildpath-->configure build path-->deployment assembly
+   -->apply-->add--->java buildpath entries-->select mysql-->next and finsh-->apply and close
+   
   
   create web pages in webApp folder
   create java classes in java folder

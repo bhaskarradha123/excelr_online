@@ -15,7 +15,7 @@ public class CrudOperation {
 		PreparedStatement ps = con.prepareStatement("insert into table_1 values(?,?,?,?,?)");
 		ps.setInt(1, id);
 		ps.setString(2, name);
-		ps.setString(2, email);
+		ps.setString(3, email);
 		ps.setLong(4, phone);
 		ps.setString(5, address);
 		return ps.executeUpdate();
