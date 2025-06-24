@@ -1,0 +1,34 @@
+Servlet api: it is an api/library used to connect webpages with java
+           : can create a servlet class by inherting properties from servlet hirearchy
+           
+   class----- Servlet-i------->Servlet Class
+             |
+   class----GenericServlet-ac--->Servlet Class
+             |
+   class----HttpServlet-ac----->Servlet Class
+   
+ 
+ creation of dynamic Project:
+ ------------------------------
+ ctr+N--->search dynamic ---->select dynamic web project--->provide project name--->
+ set targetRuntime as apache (click on new runtime-->select server as apache--apache 9--->next--->
+                               download and install/browse the installed location-->finish)
+   -->next-->next--->select web.xml-->finish
+   
+  
+  create web pages in webApp folder
+  create java classes in java folder
+  
+  
+  Deployement Descriptor: it is a servlet component used to bind a  particular request
+                          with a particular sevlet class
+                    can achieve by using web.xml file/@webServlet annotation
+                    
+             @webServlet - is a class level annotation it accepts request in the format of string , 
+                           need to specify req with /
+                     ex:@WebServlet("/req_Name")
+                     
+                     
+                     
+                     
+ 
