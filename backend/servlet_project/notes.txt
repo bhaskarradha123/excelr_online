@@ -47,11 +47,11 @@ jsp:
    -java server pages are used to create dynamic web pages 
    -extension should be .jsp and save in webApp folder
    it consist jsp tags :
-               1.scriptlet tag - used to execute java code
-               2.expression tag - used to evaluate java expression  / print data in html page
-               3.declarative tag - used to declare java variables 
-               4.comment tag- used to add comments in jsp page
-               5.directive tag- used to add directives in jsp page/ used to add external  files
+               1.scriptlet tag - used to execute java code  <% %>
+               2.expression tag - used to evaluate java expression  / print data in html page <%= %>
+               3.declarative tag - used to declare java variables <%! %>
+               4.comment tag- used to add comments in jsp page<%--   --%>
+               5.directive tag- used to add directives in jsp page/ used to add external  files<%@ %>
 
 Note: can't have one jsp tag inside another jsp tag
     : can't have html tags inside jsp tag , but can have jsp tags inside html tags

@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-        login Page  
+        login Page          
    <form action="login" method="post">
       Name: <input name="name" id="name" placeholder="enter name"><br> <br>
     Phone: <input name="phone" id="phone" placeholder="enter phone"><br> <br>
