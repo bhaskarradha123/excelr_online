@@ -34,6 +34,22 @@ Servlet api: it is an api/library used to connect webpages with java
                            need to specify req with /
                      ex:@WebServlet("/req_Name")
                      
+              web.xml - it is a xml file used to bind req with a servlet class
+                       - open web.xml in web-Inf --source
+              
+				  <servlet>
+				  <servlet-name>refName</servlet-name>
+				  <servlet-class>Fully Qualified Class Name</servlet-class>
+				  </servlet>
+				  
+				  <servlet-mapping>
+				  <servlet-name>refName</servlet-name>
+				  <url-pattern>/url</url-pattern>
+				  </servlet-mapping>
+              
+              
+       
+  Note: used web.xml or @webServlet for a req , can't use both at a time for same req              
                      
 
 Request Dispatcher: it is a servlet component used to forward a request to a particular servlet
