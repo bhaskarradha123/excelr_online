@@ -35,6 +35,40 @@ Servlet api: it is an api/library used to connect webpages with java
                      ex:@WebServlet("/req_Name")
                      
                      
-                     
+
+Request Dispatcher: it is a servlet component used to forward a request to a particular servlet
+                  : it consist forward and include method
+                  : forward method is used to forward the request to a current servlet to new resource
+                  : include method is used to include the request to a current servlet to existing resource   
+
+
+jsp:
+-----  
+   -java server pages are used to create dynamic web pages 
+   -extension should be .jsp and save in webApp folder
+   it consist jsp tags :
+               1.scriptlet tag - used to execute java code
+               2.expression tag - used to evaluate java expression  / print data in html page
+               3.declarative tag - used to declare java variables 
+               4.comment tag- used to add comments in jsp page
+               5.directive tag- used to add directives in jsp page/ used to add external  files
+
+Note: can't have one jsp tag inside another jsp tag
+    : can't have html tags inside jsp tag , but can have jsp tags inside html tags
+
+
+---------------------------------------------------------------------------------
+                                doGet                                   doPost
+------------------------------------------------------------------------------- 
+Purpose	                Fetch data	                         Submit data
+Parameters Location	    URL (query string)	                  Request body
+Security	                Less secure                       	More secure
+Data Limit	                Limited (URL length)	         Practically unlimited
+Caching	                  Yes	                                    No
+Visibility	               Visible in url       	          Hidden from url
+Usage Examples	   Search page, profile view	         Login, registration, payments  
+
+-----------------------------------------------------------------------------------------------
+Note: browser default request is get request
                      
  

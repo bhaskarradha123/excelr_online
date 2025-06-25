@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 import javax.servlet.GenericServlet;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -29,13 +30,13 @@ public class RegisterProgram  extends GenericServlet{
 	
 	CrudOperation operation=new CrudOperation();
 	try {
-		if(operation.save(id_, name, email, phone_, address)>0)
-			System.out.println("data is inserted");
-		else
-			System.out.println("data not inserted");
+		if(operation.save(id_, name, email, phone_, address)>0) {
+			RequestDispatcher dispatcher =req.getRequestDispatcher("login.jsp");
+			dispatcher.forward(req, res); //dispatch the objects into new resource
+		}	
 	} catch (SQLException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		RequestDispatcher dispatcher=req.getRequestDispatcher("register.html");
+		dispatcher.include(req, res);//dispatch the objects into existing resource
 	}
 	
 	}
