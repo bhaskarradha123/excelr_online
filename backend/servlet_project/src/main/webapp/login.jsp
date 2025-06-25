@@ -7,6 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<% String errorMsg=(String)request.getAttribute("errorMsg"); if(errorMsg!=null){%>
+
+<p style="color: red; font-size: 30px"><%=errorMsg %></p>
+
+<%} %>
+
         login Page          
    <form action="login" method="post">
       Name: <input name="name" id="name" placeholder="enter name"><br> <br>

@@ -27,6 +27,7 @@ public class LoginProgram extends HttpServlet {
 			dispatcher.forward(req, resp);
 		}
 		else {
+			req.setAttribute("errorMsg", name+" your data is incorrect pls provide correct credentials");
 			RequestDispatcher dispatcher=req.getRequestDispatcher("login.jsp");
 			dispatcher.include(req, resp);
 		}
