@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RankingArray {
-
 	public static void main(String[] args) {
 		int[] arr = { 70, 20, 10, 10, 40 };
 		System.out.println(Arrays.toString(arr));
