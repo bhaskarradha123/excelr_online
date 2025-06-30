@@ -44,7 +44,7 @@ Spring -core:
     - IOC (Inversion of Control)
     - DI (Dependency Injection)
 
-IOC:(Inversion of Control)
+IOC:(Inversion of Control)- container
 --------------------------
            : it is a design pattern in spring framework
            : it is used to manage the dependencies between objects by cresting a container
@@ -63,4 +63,11 @@ Hierarchy of IOC:
                     |                                                      |
                 ClassPathXmlApplicationContext-c   AnnotationConfigApplicationContext-c
 
-
+---------------------------------------------------------------------------------------
+            BeanFactory                              ApplicationContext
+---------------------------------------------------------------------------------------
+    root interface                                  child interface
+    create core container                         create advance container
+    bean inilization is lazy                    bean inilization is eager
+    based on xml                               based on xml and java annotations
+    rarely used in springBoot and mvc          used in springBoot and mvc
