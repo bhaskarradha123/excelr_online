@@ -5,3 +5,41 @@ a simple project-->next-->provide groupId and artifactId-->next-->finish
 
     groupID:com.excelR
     artifactId:project_Name
+
+Spring:
+-------
+  : it is a framework for java
+  : it is a free ,powerful ,lightweight and open source framework
+  : it is used to create web applications , desktop applications and mobile applications
+  : it is used to create web services
+  : it is used to create enterprise applications, microservices
+
+Spring is introduced by Rod Jhonson in 2003 by apache software foundation
+
+Why use spring:
+----------------
+   1.Reduces boilerplate code and complexity
+   2.easy to test and maintain
+   3.flexible, modular and extensible
+   4.Easy to learn and implement
+   5.supports microservices, cloud deployment and Rest APIs development
+   6.promote layer separation and separation of concerns
+
+Modules in spring:
+-----------------
+       1.Spring-core
+       2.Spring Aop
+       3.Spring web
+       4.Spring ORM
+       5.Spring mvc
+       6.Spring security
+       7.Spring boot
+       8.Spring cloud
+       9.Spring Test
+Spring -core:
+-------------
+    - it is a foundation of spring framework
+    - it provides basic building blocks for spring framework
+    - it provides fundamental features like creating a container and beans
+    - IOC (Inversion of Control)
+    - DI (Dependency Injection)
