@@ -9,9 +9,10 @@ public class MinAbosulteProgram {
 		int sum=minAbsoultDifference(arr);
 		System.out.println(sum);
 		
-//		mean 
-//		mode 
-//		medium
+//		mean :3+2+1+4  /4
+//		mode :
+//		medium: 1 2 3 4  -3
+		
 		
 	}
 	public static int minAbsoultDifference(int[]arr) {

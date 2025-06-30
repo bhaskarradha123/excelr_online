@@ -1,0 +1,7 @@
+creation of Maven Project:
+------------------------
+clr+N--->search for maven in wizard--->choose maven project--->click on create 
+a simple project-->next-->provide groupId and artifactId-->next-->finish
+
+    groupID:com.excelR
+    artifactId:project_Name
