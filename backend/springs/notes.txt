@@ -43,3 +43,24 @@ Spring -core:
     - it provides fundamental features like creating a container and beans
     - IOC (Inversion of Control)
     - DI (Dependency Injection)
+
+IOC:(Inversion of Control)
+--------------------------
+           : it is a design pattern in spring framework
+           : it is used to manage the dependencies between objects by cresting a container
+           : can create a container using BeanFactory and ApplicationContext
+
+Hierarchy of IOC:
+----------------
+                        BeanFactory-i
+                          |
+                          |
+                ----------------------------
+                |                          |
+            XmlBeanFactory-c          ApplicationContext-i
+                                            |
+                    --------------------------------------------------------------
+                    |                                                      |
+                ClassPathXmlApplicationContext-c   AnnotationConfigApplicationContext-c
+
+
