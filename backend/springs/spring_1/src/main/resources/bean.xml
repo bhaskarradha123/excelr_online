@@ -10,5 +10,9 @@
  -->
  
  <bean class="spring_1.Demo1" id="d1" ></bean>
+ <bean class="spring_1.Demo" id="d">
+ <property name="valueA" value="10"></property>
+ <property name="valueB" value="hello"></property>
+ </bean>
  
 </beans>

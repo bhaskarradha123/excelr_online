@@ -71,3 +71,19 @@ Hierarchy of IOC:
     bean inilization is lazy                    bean inilization is eager
     based on xml                               based on xml and java annotations
     rarely used in springBoot and mvc          used in springBoot and mvc
+
+
+
+Dependency Injection:
+-------------------------
+     - the process of injecting /assigning the values into an object is called dependency injection
+     - it is a design pattern in spring framework
+     - it is used to manage the dependencies between objects
+     - types:
+        help to inject values into objects
+           1.setter injection ---<property name="" value=""> --setter methods are required
+           2.constructor injection ---<constructor-arg name="" value=""> --constructor arguments are required
+        help to inject references to objects
+           3.field injection ---<property name="" ref="">
+                                <constructor-arg name="" ref=""> 
+                             --field is required in class
