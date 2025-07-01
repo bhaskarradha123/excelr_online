@@ -6,6 +6,11 @@ import java.util.stream.Collectors;
 
 public class Max_Scalar_Product {
 
+	/**
+	 * maximum scalar- both arrays need to be in ascending order
+	 * minimum scalar- one array in ascending and other in descending order
+	 * 
+	 */
 	public static void main(String[] args) {
 		int []arr1= {1,2,-4,5,2,6,8};
 		Integer []arr2= {4,5,2,9,7,5,4};
