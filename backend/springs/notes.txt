@@ -112,3 +112,16 @@ Has-a-relationship:(Association)
                ex: Car has a Engine
 2.Aggregation: one class is dependent on another class weakly
                ex: Bus has a Passengers
+
+annotations used to create objects in spring:
+--------------------------------------------
+1.@Component - used to annotate on model class/ blue prints/pojo class/encapsulated class
+2.@Repository - used to annotate on dao class (data access object layer===db logic)
+3.@Service - used to annotate on service class (business logic)
+4.@Controller - used to annotate on controller class (web logic)
+5.@RestController - used to annotate on controller class (web logic===Rest APIs)
+
+
+POJO(plain old java object):
+---------------------------
+           -it is a class that contains properties and methods , constructor only
