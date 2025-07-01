@@ -9,5 +9,8 @@ public class DemoMain {
 		ApplicationContext ac=new ClassPathXmlApplicationContext("bean.xml");
         Demo d=ac.getBean(Demo.class);
         System.out.println(d);
+        
+        Demo2 d2=ac.getBean(Demo2.class);
+        System.out.println(d2);
 	}
 }

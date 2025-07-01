@@ -9,10 +9,20 @@
 <!-- <bean class="spring_1.Demo1" id="d1" scope="prototype"></bean>
  -->
  
- <bean class="spring_1.Demo1" id="d1" ></bean>
+<!-- <bean class="spring_1.Demo1" id="d1" ></bean>
  <bean class="spring_1.Demo" id="d">
  <property name="valueA" value="10"></property>
  <property name="valueB" value="hello"></property>
+ </bean>-->
+ 
+ <bean class="spring_1.Demo" id="d">
+  <constructor-arg name="valueA" value="110"></constructor-arg>
+  <constructor-arg name="valueB" value="Welcome"></constructor-arg>
+ </bean>
+ 
+ <bean class="spring_1.Demo2" id="d2">
+  <property name="demoRef" ref="d"></property>
+  <property name="valueC" value="10.03"></property>
  </bean>
  
 </beans>
