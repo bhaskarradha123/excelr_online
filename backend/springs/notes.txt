@@ -87,3 +87,28 @@ Dependency Injection:
            3.field injection ---<property name="" ref="">
                                 <constructor-arg name="" ref=""> 
                              --field is required in class
+
+
+
+RelationsShip:
+-------------
+               one class is having relationship with other class
+               Types: 1.Is - a relationship(Inheritance) 
+                      2.has - a relationship
+Has-a-relationship:(Association)
+-------------------
+              -one class is dependent on another class
+              -one object will act like a container for another object
+              Types:1.Composition 
+                    2.Aggregation
+    ex: Car has a Engine  , Bus has a Passengers
+
+     Men --------Father
+                    |
+                    |
+                   Son
+
+1.Composition: one class is dependent on another class strongly
+               ex: Car has a Engine
+2.Aggregation: one class is dependent on another class weakly
+               ex: Bus has a Passengers

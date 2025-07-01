@@ -20,6 +20,7 @@
   <constructor-arg name="valueB" value="Welcome"></constructor-arg>
  </bean>
  
+ 
  <bean class="spring_1.Demo2" id="d2">
   <property name="demoRef" ref="d"></property>
   <property name="valueC" value="10.03"></property>
