@@ -3,6 +3,8 @@ package com.excelR.spring_2.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,9 +27,10 @@ public class EmployeeCrudController {
 
 //	http://localhost:8080/employee/save
 	@PostMapping("/save")
-	public Employee saveEmployee(@RequestBody Employee employee) {
-		return dao.saveEmployee(employee);
+	public ResponseEntity<Employee> saveEmployee(@RequestBody Employee employee) {
+		return new ResponseEntity<Employee>(dao.saveEmployee(employee),HttpStatus.CREATED);
 	}
+	
 	
 //  http://localhost:8080/employee/login
 	@PostMapping("/login")
@@ -66,26 +69,26 @@ public class EmployeeCrudController {
 	
 // http://localhost:8080/employee/fetchById?id=1001
 	@GetMapping("/fetchById")
-	public Employee fetchEmployeeById(@RequestParam int id) {
+	public ResponseEntity<Employee> fetchEmployeeById(@RequestParam int id) {
 		Employee em = dao.fetchById(id);
 		if (em != null)
-			return em;
+			return new ResponseEntity<Employee>(em,HttpStatus.FOUND);
 		else
-			return null;
-	}
-
+			return null;}
 //	http://localhost:8080/employee/fetchByEmail/radha@gmail.com
 	@GetMapping("/fetchByEmail/{email}")
-	public Employee fetchEmployeeByEmail(@PathVariable String email) {
-		return dao.fetchByEmail(email);
-	}
-
+	public ResponseEntity<Employee> fetchEmployeeByEmail(@PathVariable String email) {
+		Employee em = dao.fetchByEmail(email);
+		if (em != null)
+			return new ResponseEntity<Employee>(em,HttpStatus.FOUND);
+		else
+			return null;	}
 //	http://localhost:8080/employee/fetchAll
 	@GetMapping("/fetchAll")
-	public List<Employee> fetchAllEmployee() {
+	public ResponseEntity<List<Employee>> fetchAllEmployee() {
 		List<Employee> res = dao.fetchAllEmployee();
 		if(!res.isEmpty())
-			return res;
+			return new ResponseEntity<List<Employee>>(res,HttpStatus.FOUND);
 		else
 			return null;
 	}
