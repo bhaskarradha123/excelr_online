@@ -43,4 +43,16 @@ public class EmployeeDao {
 	public List<Employee>fetchAllEmployee(){
 		return repository.findAll();
 	}
+	
+	public Employee fetchByEmail(String email) {
+		Optional<Employee> rs = repository.findByEmail(email);
+		if (rs.isPresent()) {
+			Employee emp = rs.get();
+			return  emp;
+		}
+		else
+			return null;
+	}
+	
+	
 }

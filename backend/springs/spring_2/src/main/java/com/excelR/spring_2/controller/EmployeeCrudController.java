@@ -28,14 +28,28 @@ public class EmployeeCrudController {
 	public Employee saveEmployee(@RequestBody Employee employee) {
 		return dao.saveEmployee(employee);
 	}
-
+	
 //  http://localhost:8080/employee/login
 	@PostMapping("/login")
 	public Employee loginEmployee(@RequestBody Employee employee) {
-		System.out.println(employee.getEmail() + " " + employee.getPwd());
-		return null;
+		Employee db = dao.fetchByEmail(employee.getEmail());
+		if(db!=null) {
+			if(db.getPwd().equals(employee.getPwd())) {
+				return db;
+			}else {
+				System.out.println("pwd mismatch");
+				return null;//pwd mismatch
+			}
+		}
+		else {
+			System.out.println(" email wrong");
+			return null;//email not found}
+
+		}
 	}
 
+	
+	
 //	 http://localhost:8080/employee/update
 	@PutMapping("/update")
 	public Employee updateEmployee(@RequestBody Employee employee) {
@@ -64,8 +78,7 @@ public class EmployeeCrudController {
 //	http://localhost:8080/employee/fetchByEmail/radha@gmail.com
 	@GetMapping("/fetchByEmail/{email}")
 	public Employee fetchEmployeeByEmail(@PathVariable String email) {
-		System.out.println(email);
-		return null;
+		return dao.fetchByEmail(email);
 	}
 
 //	http://localhost:8080/employee/fetchAll
@@ -77,4 +90,6 @@ public class EmployeeCrudController {
 		else
 			return null;
 	}
+	
+	
 }
