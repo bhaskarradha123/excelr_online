@@ -1,6 +1,5 @@
 package com.excelR.spring_2.model;
 
-import org.springframework.beans.factory.annotation.Value;
 // blue prints and model class
 import org.springframework.stereotype.Component;
 
@@ -22,6 +21,17 @@ public class Employee {
 	@Column(unique = true) // it will make a column as unique
 	private long phone;
 	private String pwd;
+
+	
+	
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
