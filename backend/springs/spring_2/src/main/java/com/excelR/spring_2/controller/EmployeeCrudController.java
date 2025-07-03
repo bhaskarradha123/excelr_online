@@ -53,8 +53,7 @@ public class EmployeeCrudController {
 //	 http://localhost:8080/employee/update
 	@PutMapping("/update")
 	public Employee updateEmployee(@RequestBody Employee employee) {
-		System.out.println(employee);
-		return null;
+		return dao.updateEmployee(employee);
 	}
 
 	

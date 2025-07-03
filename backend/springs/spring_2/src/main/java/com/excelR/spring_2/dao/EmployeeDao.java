@@ -53,6 +53,25 @@ public class EmployeeDao {
 		else
 			return null;
 	}
+
+	public Employee updateEmployee(Employee user) {
+		Optional<Employee> rs = repository.findById(user.getId());
+		if (rs.isPresent()) {
+			Employee db = rs.get();
+			if(user.getEmail()==null)
+				user.setEmail(db.getEmail());
+			if(user.getName()==null)
+				user.setName(db.getName());
+			if(user.getPhone()==0)
+				user.setPhone(db.getPhone());
+			if(user.getPwd()==null)
+				user.setPwd(db.getPwd());
+			
+			return repository.save(user);
+		}
+		else
+			return null;
+	}
 	
 	
 }

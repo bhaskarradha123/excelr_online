@@ -172,5 +172,36 @@ annotations used to create Tables in database:
                - to change the column properties like name , length , datatype etc.
      5.@GeneratedValue - used to generate the primary key automatically
 
+annotation on classes based on layers:
+---------------------------------------
+
+                          db logic         business logic        web logic
+db<---->Repository<------>dao<------------->service<----------->controller<-------------->postman/webpages
+     JpaRepository       @Repository       @Service            @RestController
+
+
+annotations on method to deal with req:
+----------------------------------------
+
+@PostMapping--->post method-->save data /create data
+
+@GetMapping--->get method-->fetch data /read data
+
+@PutMapping/@PatchMapping--->put method-->update data /modify data
+
+@DeleteMapping--->delete method-->delete data
+
+
+
+annotations on variables to inject:(Dependency Injection)
+------------------------------------
+@value --->used to inject values into variables
+
+@Autowired--->used to inject references to objects
+
+
+
+
+
                 
 
