@@ -191,6 +191,8 @@ annotations on method to deal with req:
 
 @DeleteMapping--->delete method-->delete data
 
+@RequestMapping--->get/post/put/patch/delete -- for all operations used on method and class(for base url)
+
 
 
 annotations on variables to inject:(Dependency Injection)
