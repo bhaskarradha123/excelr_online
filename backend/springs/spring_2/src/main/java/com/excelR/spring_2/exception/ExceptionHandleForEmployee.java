@@ -21,4 +21,14 @@ public class ExceptionHandleForEmployee {
 		return new ResponseEntity<ResponseData<String>>(s,HttpStatus.BAD_REQUEST);
 		
 	}
+	
+	@ExceptionHandler(EmployeeNotFoundException.class)
+	public ResponseEntity<ResponseData<String>>notFound(EmployeeNotFoundException e){
+		ResponseData<String>s=new ResponseData<String>();
+		s.setStatus(HttpStatus.NOT_FOUND.value());
+		s.setMessage("you can't perform this operation");
+		s.setData(e.getMessage());
+		return new ResponseEntity<ResponseData<String>>(s,HttpStatus.NOT_FOUND);
+		
+	}
 }

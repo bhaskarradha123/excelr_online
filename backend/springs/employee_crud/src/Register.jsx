@@ -27,6 +27,7 @@ const Register = () => {
           navigate("/login");
         }, 2000); 
       }    
+
     })
     .catch((error) => {
        if(error.response && error.response.status === 400) {
@@ -35,6 +36,7 @@ const Register = () => {
     });  
   };
   
+
 
   return (
     <div className="container mt-5">

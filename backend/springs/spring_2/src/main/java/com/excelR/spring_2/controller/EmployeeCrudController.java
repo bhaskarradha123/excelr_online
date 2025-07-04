@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.excelR.spring_2.dao.EmployeeDao;
+import com.excelR.spring_2.exception.EmployeeNotFoundException;
 import com.excelR.spring_2.model.Employee;
 
 @CrossOrigin(origins = "*", methods = {RequestMethod.POST , RequestMethod.PUT,RequestMethod.DELETE, RequestMethod.GET})
@@ -37,19 +38,18 @@ public class EmployeeCrudController {
 	
 //  http://localhost:8080/employee/login
 	@PostMapping("/login")
-	public Employee loginEmployee(@RequestBody Employee employee) {
+	public ResponseEntity<Employee> loginEmployee(@RequestBody Employee employee) {
 		Employee db = dao.fetchByEmail(employee.getEmail());
 		if(db!=null) {
 			if(db.getPwd().equals(employee.getPwd())) {
-				return db;
+				return new ResponseEntity<Employee>(db,HttpStatus.FOUND);
 			}else {
-				System.out.println("pwd mismatch");
-				return null;//pwd mismatch
+			 throw new EmployeeNotFoundException("pwd is mismatch");
 			}
 		}
 		else {
-			System.out.println(" email wrong");
-			return null;//email not found}
+			 throw new EmployeeNotFoundException("email is not found");
+
 
 		}
 	}
