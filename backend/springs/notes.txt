@@ -211,6 +211,9 @@ annotations used to handle exceptions:
                  
 
 
+creating a generic class in dto to transfer data:
+-------------------------------------------------
 
+public class Response<T>(val status: int, val data: T, val message: String)
                 
 
