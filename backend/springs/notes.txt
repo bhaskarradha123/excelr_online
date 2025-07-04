@@ -202,6 +202,13 @@ annotations on variables to inject:(Dependency Injection)
 @Autowired--->used to inject references to objects
 
 
+annotations used to handle exceptions:
+========================================
+
+@RestControllerAdvice--->is a class used to handle exceptions
+
+@ExceptionHandler--->used to handle exceptions which are thrown by methods in controller class
+                 
 
 
 
