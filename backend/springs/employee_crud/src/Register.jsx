@@ -19,9 +19,22 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-   console.log("Form Data:", formData); 
-   
+   axios.post("http://localhost:8080/employee/save", formData) 
+   .then((response) => {
+      if (response.status === 201) {
+        setMessage("Registration successful!");
+        setTimeout(() => {
+          navigate("/login");
+        }, 2000); 
+      }    
+    })
+    .catch((error) => {
+       if(error.response && error.response.status === 400) {
+        setMessage("Registration failed. Please try with new data.");
+      }
+    });  
   };
+  
 
   return (
     <div className="container mt-5">
