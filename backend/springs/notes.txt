@@ -217,3 +217,10 @@ creating a generic class in dto to transfer data:
 public class Response<T>(val status: int, val data: T, val message: String)
                 
 
+annotations used to handle cors error:
+====================================
+
+@CrossOrigin--->used to handle cors error
+                should be used in controller class
+                it can handle multiple origins
+                syntax: @CrossOrigin(origins = "*" ,methods = "*" ,allowedHeaders = "*")
