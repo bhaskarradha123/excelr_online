@@ -25,7 +25,7 @@ const Home = () => {
       </button>
 
       <footer className="text-center mt-5">
-        <p>&copy; 2023 Employee Management System</p>
+        <p>&copy; 2025 Employee Management System</p>
       </footer>
     </div>
   );

@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.excelR.spring_2.dao.EmployeeDao;
 import com.excelR.spring_2.model.Employee;
 
-@CrossOrigin(origins = "*",methods = {RequestMethod.POST,RequestMethod.PUT})
 @RestController
 @RequestMapping("/employee")
 public class EmployeeCrudController {
