@@ -17,8 +17,25 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-     console.log("Form Data:", formData); 
-     
+    try {
+      const response = await axios.post("http://localhost:8080/employee/login", formData, {
+        validateStatus: (status) => status < 500
+      });
+      if (response.status === 302) {
+        setMessage("Login successful!");
+        setTimeout(() => {
+          console.log(response.data, 'login user data');
+          navigate("/dashboard" , {state: response.data});
+        }, 1500);
+      } else if (response.status === 404) {
+        setMessage(response.data.data || "Invalid credentials.");
+      } else {
+        setMessage("Unexpected response: " + response.status);
+      }
+    } catch (err) {
+      console.error("Error:", err);
+      setMessage("Network or server error. Please try again later.");
+    }
   };
 
   return (

@@ -196,3 +196,7 @@ Number - 143
            {1,2,3} and {4,5,6}
             1*4+ 2*5 + 3*6 = 32
         maximum scalar product: 32
+    69.sort an array according to order defined by another array
+        ex:{10,20,10,30,40,20,10,50} and {10,20}
+        sorted array: {10,10,10,20,20,30,40,50}
+
