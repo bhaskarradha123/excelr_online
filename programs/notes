@@ -199,4 +199,10 @@ Number - 143
     69.sort an array according to order defined by another array
         ex:{10,20,10,30,40,20,10,50} and {10,20}
         sorted array: {10,10,10,20,20,30,40,50}
+    70.Rotation of elements of an array by k times
+     {10,20,30,40,50} and k=2
+      left array  rotation :{20,30,40,50,10}
+                           :{30,40,50,10,20}
+      right array rotation :{40,50,10,20,30}
+                           :{50,10,20,30,40}
 
