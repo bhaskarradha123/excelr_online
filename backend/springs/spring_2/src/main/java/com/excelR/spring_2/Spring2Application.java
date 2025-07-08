@@ -15,14 +15,14 @@ public class Spring2Application {
 	public static void main(String[] args) {
 //		 creating an advance/J2EE container 
 		ApplicationContext ac = SpringApplication.run(Spring2Application.class, args);
-		Employee e=ac.getBean(Employee.class); //@Component
-		System.out.println(e);
-		EmployeeDao dao=ac.getBean(EmployeeDao.class); //@Repository
-		System.out.println(dao);
-		EmployeeService service=ac.getBean(EmployeeService.class);//@Service
-		System.out.println(service);
-		EmployeeController controller=ac.getBean(EmployeeController.class);//@Controller  @RestController
-		System.out.println(controller);
+//		Employee e=ac.getBean(Employee.class); //@Component
+//		System.out.println(e);
+//		EmployeeDao dao=ac.getBean(EmployeeDao.class); //@Repository
+//		System.out.println(dao);
+//		EmployeeService service=ac.getBean(EmployeeService.class);//@Service
+//		System.out.println(service);
+//		EmployeeController controller=ac.getBean(EmployeeController.class);//@Controller  @RestController
+//		System.out.println(controller);
 	}
 
 }

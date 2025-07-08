@@ -224,3 +224,124 @@ annotations used to handle cors error:
                 should be used in controller class
                 it can handle multiple origins
                 syntax: @CrossOrigin(origins = "*" ,methods = "*" ,allowedHeaders = "*")
+
+
+---------------------------------------------------------------------------------------------------------------------------
+Spring Security:
+++++++++++++++++++
+
+1. Introduction to Spring Security
+----------------------------------
+             Spring Security is a powerful framework that provides authentication,
+             authorization, and protection against common security vulnerabilities
+             like CSRF and session fixation.
+Key Features:
+• Authentication: Verifies the identity of a user (e.g., username and password).
+• Authorization: Determines access rights to resources (e.g., role-based access control).
+• Prevention: Protects against attacks like CSRF, XSS, and click jacking.
+
+2. Basic Security
+-----------------
+When Spring Security is added to a Spring Boot project, it automatically:
+      1. Secures all endpoints by default.
+      2. Requires a username and password for access.
+      3. Generates a default user and password, which is logged in the console on application startup.
+
+Steps to Enable Basic Security:
+================================
+      1. Add the Spring Security dependency in pom.xml:
+            <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            </dependency>
+      2. Run the application, and Spring Security will:
+            • Restrict access to all endpoints.
+            • Require basic HTTP authentication (username/password).
+
+      3. Configure Username & Password in application.properties
+            Instead of using the default credentials, 
+            you can configure your own username and password in application.properties:
+            Example:
+               spring.security.user.name=admin
+               spring.security.user.password=admin123
+
+               When configured, use the custom credentials (admin/admin123) to access secured endpoints.
+               If not configured, the default credentials (admin/admin) will be used.
+
+------------------------------------------------------------------------------
+
+Role-Based Authentication in Spring Boot 4.x
+---------------------------------------------
+
+What is Role-Based Authentication?
+            Role-based authentication restricts access to specific endpoints
+            or resources based on the user's role.
+For example:
+         • An ADMIN can access all endpoints.
+         • A USER can access limited endpoints.
+
+In Spring Boot, roles are used with Spring Security to control access.
+
+
+Steps to Implement Role-Based Authentication
+----------------------------------------------
+      1. Add Spring Security Dependency Include the following dependency in pom.xml:
+            <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            </dependency>
+      2. Configure Security Roles Roles are typically stored in the database or hardcoded for testing
+         purposes. In this example, we'll use hardcoded roles.
+      3. Create a Security Configuration Class Define role-based access in a custom security
+         configuration class by extending SecurityFilterChain in Spring Boot 4.x.
+      4. Example Code Implementation
+         Controller: Define secured endpoints based on roles.
+
+            import org.springframework.web.bind.annotation.GetMapping;
+            import org.springframework.web.bind.annotation.RestController;
+            @RestController
+            public class RoleBasedController {
+            @GetMapping("/admin")
+            public String adminAccess() {
+            return "Welcome, Admin!";
+            }
+            @GetMapping("/user")
+            public String userAccess() {
+            return "Welcome, User!";
+            }
+            @GetMapping("/public")
+            public String publicAccess() {
+            return "This is a public endpoint.";
+            }
+            }
+      Security Configuration:
+
+            import org.springframework.context.annotation.Bean;
+            import org.springframework.context.annotation.Configuration;
+            import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+            import org.springframework.security.web.SecurityFilterChain;
+            @Configuration
+            public class SecurityConfig {
+            @Bean
+            public SecurityFilterChain securityFilterChain(HttpSecurity http) throws
+            Exception {
+            http.csrf().disable()
+            .authorizeHttpRequests(auth -> auth
+            .requestMatchers("/admin").hasRole("ADMIN")
+            .requestMatchers("/user").hasRole("USER")
+            .requestMatchers("/public").permitAll()
+            .anyRequest().authenticated()
+            )
+            .httpBasic(); // Enable Basic Authentication
+            return http.build();
+            }
+            }
+In-Memory User Roles: Configure users with roles in application.properties:
+            spring.security.user.name=admin
+            spring.security.user.password=admin123
+            spring.security.user.roles=ADMIN
+            
+Testing the Application:
+• Access /admin with admin credentials (admin/admin123).
+• Access /user with a user role (requires additional user configuration).
+• Access /public without any authentication.
