@@ -11,9 +11,18 @@ public class RoleBasedController {
 		return "hi welcome admin...!!";
 	}
     
+
+    
 //	http://localhost:8080/employee
     @GetMapping("/employee")
    	public String EmployeeAccess() {
    		return "hi welcome employee...!!";
+   	}
+    
+    
+//	http://localhost:8080/students
+    @GetMapping("/students")
+   	public String studentAccess() {
+   		return "hi welcome students...!!";
    	}
 }

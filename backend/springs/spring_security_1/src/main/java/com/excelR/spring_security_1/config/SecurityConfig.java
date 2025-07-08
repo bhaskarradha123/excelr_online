@@ -7,7 +7,6 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class SecurityConfig {
-    
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity security) throws Exception {
 		security
@@ -15,7 +14,9 @@ public class SecurityConfig {
 		.disable()
 		.authorizeHttpRequests(auth->
 		           auth.requestMatchers("/admin").hasRole("ADMIN")
-		               .requestMatchers("/employee").permitAll()
+		               .requestMatchers("/employee").hasRole("EMPLOYEE")
+		               .requestMatchers("/students")
+		               .permitAll()
 		               .anyRequest().authenticated()
 				).httpBasic();
 		

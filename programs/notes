@@ -205,4 +205,5 @@ Number - 143
                            :{30,40,50,10,20}
       right array rotation :{40,50,10,20,30}
                            :{50,10,20,30,40}
+    71.Juggling algorithm for array rotation
 
