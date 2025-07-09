@@ -11,7 +11,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 
 @Component
 public class JwtUtil {
-	private static final String SECRET_KEY = "mysecretkeymysecretkey";
+	private static final String SECRET_KEY = "mysecretkeymysecretkeymysecretkeymysecretkey";
 
 	public String generateToken(String username) {
 		return Jwts.builder().setSubject(username).setIssuedAt(new Date())

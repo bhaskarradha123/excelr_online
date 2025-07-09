@@ -12,10 +12,10 @@ import com.excelR.spring_security_1.util.JwtUtil;
 public class RoleBasedController {
 	@Autowired
 	JwtUtil util;
-	
+//	http://localhost:8080/authenticate?username=radha
 	@PostMapping("/authenticate")
-	public String genertaeTokenWhenLogin(@RequestParam String userName) {
-	  return util.generateToken(userName);	
+	public String genertaeTokenWhenLogin(@RequestParam String username) {
+	  return util.generateToken(username);	
 	}
 	
 	

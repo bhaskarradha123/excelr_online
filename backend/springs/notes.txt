@@ -588,3 +588,27 @@ import org.springframework.web.bind.annotation.*;
          return jwtUtil.generateToken(username);
          }
          }
+
+
+JWT Token Structure:
+-----------------------
+    1. Header
+    2. Payload
+    3. Signature
+
+    eyJhbGciOiJIUzI1NiJ9 - header
+                            {
+                              alg: "HS256"
+                              typ: "JWT"
+                            }
+
+   .eyJzdWIiOiJyYWRoYSIsImlhdCI6MTc1MjA2NTk1OCwiZXhwIjoxNzUyMDY5NTU4fQ - payload
+                           {
+                             sub: "radha",
+                             name: "radha",
+                             iat: 1572065958,
+                             exp: 1572069558
+                             role: "ADMIN"
+                           }
+   .o39GttqOh3SfUu8xQ2rjnGQIrveSuIgTIP-xABxOX24 - signature - base64 encoded 
+                                                            - based on secret key
