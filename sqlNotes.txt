@@ -142,3 +142,19 @@ DDL(Data Definition Language):
               .  .  .
           )
  
+ constraints:
+ ------------
+1.unique - it makes sure all values in a column are unique.
+2.not null - it makes sure all values in a column are not null.
+3.primary key - it makes sure all values in a column are unique and not null.
+              - it is a combination of unique and not null.
+              - In a table there can be only one primary key.
+4.foreign key - It also called as a reference key.
+              - It built's a relationship between two tables.
+              - In a table there can be any number of foreign keys.
+                foreign key in the current table is called child table 
+                and the reference table called as parent table
+        In the below example RollNo is primary key in student , 
+        but it acting like foreign key in marks table
+                Student(RollNo, Name, Email, Mobile, Address) -parent table/master table
+                marks(id , subject, marks, date,RollNo) - child table/detail table
