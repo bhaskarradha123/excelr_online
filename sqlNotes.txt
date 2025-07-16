@@ -73,3 +73,72 @@ RollNo    |    Name     |     Email     |      Mobile    |      Address  |
 2         |     Ram     |     ram@.com   |     6788888888 |    Bangalore |
 
 3         |     Rani    |     rani@.com   |    9999999999 |    Bangalore |
+--------------------------------------------------------------------------
+
+
+Data types:
+----------
+    -It is a type of data that is stored in a database.
+    Types:
+         1. Numeric data types
+         2. Character data types
+         3. Date and time data types
+         4. Logical data types
+
+EX: INT - Numeric data type
+    CHAR - Character data type
+    VARCHAR - Character data type - indicates with ''(single quotes)
+    DATE - Date and time data type
+    BOOLEAN - Logical data type
+    FLOAT - Numeric data type(decimal numbers)
+
+SQL Syntax and Rules:
+---------------------
+     1.commands are written in english language.
+     2.Each command is terminated by a semicolon(;).
+     3.Keywords are written in case - insensitive.(uppercase -optional but recommended)
+
+
+To display databases:
+ CMD: show database;
+
+to change database:
+ CMD: use database_name;
+
+to display tables in a database:
+ CMD: show tables;
+
+to display fields in a table
+ CMD:  desc table_name;
+       show fields in table_name;
+       show columns in table_name;
+
+
+database/schema:
+---------------
+1.to display databases: CMD: show databases;
+2.to create a database: CMD: create database database_name;
+3.to delete a database: CMD: drop database database_name;
+4.to change database: CMD: use database_name;
+
+
+table/entity:
+-------------
+1.to display tables: CMD: show tables;
+
+DDL(Data Definition Language):
+----------------------------
+                by using ddl , we can create, modify and delete tables in a database.
+
+2.to delete a table: CMD: drop table table_name;
+3.to rename a table tableName: CMD: rename table tableName to newTableName;
+4.to create a table: 
+             -data types:INT, CHAR, VARCHAR, DATE, BOOLEAN, FLOAT
+             -constraints : primary key, foreign key, unique, not null, check, default
+    syntax:
+          create table table_name(
+              column_name data_type constraints,
+              column_name data_type constraints,
+              .  .  .
+          )
+ 
