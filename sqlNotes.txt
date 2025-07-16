@@ -1,2 +1,29 @@
-                                                                                   SQL NOTES
-   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                                     SQLNOTES
+=====================================================================================================
+SQL(Structured Query Language)
+---------------------------------
+    -It is a language used to interact with a database.
+    -It is used to create, modify and delete data in a database.
+
+Data:
+------
+     - collection of information that is stored in a database.
+     - It can be structured or unstructured.
+
+Database:
+--------
+     - It is a container/place where data is stored.
+     - It is a collection of data/information that is stored in a database. 
+     Types:
+          1. Relational Databases: it is a type of database where data is stored in tables.
+          2. Non-Relational Databases: it is a type of database where data is stored in documents/objects.
+          3. Graph Databases: it is a type of database where data is stored in graphs.
+
+----------------------------------------------------------------------------------------------
+      database                                    DBMS(Database Management System)
+-------------------------------------------------------------------------------------
+It is a collection of data that is stored         Software used to manage and interact 
+in a database.                                    with a database.
+
+ex: MySQL, Oracle, MS-SQL, DB2, SQLite, etc.      ex:flat like dbms, tree like dbms,
+                                                     graph like dbms, RDMBS
