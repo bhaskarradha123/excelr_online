@@ -26,4 +26,21 @@ It is a collection of data that is stored         Software used to manage and in
 in a database.                                    with a database.
 
 ex: MySQL, Oracle, MS-SQL, DB2, SQLite, etc.      ex:flat like dbms, tree like dbms,
-                                                     graph like dbms, RDMBS
+                                                     graph like dbms, RDBMS, etc.
+
+-------------------------------------------------------------------------------------------------
+RDBMS :(Relational Database Management System)
+----------------------------------------------
+       - it is a type of database where data is stored in tables with rows and columns.
+       - Two tables can be related to each other by a primary key and a foreign key.
+
+
+Popular RDBMS:
+------------
+      1.MySQL - free and open source , widely used
+      2.Oracle - commercial , used in enterprise level
+      3.MS-SQL - commercial , used in enterprise level
+      4.DB2 - commercial , used in enterprise level 
+      5.SQLite - free and open source , used in enterprise level
+      6.PostgreSQL - free and open source , widely used mainly used in microsoft's azure
+
