@@ -44,3 +44,32 @@ Popular RDBMS:
       5.SQLite - free and open source , used in enterprise level
       6.PostgreSQL - free and open source , widely used mainly used in microsoft's azure
 
+
+Database Vendors:
+----------------
+    Oracle - 10G, 11G, 12G
+    MySQL - 5.5, 5.6, 5.7, 8.0
+    IBM - DB2
+    Microsoft - MS-SQL
+    SAP - sy base
+
+
+Table(Entity):
+-------------- 
+       - it is a collection of data that is stored in a database in
+         the form of rows and columns.
+    ex: Student - table /Entity
+        -attributes(columns) - RollNo, Name, Email, Mobile, Address
+        -column:a field in a table, represents a single attribute
+        -row:a single record
+
+
+Student
+-------------------------------------------------------------------------
+RollNo    |    Name     |     Email     |      Mobile    |      Address  |
+-------------------------------------------------------------------------
+1         |     Raj     |     raj@.com   |     1234567890 |    Bangalore |
+
+2         |     Ram     |     ram@.com   |     6788888888 |    Bangalore |
+
+3         |     Rani    |     rani@.com   |    9999999999 |    Bangalore |
