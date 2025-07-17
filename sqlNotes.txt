@@ -158,3 +158,23 @@ DDL(Data Definition Language):
         but it acting like foreign key in marks table
                 Student(RollNo, Name, Email, Mobile, Address) -parent table/master table
                 marks(id , subject, marks, date,RollNo) - child table/detail table
+5.check - it makes sure all values in a column are valid.
+6.default- it specifies a default value for a column.
+7.auto_increment - it makes sure that the values in a column are auto-incremented.
+
+
+attributes/columns/fields:
+--------------------------
+
+1.to display fields in a table: CMD: desc table_name;
+                                CMD: show fields in table_name;
+                                CMD: show columns in table_name;
+2.to add a column:
+     CMD: alter table table_name add column column_name data_type constraints;
+3.to modify a column: 
+     CMD: alter table table_name modify column column_name data_type constraints;
+4.to rename a column:
+     CMD: alter table table_name change column old_column_name new_column_name data_type constraints;
+     CMD: alter table table_name rename column old_column_name to new_column_name;
+5.to delete a column:
+     CMD: alter table table_name drop column column_name;
