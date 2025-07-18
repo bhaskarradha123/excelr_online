@@ -306,6 +306,12 @@ special operator:
          like - used to specify a pattern in where clause
               - % - any number of characters
               - _ - any single character
+        null - used to specify null value in where clause
+             - null means no value/ no data
+             -to achieve null we have to use a special operator called is
+        not null - used to specify non-null value in where clause
+
+
 
 Q. WAQ to display employees data whose salary in between 10000 and 20000?
 ans . select * from employee where salary between 10000 and 20000;
@@ -319,3 +325,83 @@ Q. WAQ to display employees name whose hire date is ending with '01'?
 ans . select * from employee where hireDate like '%01';
          or
      select * from employee where hireDate like '_ _ _ _-_ _-01';
+
+Q. WAQ to display employees data whose name starts with 'R'?
+ans. select * from employee where name like 'R%';
+
+Q. WAQ to display departments apart from d006 and d009?
+ans. select * from departments where dept_no not in('d006','d009');
+
+-----------------------------------------------------------------------------------------
+functions  in sql:
+------------------
+        - functions are used to perform specific operations on data.
+     
+ 1.Aggregate functions: 
+ ---------------------
+      - functions that returns a single value by working on a group of data.
+      - it is also called as multi row functions.(dealing with multiple rows)
+      1.sum()-> returns the sum of all values
+      2.avg()-> returns the average of all values
+      3.count()-> returns the count of all values
+      4.max()-> returns the maximum value of all values
+      5.min()-> returns the minimum value of all values
+
+Q. WAQ to display total number of employees?
+ans . select count(*) from employee;
+-----------------------------------------------------------------------------
+              numbers                 strings                dates
+-----------------------------------------------------------------------------
+sum           yes                      no                         no
+avg           yes                      no                         no
+count         yes                      yes                        yes
+max           yes                      yes                        no
+min           yes                      yes                        no
+-----------------------------------------------------------------------------------------
+2.Scalar functions:
+------------------
+      - functions that returns a single value by working on a single row of data.
+      - single row functions.(dealing with single row)
+      1.length()-> returns the length of a string
+      2.upper()-> returns the string in upper case
+      3.lower()-> returns the string in lower case
+      4.substr()-> returns the substring of a string
+                  substr(columnName, start index position, end index position)
+      5.concat()-> returns the concatenation of two strings
+      6.initcap()-> returns the string in title case
+      7.replace()-> returns the string after replacing a substring with another substring
+               -> replace(columnName, substringToReplace, substringToReplaceWith)
+
+Q. WAQ to display first name and last name in upper case?
+ans. select upper(first_name),upper(last_name) from employees; 
+
+Q. WAQ to display the size of first_name column?
+ans. select length(first_name) from employees;
+
+Q. WAQ to replace last_name having facello to bacello;
+ans. select replace(last_name,'facello','bacello') from employees;
+
+
+Note:
+-----
+     single row functions can be used in select statement as well as in where clause.
+     multi row functions can be used only in select statement.
+
+
+Date Function:
+-------------
+       - used to perform date related operations.
+       1.now()-> returns the current date and time
+       2.current_date()-> returns the current date
+       3.current_time()-> returns the current time
+       4.current_timestamp()-> returns the current date and time
+
+
+Q. WAQ to display current date?
+ans. select current_date();
+
+Q.WAQ to display year , month , day of employee joining date?
+ans. select year(hireDate),month(hireDate),day(hireDate) from employees;
+
+Q.WAQ to change the pattern of date?
+ans. select date_format(hireDate,'%d-%m-%Y') from employees;
