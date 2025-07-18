@@ -178,3 +178,144 @@ attributes/columns/fields:
      CMD: alter table table_name rename column old_column_name to new_column_name;
 5.to delete a column:
      CMD: alter table table_name drop column column_name;
+---------------------------------------------------------------------------------
+drop                                               truncate
+---------------------------------------------------------------------------------
+drop table table_name;                             truncate table table_name;
+
+it will delete the table permanently               it will delete all the records/data 
+   from the database.                              in the table.Table structure will
+                                                   remains same
+---------------------------------------------------------------------------------
+
+
+DML(Data Manipulation Language):
+----------------------------------
+            by using dml , we can insert, update and delete data in a table.
+
+Insert :
+   CMD: insert into tableName (column1, column2, column3, column4)
+         values (value1, value2, value3, value4);
+
+         insert into tableName values (value1, value2, value3, value4);
+
+Update :
+   CMD: update tableName set column1=value1, column2=value2,..
+         where condition;
+
+Delete :
+   CMD: delete from tableName where condition;
+
+
+-------------------------------------------------------------------------------
+              CMD: mysql -u root -p < employees.sql
+
+mysql used to import data from sql file to database
+          -u root -p means root user and password
+          employees.sql is a sql file
+-------------------------------------------------------------------------------
+
+
+
+
+DQL(Data Query Language):
+-------------------------
+            -by using dql , we can fetch data from a table.
+
+Q. write a query to fetch all the records from a table?
+Ans: select * from tableName;
+
+Q. write a query to fetch name and email column from employee table?
+Ans: select name, email from employee;
+
+filtering records:
+------------------
+      - filtering records based on conditions/operators/expressions.
+      
+Where clause:
+=============
+      - filtering records based on conditions.
+    CMD: select * from tableName where condition;
+
+Arithmetic operators:
+-------------------
+            + addition
+            - subtraction
+            * multiplication
+            / division
+            % modulus
+
+Q.waq to display employee num with their salaries& decrease the salary by 10000;
+ans: select empNo,salary-10000 from employee;
+
+q.waq to display employee num with their daily salary;
+ans: select empNo,salary/365 from employee;----365 days in a year
+
+concatenation:
+-------------
+      - combining two or more strings together.
+      - joining or merging 2 or more column data to a single column.
+      - to achieve we can use concat() function. or || operator.(double vertical pipes)
+
+q.waq to display in the below format (my name is last name)
+ans : select concat('my name is ',lastName) as name from employee;
+     select 'my name is '||lastName from employee; - will applicable to oracle ,
+                                                    sql server
+q. WAQ to display in the below format (firstName - lastName as fullName)   
+   select concat(firstName,' - ',lastName) as fullName from employee;
+
+
+order by:
+--------
+     -  it is a clause which is used to sort the result-set in ascending or descending order.
+     -  by default it will sort the result-set in ascending order.
+     -  to specify in ascending order use asc keyword.
+     -  to specify in descending order use desc keyword.
+
+Q. WAQ to display employee data based on hire date in ascending order? 
+   select * from employees order by hireDate asc;
+
+Relational operators:
+---------------------
+            = equal to
+            != not equal to
+            < less than
+            > greater than
+            <= less than or equal to
+            >= greater than or equal to
+            <> not equal to
+     - relational operators used on where clause.
+
+Q .WAQ to display employees data whose hire date is less than 1990? 
+ans. select * from employee where hireDate<'1990-01-01';
+
+logical operators:
+------------------
+            and - both the conditions should be true
+            or  - either of the conditions should be true
+            not - reverse the condition
+     - logical operators used on where clause.
+
+Q. WAQ to display employees data whose hire date is less than 1882 and gender is female?
+ans. select * from employee where hireDate<'1882-01-01' and gender='F';
+
+special operator:
+----------------
+         In  - used to specify multiple values in where clause
+         between - used to specify a range in where clause
+         like - used to specify a pattern in where clause
+              - % - any number of characters
+              - _ - any single character
+
+Q. WAQ to display employees data whose salary in between 10000 and 20000?
+ans . select * from employee where salary between 10000 and 20000;
+                            or
+     select * from employee where salary>=10000 and salary<=20000;
+
+Q. WAQ to display employees name whose name contains the letter 'a'?
+ans. select * from employee where name like '%a%';
+
+Q. WAQ to display employees name whose hire date is ending with '01'? 
+ans . select * from employee where hireDate like '%01';
+         or
+     select * from employee where hireDate like '_ _ _ _-_ _-01';
