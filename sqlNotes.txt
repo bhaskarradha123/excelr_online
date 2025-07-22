@@ -415,7 +415,19 @@ Math Functions:
        4.round()-> returns the nearest integer to a number
        5.sign()-> returns the sign of a number
        6.mod()-> returns the remainder of a number divided by another number
+       7.Power()/pow()-> returns the value of a number raised to the power of another number
 
+Q. WAT to round up a decimal value?
+ans. select ceil(4.2) as result; // 5
+
+Q. WAQ to round down a decimal value?
+ans. select floor(4.2) as result; // 4
+
+Q. WAQ to round a decimal value?
+ans. select round(4.2) as result; // 4
+
+Q.WAQ to get the power of a number?
+ans . select pow(2,3) as result; // 8
 
 Joins:
 ------
