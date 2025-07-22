@@ -405,3 +405,127 @@ ans. select year(hireDate),month(hireDate),day(hireDate) from employees;
 
 Q.WAQ to change the pattern of date?
 ans. select date_format(hireDate,'%d-%m-%Y') from employees;
+
+Math Functions:
+--------------
+       - used to perform mathematical operations.
+       1.abs()-> returns the absolute value of a 9*/9+number
+       2.ceil()-> returns the smallest integer greater than or equal to a number
+       3.floor()-> returns the largest integer less than or equal to a number
+       4.round()-> returns the nearest integer to a number
+       5.sign()-> returns the sign of a number
+       6.mod()-> returns the remainder of a number divided by another number
+
+
+Joins:
+------
+    - joining or merging one or more tables
+    - used to combine rows from two or more tables based on a related column 
+      between them.
+
+Types of joins:
+---------------
+           1.cross join
+           2.inner join/equi join
+           3.outer joins
+                     1.left outer join
+                     2.right outer join
+                     3.full outer join
+           4.self join
+
+1.cross join/cartesian join:
+--------------------------         
+         -In this join , it returns each and every record of the table is going to be
+          matched.
+         -In Cross Join, if table A contains 10 records and table B contains 4 records,
+          then the cross join will return 40 records. 
+         -whenever we use cross join, will get correct data as well as incorrect data 
+
+CMD: select * from tableA cross join tableB;
+     select * from tableA,tableB;
+
+2.inner join/equi join:
+----------------------
+        - it returns only the matched records.
+        - In inner join, if table A contains 10 records and table B contains 4 records,
+          then the inner join will return 4 records.
+        - for equi joins, proper condition should be given in where clause.
+
+CMD: select * from tableA inner join tableB where condition;
+     select * from tableA,tableB where condition;
+
+Note : condition must be matching in both the tables.
+
+Q. WAQ to fetch data from employee and salaries table where first name of employee is Parto?
+ans. select * from employees e inner join salaries s  where e.emp_no=s.emp_no and firstName='Parto';
+                  or
+     select * from employees e,salaries s where e.emp_no=s.emp_no and  firstName='Parto';
+
+
+3.Outer join:
+-------------
+    - it returns matched records as well as unmatched records.
+    types:
+    ------
+        1.left outer join/left join
+        2.right outer join/right join
+        3.full outer join/full join
+
+  1.left outer join:
+  =================
+           -it returns all the records from left table and 
+            matched records from right table.
+          -if there is no matched records in right table, will return null values.
+
+Q. WAQ to fetch data from employee and salaries table 
+   where salary to date is equals to 2000-06-26?
+ans.  select e.emp_no, e.first_name,s.salary
+      from employees e left join salaries s
+      on e.emp_no=s.emp_no and s.to_date='2000-06-26';
+
+   2.right outer join/right join:
+   ==============================
+           -it returns all the records from right table and 
+            matched records from left table.
+          -if there is no matched records in left table, will return null values.
+
+Q. WAQ to fetch data from employee and salaries table 
+   where salary to date is equals to 2000-06-26?
+ans.  select e.emp_no, e.first_name,s.salary
+      from employees e right join salaries s
+      on e.emp_no=s.emp_no and s.to_date='2000-06-26';
+
+3.outer join/full outer join/full join:
+=======================================
+           -it returns all the records from both the tables.
+           -it returns matched records as well as unmatched records.
+           -it can't achieve by using mysql syntax.
+
+CMD: select * from tableA full outer join tableB on condition; // not supported by mysql
+                   or
+     select * from tableA left join tableB on condition
+                      union
+     select * from tableA right join tableB on condition;
+       
+
+
+4.self join:
+------------
+          - joining the table with itself. 
+          - without aliasing we can't use self join.  
+          - to compare rows within same table
+          - to find the relationship between rows within same table.
+
+CMD:  select * from tableA a join tableA b on a.column=b.column;
+
+Q. WAQ to compare the birth_date of employees?
+ans. select a.emp_no  as emp1, a.birth_date as date1,
+     b.emp_no as emp2, b.birth_date as date2
+     from employees a join employees b
+     on a.birth_date=b.birth_date and a.emp_no<>b.emp_no limit 10;
+
+Q. WAQ to compare the first name of employees with other employees?
+ans . select a.emp_no as emp1 , a.first_name as name1,
+      b.emp_no as emp2, b.first_name as name2
+      from employees a join employees b
+      on a.first_name=b.first_name and a.emp_no<>b.emp_no limit 10;
