@@ -1,0 +1,236 @@
+//Team-1 -https://github.com/Kp00100/Project_Team1
+-------
+     Neha ushir
+     Kalyani Patil
+     Jagruthi
+     //Thota dinesh kumar
+     
+Team 2   -   https://github.com/Hemu-12/online_Pharma_team2
+------
+    Vaishnavi sinde
+    Hemanshi
+    Sneha mandan
+    Shubham patil
+    shradha missal
+    Shubham
+   
+
+Team 3  - https://github.com/Naveena06g/Online_Pharma_Team_3
+------
+     Shravya 
+     R Jahnavi
+     Dasari Naveen
+     Naveena
+     Varshitha
+     manogna
+
+	
+Team 4   -   https://github.com/manilaxmisisvas/Online_Pharma_team4
+-----  
+     alekya  
+    // devansh   Thota dinesh kumar
+     K nandini
+     sisvas
+   // samadhan kad
+      priya
+   
+
+//Team 5  -  https://github.com/PratikshaShendage/Online_Pharma_Team5/tree/master
+------
+    Reshma 
+    //Pratiksha
+    nabil 
+    Ratndeep
+    Vinti
+    Nithin
+    
+Team 6: -https://github.com/Deshmukhsne/online-pharma-team6
+-------
+     Revanth
+     Snehal
+     //Gowd
+     Nilesh Chavan
+     Pratiksha
+     mariyam
+     
+
+
+
+Task :
+----
+    Person1(Team Lead) --create git repository in her GitHub profile.
+                       --send invitation link(collabirators)
+                       --need to upload projects-- main
+                       git hub reposiroty
+                              |
+                              |_frontend--online_Pharma_frontend
+                              |
+                              |_backend--online_Pharma_backend
+
+     Other team members-- accept req
+                       -- create a branch with your name
+                       -- clone project into your system
+   
+  
+
+- Create project in your repository--new project--board--change name --create
+- create issues to assign task to a respective person
+
+
+
+
+
+BackEnd end points:
+
+   Admin:  -- 15
+            1.Register 
+            2.Login
+            3.Profile- update ,delete, logout 
+            4.Drugs-add, update ,delete , readByName , readById, fetchAllDrugs
+            5.Members-update ,delete ,viewMembers,approveMember
+
+   User:--9
+            1.Register 
+            2.Login
+            3.Profile- update ,delete, logout 
+            4.Drugs- readByName , readById, fetchAllDrugs , addDrug into Cart--bill
+            5.Payment- 
+
+
+AuthController-- register , login ----permitall
+AdminController- fetchAllUser, enableUser, addDrug,deleteDrug,updateDrug --admin
+UserController--updateProfile,deleteProfile,fetchProfile,fetchAllDrugs  ,fetchDrugByName, fetchDrugById----- hasAnyRole('ADMIN','USER')
+DrugOrderController--saveDrugOder(items in cart)   -user
+
+
+Entities:
+--------
+    Member
+    Address
+    Drug
+    DrugOrder
+
+
+Member----Address(OnetoOne)  --- foreign key
+DrugOrder---Member(ManyToOne) ---foreign key
+DrugOrder---List<Drug>(ManyToMany)----foreign table(two columns)
+
+
+
+Payment 
+========
+
+
+
+App.jsx
+
+import './App.css'
+
+function App() {
+     const totalPrice=400;// total amount of drugs present in cart
+   function handlePayment(){
+     const options={
+      key:"rzp_test_4Ea0vvGa7O4ivP" ,// razorpay key
+      amount:totalPrice*100,
+      currency:"INR",
+      name:"Online Pharmacy",
+      description:"Test Transaction",
+      // image:"https://example.com/your_logo",
+      handler:function(response){
+        alert("payment successfully done"+response.razorpay_payment_id);
+        // can have an endpoint to save order details with payment id
+        // make cart as empty
+        // navigate to dashboard
+
+      },
+      prefill:{
+        name:'radha', // userName
+        email:'radha@123', // user email
+        contact:'1234567890' // user contact
+      },
+      theme:{color:'#fbbf24'}
+
+     }
+     const rzp1=new window.Razorpay(options);
+     rzp1.open();
+   }
+
+  return (
+    <>
+      <button onClick={handlePayment}>Pay  {totalPrice} rupees</button>
+    </>
+  )
+}
+
+export default App
+
+
+
+
+
+----------------------------------------------------------------------------------------------------
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+Add in index.html
+
+----------------------------------------------------------------------------------------------------------
+
+uploading image into cloud
+
+
+import React from 'react'
+
+const ImageTask = () => {
+    const [image,setImage]=React.useState(null);
+  function saveImage(){
+   if(!image)return;
+   
+   const formData=new FormData();
+   formData.append('file',image);
+   formData.append('upload_preset','unsigned_upload');//change with your presentName
+   formData.append('cloudinary','dsbwkapof');//change with your cloudName 
+
+    try{
+      fetch('https://api.cloudinary.com/v1_1/dsbwkapof/image/upload',
+      {
+        method:'post',
+        body:formData
+      })
+      .then(res=>res.json())
+      .then(data=>{
+        console.log(data.secure_url);
+      })}
+    catch(e){
+      console.log(e);
+    }
+
+
+  }
+
+  return (
+    <div>
+   <input type="file" accept='image/*'  onChange={(e)=>setImage(e.target.files[0])}/>
+   <button onClick={saveImage}>Click</button>
+    </div>
+  )
+}
+
+export default ImageTask
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
