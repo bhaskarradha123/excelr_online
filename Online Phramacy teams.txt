@@ -44,7 +44,7 @@ Team 4   -   https://github.com/manilaxmisisvas/Online_Pharma_team4
     Vinti
     Nithin
     
-Team 6: -https://github.com/Deshmukhsne/online-pharma-team6
+Team 6: -https://github.com/Deshmukhsne/online-pharma-team6  Completed
 -------
      Revanth
      Snehal
@@ -178,12 +178,31 @@ Add in index.html
 
 uploading image into cloud
 
-
 import React from 'react'
 
 const ImageTask = () => {
     const [image,setImage]=React.useState(null);
+    const [img,setImg]=React.useState('');
+    const name=React.useRef();
+//  fetching data
+  //   const[drugs,setDrugs]=React.useState([]);
+  //   React.useEffect(()=>{
+  //     fetchAllDrugs();
+  //   },[])
+
+  //  function fetchAllDrugs(){
+  //     fetch('http://localhost:8080/fetchAllDrugs')
+  //     .then(res=>res.json())
+  //     .then(data=>setDrugs(data))
+  //   }
+
+
+
   function saveImage(){
+    
+   
+   
+
    if(!image)return;
    
    const formData=new FormData();
@@ -200,32 +219,45 @@ const ImageTask = () => {
       .then(res=>res.json())
       .then(data=>{
         console.log(data.secure_url);
+        console.log(name.current.value);
+       let drugObj={
+        name:name.current.value,
+        image:data.secure_url
+       }
+      //  uploading to backend
+      //  fetch('http://localhost:8080/saveDrug',{
+      //   method:'post',
+      //   headers:{'Content-Type':'application/json'},
+      //   body:JSON.stringify(drugObj)
+      //  })
+
       })}
     catch(e){
       console.log(e);
     }
 
 
+    
+
+
+
+
   }
 
   return (
+   <>
     <div>
+    <input type="text"  placeholder='enter drug name' ref={name} />
    <input type="file" accept='image/*'  onChange={(e)=>setImage(e.target.files[0])}/>
    <button onClick={saveImage}>Click</button>
     </div>
+   <div>Display Image</div>
+   <img src={img} alt="upload" />
+   </>
   )
 }
 
 export default ImageTask
-
-
-
-
-
-
-
-
-
 
 
 
