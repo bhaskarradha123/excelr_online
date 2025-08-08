@@ -262,7 +262,19 @@ export default ImageTask
 
 
 
+===========================================================================================
+Railway -- for db deployemnet
+
+
+
+
+Render---for backend and frontend deployement
+
+
+
+
 
 
 
     
+
